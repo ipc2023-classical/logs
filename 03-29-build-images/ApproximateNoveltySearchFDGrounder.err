@@ -1,0 +1,62 @@
+INFO:    Starting build...
+Getting image source signatures
+Copying blob sha256:5c19388d38e1ea904672812dd0aac505220c9254e2621a1684e0fe29e2dba80e
+Copying config sha256:558d44db75c8f69c29f427cf88e6a71c39320f7607584baa6860f6e4f6121892
+Writing manifest to image destination
+Storing signatures
+2023/03/29 12:15:42  info unpack layer: sha256:5c19388d38e1ea904672812dd0aac505220c9254e2621a1684e0fe29e2dba80e
+INFO:    Copying . to 
+INFO:    Running post scriptlet
++ apt-get update
++ apt-get -y install cmake python3 python3-dev python3-pip make g++ git
+debconf: delaying package configuration, since apt-utils is not installed
++ cmake -S. -Bbuilds/build_release -DCMAKE_INSTALL_PREFIX=builds/Release -DCMAKE_BUILD_TYPE=Release -DUSE_SUPERBUILD=ON
+The PYTHON_VERSION is 3.10
+  WARNING: The script pybind11-config is installed in '/root/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+Building Boost in release mode
+Boost is built using python  :  3.10 ;
+The boost build command is : ./b2 --user-config=/builds/build_release/../build_external/boost/user-config.jam --with-python --with-program_options --build-dir=/builds/build_release/../build_external/boost/build variant=release optimization=space link=static install cxxflags=-fpic
+CMake Warning (dev) at sr/share/cmake-3.24/Modules/ExternalProject.cmake:3074 (message):
+  The DOWNLOAD_EXTRACT_TIMESTAMP option was not given and policy CMP0135 is
+  not set.  The policy's OLD behavior will be used.  When using a URL
+  download, the timestamps of extracted files should preferably be that of
+  the time of extraction, otherwise code that depends on the extracted
+  contents might not be rebuilt if the URL changes.  The OLD behavior
+  preserves the timestamps from the archive instead, but this is usually not
+  what you want.  Update your project to the NEW behavior or specify the
+  DOWNLOAD_EXTRACT_TIMESTAMP option with a value of true to avoid this
+  robustness issue.
+Call Stack (most recent call first):
+  sr/share/cmake-3.24/Modules/ExternalProject.cmake:4170 (_ep_add_download_command)
+  cmake/SuperBuildLinux/CMakeLists.txt:216 (ExternalProject_Add)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
++ cmake --build builds/build_release -j4
+Cloning into 'Catch2'...
+HEAD is now at f4af9f69 Bump version to v3.0.0 preview 4
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_C_COMPILER
+
+
+The PYTHON_VERSION is 3.10
+THE BOOST INCLUDE dirs search path is /builds/external_lib/boost/include
+Getting image source signatures
+Copying blob sha256:5c19388d38e1ea904672812dd0aac505220c9254e2621a1684e0fe29e2dba80e
+Copying config sha256:558d44db75c8f69c29f427cf88e6a71c39320f7607584baa6860f6e4f6121892
+Writing manifest to image destination
+Storing signatures
+2023/03/29 12:23:43  info unpack layer: sha256:5c19388d38e1ea904672812dd0aac505220c9254e2621a1684e0fe29e2dba80e
+INFO:    Copying builds/Release/lapkt_package/ to 
+INFO:    Running post scriptlet
++ apt-get update
++ apt-get -y install python3-minimal
+debconf: delaying package configuration, since apt-utils is not installed
++ rm -rf /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic-backports_InRelease /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic-backports_universe_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic-updates_InRelease /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic-updates_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic-updates_multiverse_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic-updates_restricted_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic-updates_universe_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic_InRelease /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic_multiverse_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic_restricted_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic_universe_binary-amd64_Packages.lz4 /var/lib/apt/lists/auxfiles /var/lib/apt/lists/lock /var/lib/apt/lists/partial /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_kinetic-security_InRelease /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_kinetic-security_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_kinetic-security_multiverse_binary-amd64_Packages.lz4 /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_kinetic-security_restricted_binary-amd64_Packages.lz4 /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_kinetic-security_universe_binary-amd64_Packages.lz4
+INFO:    Adding labels
+INFO:    Adding runscript
+INFO:    Creating SIF file...
+INFO:    Build complete: /tmp/ApproximateNoveltySearchFDGrounder.img
