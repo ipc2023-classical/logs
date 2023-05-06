@@ -1,0 +1,60 @@
+INFO:    Starting build...
+Getting image source signatures
+Copying blob sha256:5c19388d38e1ea904672812dd0aac505220c9254e2621a1684e0fe29e2dba80e
+Copying config sha256:558d44db75c8f69c29f427cf88e6a71c39320f7607584baa6860f6e4f6121892
+Writing manifest to image destination
+Storing signatures
+2023/03/27 15:05:09  info unpack layer: sha256:5c19388d38e1ea904672812dd0aac505220c9254e2621a1684e0fe29e2dba80e
+INFO:    Copying . to 
+INFO:    Running post scriptlet
++ apt-get update
++ apt-get -y install cmake python3 make g++
+debconf: delaying package configuration, since apt-utils is not installed
++ ./build.py -j4
+CMake Deprecation Warning at CMakeLists.txt:31 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at search/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at h2-preprocessor/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+/src/h2-preprocessor/planner.cc: In function ‘int main(int, const char**)’:
+/src/h2-preprocessor/planner.cc:49:30: warning: catching polymorphic type ‘class std::invalid_argument’ by value [-Wcatch-value=]
+   49 |                 }catch (std::invalid_argument) {
+      |                              ^~~~~~~~~~~~~~~~
++ strip --strip-all builds/release/bin/downward
+Getting image source signatures
+Copying blob sha256:5c19388d38e1ea904672812dd0aac505220c9254e2621a1684e0fe29e2dba80e
+Copying config sha256:558d44db75c8f69c29f427cf88e6a71c39320f7607584baa6860f6e4f6121892
+Writing manifest to image destination
+Storing signatures
+2023/03/27 15:10:11  info unpack layer: sha256:5c19388d38e1ea904672812dd0aac505220c9254e2621a1684e0fe29e2dba80e
+INFO:    Copying fast-downward.py to 
+INFO:    Copying builds/release/bin/ to 
+INFO:    Copying driver to 
+INFO:    Running post scriptlet
++ apt-get update
++ apt-get -y install python3-minimal
+debconf: delaying package configuration, since apt-utils is not installed
++ rm -rf /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic-backports_InRelease /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic-backports_universe_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic-updates_InRelease /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic-updates_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic-updates_multiverse_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic-updates_restricted_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic-updates_universe_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic_InRelease /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic_multiverse_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic_restricted_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic_universe_binary-amd64_Packages.lz4 /var/lib/apt/lists/auxfiles /var/lib/apt/lists/lock /var/lib/apt/lists/partial /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_kinetic-security_InRelease /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_kinetic-security_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_kinetic-security_multiverse_binary-amd64_Packages.lz4 /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_kinetic-security_restricted_binary-amd64_Packages.lz4 /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_kinetic-security_universe_binary-amd64_Packages.lz4
+INFO:    Adding labels
+INFO:    Adding runscript
+INFO:    Creating SIF file...
+INFO:    Build complete: /tmp/cerberus_agl.img

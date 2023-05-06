@@ -1,0 +1,1191 @@
+apptainer version 1.1.6
+Get:1 http://security.ubuntu.com/ubuntu kinetic-security InRelease [109 kB]
+Get:2 http://archive.ubuntu.com/ubuntu kinetic InRelease [267 kB]
+Get:3 http://security.ubuntu.com/ubuntu kinetic-security/multiverse amd64 Packages [6296 B]
+Get:4 http://security.ubuntu.com/ubuntu kinetic-security/restricted amd64 Packages [318 kB]
+Get:5 http://security.ubuntu.com/ubuntu kinetic-security/main amd64 Packages [327 kB]
+Get:6 http://archive.ubuntu.com/ubuntu kinetic-updates InRelease [118 kB]
+Get:7 http://security.ubuntu.com/ubuntu kinetic-security/universe amd64 Packages [190 kB]
+Get:8 http://archive.ubuntu.com/ubuntu kinetic-backports InRelease [99.9 kB]
+Get:9 http://archive.ubuntu.com/ubuntu kinetic/multiverse amd64 Packages [289 kB]
+Get:10 http://archive.ubuntu.com/ubuntu kinetic/main amd64 Packages [1778 kB]
+Get:11 http://archive.ubuntu.com/ubuntu kinetic/restricted amd64 Packages [151 kB]
+Get:12 http://archive.ubuntu.com/ubuntu kinetic/universe amd64 Packages [17.9 MB]
+Get:13 http://archive.ubuntu.com/ubuntu kinetic-updates/main amd64 Packages [455 kB]
+Get:14 http://archive.ubuntu.com/ubuntu kinetic-updates/restricted amd64 Packages [318 kB]
+Get:15 http://archive.ubuntu.com/ubuntu kinetic-updates/universe amd64 Packages [327 kB]
+Get:16 http://archive.ubuntu.com/ubuntu kinetic-updates/multiverse amd64 Packages [7021 B]
+Get:17 http://archive.ubuntu.com/ubuntu kinetic-backports/universe amd64 Packages [4521 B]
+Fetched 22.7 MB in 9s (2524 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  autoconf autotools-dev binutils binutils-common binutils-x86-64-linux-gnu
+  cmake-data cpp cpp-12 dh-elpa-helper emacsen-common g++-12 gcc gcc-12
+  libarchive13 libasan8 libatomic1 libbinutils libbrotli1 libc-dev-bin
+  libc6-dev libcc1-0 libcrypt-dev libctf-nobfd0 libctf0 libcurl4 libexpat1
+  libgcc-12-dev libgdbm-compat4 libgdbm6 libgomp1 libgprofng0 libgssapi-krb5-2
+  libicu71 libisl23 libitm1 libjsoncpp25 libk5crypto3 libkeyutils1 libkrb5-3
+  libkrb5support0 libldap-2.5-0 liblsan0 libmpc3 libmpfr6 libnghttp2-14
+  libnsl-dev libnsl2 libperl5.34 libpsl5 libquadmath0 librhash0 librtmp1
+  libsasl2-2 libsasl2-modules-db libsqlite3-0 libssh-4 libssl3
+  libstdc++-12-dev libtirpc-common libtirpc-dev libtirpc3 libtsan2 libubsan1
+  libuv1 libxml2 linux-libc-dev m4 perl perl-modules-5.34 pypy3-lib
+  rpcsvc-proto
+Suggested packages:
+  autoconf-archive gnu-standards autoconf-doc libtool gettext binutils-doc
+  cmake-doc ninja-build cmake-format cpp-doc gcc-12-locales cpp-12-doc
+  g++-multilib g++-12-multilib gcc-12-doc gcc-multilib manpages-dev flex bison
+  gdb gcc-doc gcc-12-multilib lrzip glibc-doc gdbm-l10n krb5-doc krb5-user
+  libstdc++-12-doc m4-doc make-doc perl-doc libterm-readline-gnu-perl
+  | libterm-readline-perl-perl libtap-harness-archive-perl pypy3-doc pypy3-tk
+Recommended packages:
+  manpages manpages-dev libc-devtools ca-certificates krb5-locales
+  libldap-common publicsuffix libsasl2-modules netbase
+The following NEW packages will be installed:
+  autoconf automake autotools-dev binutils binutils-common
+  binutils-x86-64-linux-gnu cmake cmake-data cpp cpp-12 dh-elpa-helper
+  emacsen-common g++ g++-12 gcc gcc-12 libarchive13 libasan8 libatomic1
+  libbinutils libbrotli1 libc-dev-bin libc6-dev libcc1-0 libcrypt-dev
+  libctf-nobfd0 libctf0 libcurl4 libexpat1 libgcc-12-dev libgdbm-compat4
+  libgdbm6 libgomp1 libgprofng0 libgssapi-krb5-2 libicu71 libisl23 libitm1
+  libjsoncpp25 libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0
+  libldap-2.5-0 liblsan0 libmpc3 libmpfr6 libnghttp2-14 libnsl-dev libnsl2
+  libperl5.34 libpsl5 libquadmath0 librhash0 librtmp1 libsasl2-2
+  libsasl2-modules-db libsqlite3-0 libssh-4 libssl3 libstdc++-12-dev
+  libtirpc-common libtirpc-dev libtirpc3 libtsan2 libubsan1 libuv1 libxml2
+  linux-libc-dev m4 make perl perl-modules-5.34 pypy3 pypy3-lib rpcsvc-proto
+  time
+0 upgraded, 77 newly installed, 0 to remove and 0 not upgraded.
+Need to get 119 MB of archives.
+After this operation, 480 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu kinetic-updates/main amd64 perl-modules-5.34 all 5.34.0-5ubuntu1.1 [2952 kB]
+Get:2 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libgdbm6 amd64 1.23-1 [33.9 kB]
+Get:3 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libgdbm-compat4 amd64 1.23-1 [6606 B]
+Get:4 http://archive.ubuntu.com/ubuntu kinetic-updates/main amd64 libperl5.34 amd64 5.34.0-5ubuntu1.1 [4713 kB]
+Get:5 http://archive.ubuntu.com/ubuntu kinetic-updates/main amd64 perl amd64 5.34.0-5ubuntu1.1 [231 kB]
+Get:6 http://archive.ubuntu.com/ubuntu kinetic/universe amd64 pypy3-lib amd64 7.3.9+dfsg-4 [2746 kB]
+Get:7 http://archive.ubuntu.com/ubuntu kinetic-updates/main amd64 libexpat1 amd64 2.4.8-2ubuntu0.22.10.1 [84.3 kB]
+Get:8 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libsqlite3-0 amd64 3.39.3-1 [655 kB]
+Get:9 http://archive.ubuntu.com/ubuntu kinetic-updates/main amd64 libssl3 amd64 3.0.5-2ubuntu2.1 [1896 kB]
+Get:10 http://archive.ubuntu.com/ubuntu kinetic/universe amd64 pypy3 amd64 7.3.9+dfsg-4 [12.8 MB]
+Get:11 http://archive.ubuntu.com/ubuntu kinetic-updates/main amd64 libkrb5support0 amd64 1.20-1ubuntu0.1 [31.3 kB]
+Get:12 http://archive.ubuntu.com/ubuntu kinetic-updates/main amd64 libk5crypto3 amd64 1.20-1ubuntu0.1 [81.7 kB]
+Get:13 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libkeyutils1 amd64 1.6.3-1 [10.7 kB]
+Get:14 http://archive.ubuntu.com/ubuntu kinetic-updates/main amd64 libkrb5-3 amd64 1.20-1ubuntu0.1 [346 kB]
+Get:15 http://archive.ubuntu.com/ubuntu kinetic-updates/main amd64 libgssapi-krb5-2 amd64 1.20-1ubuntu0.1 [142 kB]
+Get:16 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libicu71 amd64 71.1-3ubuntu1 [10.6 MB]
+Get:17 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libtirpc-common all 1.3.3+ds-1 [7790 B]
+Get:18 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libtirpc3 amd64 1.3.3+ds-1 [80.9 kB]
+Get:19 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libnsl2 amd64 1.3.0-2build2 [42.3 kB]
+Get:20 http://archive.ubuntu.com/ubuntu kinetic-updates/main amd64 libxml2 amd64 2.9.14+dfsg-1ubuntu0.1 [763 kB]
+Get:21 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libnghttp2-14 amd64 1.49.0-1 [73.5 kB]
+Get:22 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libpsl5 amd64 0.21.0-1.2build2 [58.4 kB]
+Get:23 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libuv1 amd64 1.44.2-1 [91.0 kB]
+Get:24 http://archive.ubuntu.com/ubuntu kinetic/main amd64 time amd64 1.9-0.1build2 [46.7 kB]
+Get:25 http://archive.ubuntu.com/ubuntu kinetic/main amd64 m4 amd64 1.4.19-1 [244 kB]
+Get:26 http://archive.ubuntu.com/ubuntu kinetic/main amd64 autoconf all 2.71-2 [338 kB]
+Get:27 http://archive.ubuntu.com/ubuntu kinetic/main amd64 autotools-dev all 20220109.1 [44.9 kB]
+Get:28 http://archive.ubuntu.com/ubuntu kinetic/main amd64 automake all 1:1.16.5-1.3 [558 kB]
+Get:29 http://archive.ubuntu.com/ubuntu kinetic-updates/main amd64 binutils-common amd64 2.39-3ubuntu1.1 [225 kB]
+Get:30 http://archive.ubuntu.com/ubuntu kinetic-updates/main amd64 libbinutils amd64 2.39-3ubuntu1.1 [610 kB]
+Get:31 http://archive.ubuntu.com/ubuntu kinetic-updates/main amd64 libctf-nobfd0 amd64 2.39-3ubuntu1.1 [99.8 kB]
+Get:32 http://archive.ubuntu.com/ubuntu kinetic-updates/main amd64 libctf0 amd64 2.39-3ubuntu1.1 [97.4 kB]
+Get:33 http://archive.ubuntu.com/ubuntu kinetic-updates/main amd64 libgprofng0 amd64 2.39-3ubuntu1.1 [897 kB]
+Get:34 http://archive.ubuntu.com/ubuntu kinetic-updates/main amd64 binutils-x86-64-linux-gnu amd64 2.39-3ubuntu1.1 [2435 kB]
+Get:35 http://archive.ubuntu.com/ubuntu kinetic-updates/main amd64 binutils amd64 2.39-3ubuntu1.1 [3306 B]
+Get:36 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libarchive13 amd64 3.6.0-1ubuntu1 [368 kB]
+Get:37 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libbrotli1 amd64 1.0.9-2build6 [315 kB]
+Get:38 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libsasl2-modules-db amd64 2.1.28+dfsg-6ubuntu2 [20.3 kB]
+Get:39 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libsasl2-2 amd64 2.1.28+dfsg-6ubuntu2 [56.6 kB]
+Get:40 http://archive.ubuntu.com/ubuntu kinetic-updates/main amd64 libldap-2.5-0 amd64 2.5.14+dfsg-0ubuntu0.22.10.1 [184 kB]
+Get:41 http://archive.ubuntu.com/ubuntu kinetic/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-2build4 [58.2 kB]
+Get:42 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libssh-4 amd64 0.9.6-2build1 [184 kB]
+Get:43 http://archive.ubuntu.com/ubuntu kinetic-updates/main amd64 libcurl4 amd64 7.85.0-1ubuntu0.5 [295 kB]
+Get:44 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libjsoncpp25 amd64 1.9.5-4 [80.3 kB]
+Get:45 http://archive.ubuntu.com/ubuntu kinetic/main amd64 librhash0 amd64 1.4.2-1ubuntu1 [125 kB]
+Get:46 http://archive.ubuntu.com/ubuntu kinetic/main amd64 dh-elpa-helper all 2.0.9ubuntu1 [7610 B]
+Get:47 http://archive.ubuntu.com/ubuntu kinetic/main amd64 emacsen-common all 3.0.4 [14.9 kB]
+Get:48 http://archive.ubuntu.com/ubuntu kinetic/main amd64 cmake-data all 3.24.2-1ubuntu1 [2024 kB]
+Get:49 http://archive.ubuntu.com/ubuntu kinetic/main amd64 cmake amd64 3.24.2-1ubuntu1 [8978 kB]
+Get:50 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libisl23 amd64 0.25-1 [740 kB]
+Get:51 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libmpfr6 amd64 4.1.0-3build3 [1425 kB]
+Get:52 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libmpc3 amd64 1.2.1-2build1 [46.9 kB]
+Get:53 http://archive.ubuntu.com/ubuntu kinetic/main amd64 cpp-12 amd64 12.2.0-3ubuntu1 [10.6 MB]
+Get:54 http://archive.ubuntu.com/ubuntu kinetic/main amd64 cpp amd64 4:12.2.0-1ubuntu1 [27.3 kB]
+Get:55 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libcc1-0 amd64 12.2.0-3ubuntu1 [46.4 kB]
+Get:56 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libgomp1 amd64 12.2.0-3ubuntu1 [125 kB]
+Get:57 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libitm1 amd64 12.2.0-3ubuntu1 [29.4 kB]
+Get:58 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libatomic1 amd64 12.2.0-3ubuntu1 [10.4 kB]
+Get:59 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libasan8 amd64 12.2.0-3ubuntu1 [2433 kB]
+Get:60 http://archive.ubuntu.com/ubuntu kinetic/main amd64 liblsan0 amd64 12.2.0-3ubuntu1 [1060 kB]
+Get:61 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libtsan2 amd64 12.2.0-3ubuntu1 [2456 kB]
+Get:62 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libubsan1 amd64 12.2.0-3ubuntu1 [969 kB]
+Get:63 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libquadmath0 amd64 12.2.0-3ubuntu1 [152 kB]
+Get:64 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libgcc-12-dev amd64 12.2.0-3ubuntu1 [2577 kB]
+Get:65 http://archive.ubuntu.com/ubuntu kinetic/main amd64 gcc-12 amd64 12.2.0-3ubuntu1 [21.4 MB]
+Get:66 http://archive.ubuntu.com/ubuntu kinetic/main amd64 gcc amd64 4:12.2.0-1ubuntu1 [5104 B]
+Get:67 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libc-dev-bin amd64 2.36-0ubuntu4 [20.0 kB]
+Get:68 http://archive.ubuntu.com/ubuntu kinetic-updates/main amd64 linux-libc-dev amd64 5.19.0-38.39 [1370 kB]
+Get:69 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libcrypt-dev amd64 1:4.4.28-2 [112 kB]
+Get:70 http://archive.ubuntu.com/ubuntu kinetic/main amd64 rpcsvc-proto amd64 1.4.2-0ubuntu6 [68.5 kB]
+Get:71 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libtirpc-dev amd64 1.3.3+ds-1 [193 kB]
+Get:72 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libnsl-dev amd64 1.3.0-2build2 [71.3 kB]
+Get:73 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libc6-dev amd64 2.36-0ubuntu4 [2088 kB]
+Get:74 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libstdc++-12-dev amd64 12.2.0-3ubuntu1 [2158 kB]
+Get:75 http://archive.ubuntu.com/ubuntu kinetic/main amd64 g++-12 amd64 12.2.0-3ubuntu1 [12.0 MB]
+Get:76 http://archive.ubuntu.com/ubuntu kinetic/main amd64 g++ amd64 4:12.2.0-1ubuntu1 [1406 B]
+Get:77 http://archive.ubuntu.com/ubuntu kinetic/main amd64 make amd64 4.3-4.1build1 [180 kB]
+Fetched 119 MB in 39s (3027 kB/s)
+Selecting previously unselected package perl-modules-5.34.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4399 files and directories currently installed.)
+Preparing to unpack .../0-perl-modules-5.34_5.34.0-5ubuntu1.1_all.deb ...
+Unpacking perl-modules-5.34 (5.34.0-5ubuntu1.1) ...
+Selecting previously unselected package libgdbm6:amd64.
+Preparing to unpack .../1-libgdbm6_1.23-1_amd64.deb ...
+Unpacking libgdbm6:amd64 (1.23-1) ...
+Selecting previously unselected package libgdbm-compat4:amd64.
+Preparing to unpack .../2-libgdbm-compat4_1.23-1_amd64.deb ...
+Unpacking libgdbm-compat4:amd64 (1.23-1) ...
+Selecting previously unselected package libperl5.34:amd64.
+Preparing to unpack .../3-libperl5.34_5.34.0-5ubuntu1.1_amd64.deb ...
+Unpacking libperl5.34:amd64 (5.34.0-5ubuntu1.1) ...
+Selecting previously unselected package perl.
+Preparing to unpack .../4-perl_5.34.0-5ubuntu1.1_amd64.deb ...
+Unpacking perl (5.34.0-5ubuntu1.1) ...
+Selecting previously unselected package pypy3-lib:amd64.
+Preparing to unpack .../5-pypy3-lib_7.3.9+dfsg-4_amd64.deb ...
+Unpacking pypy3-lib:amd64 (7.3.9+dfsg-4) ...
+Selecting previously unselected package libexpat1:amd64.
+Preparing to unpack .../6-libexpat1_2.4.8-2ubuntu0.22.10.1_amd64.deb ...
+Unpacking libexpat1:amd64 (2.4.8-2ubuntu0.22.10.1) ...
+Selecting previously unselected package libsqlite3-0:amd64.
+Preparing to unpack .../7-libsqlite3-0_3.39.3-1_amd64.deb ...
+Unpacking libsqlite3-0:amd64 (3.39.3-1) ...
+Selecting previously unselected package libssl3:amd64.
+Preparing to unpack .../8-libssl3_3.0.5-2ubuntu2.1_amd64.deb ...
+Unpacking libssl3:amd64 (3.0.5-2ubuntu2.1) ...
+Setting up pypy3-lib:amd64 (7.3.9+dfsg-4) ...
+Setting up libexpat1:amd64 (2.4.8-2ubuntu0.22.10.1) ...
+Setting up libgdbm6:amd64 (1.23-1) ...
+Setting up libsqlite3-0:amd64 (3.39.3-1) ...
+Setting up libssl3:amd64 (3.0.5-2ubuntu2.1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 78.)
+debconf: falling back to frontend: Readline
+Selecting previously unselected package pypy3.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7640 files and directories currently installed.)
+Preparing to unpack .../00-pypy3_7.3.9+dfsg-4_amd64.deb ...
+Unpacking pypy3 (7.3.9+dfsg-4) ...
+Selecting previously unselected package libkrb5support0:amd64.
+Preparing to unpack .../01-libkrb5support0_1.20-1ubuntu0.1_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.20-1ubuntu0.1) ...
+Selecting previously unselected package libk5crypto3:amd64.
+Preparing to unpack .../02-libk5crypto3_1.20-1ubuntu0.1_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.20-1ubuntu0.1) ...
+Selecting previously unselected package libkeyutils1:amd64.
+Preparing to unpack .../03-libkeyutils1_1.6.3-1_amd64.deb ...
+Unpacking libkeyutils1:amd64 (1.6.3-1) ...
+Selecting previously unselected package libkrb5-3:amd64.
+Preparing to unpack .../04-libkrb5-3_1.20-1ubuntu0.1_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.20-1ubuntu0.1) ...
+Selecting previously unselected package libgssapi-krb5-2:amd64.
+Preparing to unpack .../05-libgssapi-krb5-2_1.20-1ubuntu0.1_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.20-1ubuntu0.1) ...
+Selecting previously unselected package libicu71:amd64.
+Preparing to unpack .../06-libicu71_71.1-3ubuntu1_amd64.deb ...
+Unpacking libicu71:amd64 (71.1-3ubuntu1) ...
+Selecting previously unselected package libtirpc-common.
+Preparing to unpack .../07-libtirpc-common_1.3.3+ds-1_all.deb ...
+Unpacking libtirpc-common (1.3.3+ds-1) ...
+Selecting previously unselected package libtirpc3:amd64.
+Preparing to unpack .../08-libtirpc3_1.3.3+ds-1_amd64.deb ...
+Unpacking libtirpc3:amd64 (1.3.3+ds-1) ...
+Selecting previously unselected package libnsl2:amd64.
+Preparing to unpack .../09-libnsl2_1.3.0-2build2_amd64.deb ...
+Unpacking libnsl2:amd64 (1.3.0-2build2) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../10-libxml2_2.9.14+dfsg-1ubuntu0.1_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.14+dfsg-1ubuntu0.1) ...
+Selecting previously unselected package libnghttp2-14:amd64.
+Preparing to unpack .../11-libnghttp2-14_1.49.0-1_amd64.deb ...
+Unpacking libnghttp2-14:amd64 (1.49.0-1) ...
+Selecting previously unselected package libpsl5:amd64.
+Preparing to unpack .../12-libpsl5_0.21.0-1.2build2_amd64.deb ...
+Unpacking libpsl5:amd64 (0.21.0-1.2build2) ...
+Selecting previously unselected package libuv1:amd64.
+Preparing to unpack .../13-libuv1_1.44.2-1_amd64.deb ...
+Unpacking libuv1:amd64 (1.44.2-1) ...
+Selecting previously unselected package time.
+Preparing to unpack .../14-time_1.9-0.1build2_amd64.deb ...
+Unpacking time (1.9-0.1build2) ...
+Selecting previously unselected package m4.
+Preparing to unpack .../15-m4_1.4.19-1_amd64.deb ...
+Unpacking m4 (1.4.19-1) ...
+Selecting previously unselected package autoconf.
+Preparing to unpack .../16-autoconf_2.71-2_all.deb ...
+Unpacking autoconf (2.71-2) ...
+Selecting previously unselected package autotools-dev.
+Preparing to unpack .../17-autotools-dev_20220109.1_all.deb ...
+Unpacking autotools-dev (20220109.1) ...
+Selecting previously unselected package automake.
+Preparing to unpack .../18-automake_1%3a1.16.5-1.3_all.deb ...
+Unpacking automake (1:1.16.5-1.3) ...
+Selecting previously unselected package binutils-common:amd64.
+Preparing to unpack .../19-binutils-common_2.39-3ubuntu1.1_amd64.deb ...
+Unpacking binutils-common:amd64 (2.39-3ubuntu1.1) ...
+Selecting previously unselected package libbinutils:amd64.
+Preparing to unpack .../20-libbinutils_2.39-3ubuntu1.1_amd64.deb ...
+Unpacking libbinutils:amd64 (2.39-3ubuntu1.1) ...
+Selecting previously unselected package libctf-nobfd0:amd64.
+Preparing to unpack .../21-libctf-nobfd0_2.39-3ubuntu1.1_amd64.deb ...
+Unpacking libctf-nobfd0:amd64 (2.39-3ubuntu1.1) ...
+Selecting previously unselected package libctf0:amd64.
+Preparing to unpack .../22-libctf0_2.39-3ubuntu1.1_amd64.deb ...
+Unpacking libctf0:amd64 (2.39-3ubuntu1.1) ...
+Selecting previously unselected package libgprofng0:amd64.
+Preparing to unpack .../23-libgprofng0_2.39-3ubuntu1.1_amd64.deb ...
+Unpacking libgprofng0:amd64 (2.39-3ubuntu1.1) ...
+Selecting previously unselected package binutils-x86-64-linux-gnu.
+Preparing to unpack .../24-binutils-x86-64-linux-gnu_2.39-3ubuntu1.1_amd64.deb ...
+Unpacking binutils-x86-64-linux-gnu (2.39-3ubuntu1.1) ...
+Selecting previously unselected package binutils.
+Preparing to unpack .../25-binutils_2.39-3ubuntu1.1_amd64.deb ...
+Unpacking binutils (2.39-3ubuntu1.1) ...
+Selecting previously unselected package libarchive13:amd64.
+Preparing to unpack .../26-libarchive13_3.6.0-1ubuntu1_amd64.deb ...
+Unpacking libarchive13:amd64 (3.6.0-1ubuntu1) ...
+Selecting previously unselected package libbrotli1:amd64.
+Preparing to unpack .../27-libbrotli1_1.0.9-2build6_amd64.deb ...
+Unpacking libbrotli1:amd64 (1.0.9-2build6) ...
+Selecting previously unselected package libsasl2-modules-db:amd64.
+Preparing to unpack .../28-libsasl2-modules-db_2.1.28+dfsg-6ubuntu2_amd64.deb ...
+Unpacking libsasl2-modules-db:amd64 (2.1.28+dfsg-6ubuntu2) ...
+Selecting previously unselected package libsasl2-2:amd64.
+Preparing to unpack .../29-libsasl2-2_2.1.28+dfsg-6ubuntu2_amd64.deb ...
+Unpacking libsasl2-2:amd64 (2.1.28+dfsg-6ubuntu2) ...
+Selecting previously unselected package libldap-2.5-0:amd64.
+Preparing to unpack .../30-libldap-2.5-0_2.5.14+dfsg-0ubuntu0.22.10.1_amd64.deb ...
+Unpacking libldap-2.5-0:amd64 (2.5.14+dfsg-0ubuntu0.22.10.1) ...
+Selecting previously unselected package librtmp1:amd64.
+Preparing to unpack .../31-librtmp1_2.4+20151223.gitfa8646d.1-2build4_amd64.deb ...
+Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2build4) ...
+Selecting previously unselected package libssh-4:amd64.
+Preparing to unpack .../32-libssh-4_0.9.6-2build1_amd64.deb ...
+Unpacking libssh-4:amd64 (0.9.6-2build1) ...
+Selecting previously unselected package libcurl4:amd64.
+Preparing to unpack .../33-libcurl4_7.85.0-1ubuntu0.5_amd64.deb ...
+Unpacking libcurl4:amd64 (7.85.0-1ubuntu0.5) ...
+Selecting previously unselected package libjsoncpp25:amd64.
+Preparing to unpack .../34-libjsoncpp25_1.9.5-4_amd64.deb ...
+Unpacking libjsoncpp25:amd64 (1.9.5-4) ...
+Selecting previously unselected package librhash0:amd64.
+Preparing to unpack .../35-librhash0_1.4.2-1ubuntu1_amd64.deb ...
+Unpacking librhash0:amd64 (1.4.2-1ubuntu1) ...
+Selecting previously unselected package dh-elpa-helper.
+Preparing to unpack .../36-dh-elpa-helper_2.0.9ubuntu1_all.deb ...
+Unpacking dh-elpa-helper (2.0.9ubuntu1) ...
+Selecting previously unselected package emacsen-common.
+Preparing to unpack .../37-emacsen-common_3.0.4_all.deb ...
+Unpacking emacsen-common (3.0.4) ...
+Selecting previously unselected package cmake-data.
+Preparing to unpack .../38-cmake-data_3.24.2-1ubuntu1_all.deb ...
+Unpacking cmake-data (3.24.2-1ubuntu1) ...
+Selecting previously unselected package cmake.
+Preparing to unpack .../39-cmake_3.24.2-1ubuntu1_amd64.deb ...
+Unpacking cmake (3.24.2-1ubuntu1) ...
+Selecting previously unselected package libisl23:amd64.
+Preparing to unpack .../40-libisl23_0.25-1_amd64.deb ...
+Unpacking libisl23:amd64 (0.25-1) ...
+Selecting previously unselected package libmpfr6:amd64.
+Preparing to unpack .../41-libmpfr6_4.1.0-3build3_amd64.deb ...
+Unpacking libmpfr6:amd64 (4.1.0-3build3) ...
+Selecting previously unselected package libmpc3:amd64.
+Preparing to unpack .../42-libmpc3_1.2.1-2build1_amd64.deb ...
+Unpacking libmpc3:amd64 (1.2.1-2build1) ...
+Selecting previously unselected package cpp-12.
+Preparing to unpack .../43-cpp-12_12.2.0-3ubuntu1_amd64.deb ...
+Unpacking cpp-12 (12.2.0-3ubuntu1) ...
+Selecting previously unselected package cpp.
+Preparing to unpack .../44-cpp_4%3a12.2.0-1ubuntu1_amd64.deb ...
+Unpacking cpp (4:12.2.0-1ubuntu1) ...
+Selecting previously unselected package libcc1-0:amd64.
+Preparing to unpack .../45-libcc1-0_12.2.0-3ubuntu1_amd64.deb ...
+Unpacking libcc1-0:amd64 (12.2.0-3ubuntu1) ...
+Selecting previously unselected package libgomp1:amd64.
+Preparing to unpack .../46-libgomp1_12.2.0-3ubuntu1_amd64.deb ...
+Unpacking libgomp1:amd64 (12.2.0-3ubuntu1) ...
+Selecting previously unselected package libitm1:amd64.
+Preparing to unpack .../47-libitm1_12.2.0-3ubuntu1_amd64.deb ...
+Unpacking libitm1:amd64 (12.2.0-3ubuntu1) ...
+Selecting previously unselected package libatomic1:amd64.
+Preparing to unpack .../48-libatomic1_12.2.0-3ubuntu1_amd64.deb ...
+Unpacking libatomic1:amd64 (12.2.0-3ubuntu1) ...
+Selecting previously unselected package libasan8:amd64.
+Preparing to unpack .../49-libasan8_12.2.0-3ubuntu1_amd64.deb ...
+Unpacking libasan8:amd64 (12.2.0-3ubuntu1) ...
+Selecting previously unselected package liblsan0:amd64.
+Preparing to unpack .../50-liblsan0_12.2.0-3ubuntu1_amd64.deb ...
+Unpacking liblsan0:amd64 (12.2.0-3ubuntu1) ...
+Selecting previously unselected package libtsan2:amd64.
+Preparing to unpack .../51-libtsan2_12.2.0-3ubuntu1_amd64.deb ...
+Unpacking libtsan2:amd64 (12.2.0-3ubuntu1) ...
+Selecting previously unselected package libubsan1:amd64.
+Preparing to unpack .../52-libubsan1_12.2.0-3ubuntu1_amd64.deb ...
+Unpacking libubsan1:amd64 (12.2.0-3ubuntu1) ...
+Selecting previously unselected package libquadmath0:amd64.
+Preparing to unpack .../53-libquadmath0_12.2.0-3ubuntu1_amd64.deb ...
+Unpacking libquadmath0:amd64 (12.2.0-3ubuntu1) ...
+Selecting previously unselected package libgcc-12-dev:amd64.
+Preparing to unpack .../54-libgcc-12-dev_12.2.0-3ubuntu1_amd64.deb ...
+Unpacking libgcc-12-dev:amd64 (12.2.0-3ubuntu1) ...
+Selecting previously unselected package gcc-12.
+Preparing to unpack .../55-gcc-12_12.2.0-3ubuntu1_amd64.deb ...
+Unpacking gcc-12 (12.2.0-3ubuntu1) ...
+Selecting previously unselected package gcc.
+Preparing to unpack .../56-gcc_4%3a12.2.0-1ubuntu1_amd64.deb ...
+Unpacking gcc (4:12.2.0-1ubuntu1) ...
+Selecting previously unselected package libc-dev-bin.
+Preparing to unpack .../57-libc-dev-bin_2.36-0ubuntu4_amd64.deb ...
+Unpacking libc-dev-bin (2.36-0ubuntu4) ...
+Selecting previously unselected package linux-libc-dev:amd64.
+Preparing to unpack .../58-linux-libc-dev_5.19.0-38.39_amd64.deb ...
+Unpacking linux-libc-dev:amd64 (5.19.0-38.39) ...
+Selecting previously unselected package libcrypt-dev:amd64.
+Preparing to unpack .../59-libcrypt-dev_1%3a4.4.28-2_amd64.deb ...
+Unpacking libcrypt-dev:amd64 (1:4.4.28-2) ...
+Selecting previously unselected package rpcsvc-proto.
+Preparing to unpack .../60-rpcsvc-proto_1.4.2-0ubuntu6_amd64.deb ...
+Unpacking rpcsvc-proto (1.4.2-0ubuntu6) ...
+Selecting previously unselected package libtirpc-dev:amd64.
+Preparing to unpack .../61-libtirpc-dev_1.3.3+ds-1_amd64.deb ...
+Unpacking libtirpc-dev:amd64 (1.3.3+ds-1) ...
+Selecting previously unselected package libnsl-dev:amd64.
+Preparing to unpack .../62-libnsl-dev_1.3.0-2build2_amd64.deb ...
+Unpacking libnsl-dev:amd64 (1.3.0-2build2) ...
+Selecting previously unselected package libc6-dev:amd64.
+Preparing to unpack .../63-libc6-dev_2.36-0ubuntu4_amd64.deb ...
+Unpacking libc6-dev:amd64 (2.36-0ubuntu4) ...
+Selecting previously unselected package libstdc++-12-dev:amd64.
+Preparing to unpack .../64-libstdc++-12-dev_12.2.0-3ubuntu1_amd64.deb ...
+Unpacking libstdc++-12-dev:amd64 (12.2.0-3ubuntu1) ...
+Selecting previously unselected package g++-12.
+Preparing to unpack .../65-g++-12_12.2.0-3ubuntu1_amd64.deb ...
+Unpacking g++-12 (12.2.0-3ubuntu1) ...
+Selecting previously unselected package g++.
+Preparing to unpack .../66-g++_4%3a12.2.0-1ubuntu1_amd64.deb ...
+Unpacking g++ (4:12.2.0-1ubuntu1) ...
+Selecting previously unselected package make.
+Preparing to unpack .../67-make_4.3-4.1build1_amd64.deb ...
+Unpacking make (4.3-4.1build1) ...
+Setting up libicu71:amd64 (71.1-3ubuntu1) ...
+Setting up time (1.9-0.1build2) ...
+Setting up libkeyutils1:amd64 (1.6.3-1) ...
+Setting up libpsl5:amd64 (0.21.0-1.2build2) ...
+Setting up libtirpc-common (1.3.3+ds-1) ...
+Setting up libbrotli1:amd64 (1.0.9-2build6) ...
+Setting up binutils-common:amd64 (2.39-3ubuntu1.1) ...
+Setting up libnghttp2-14:amd64 (1.49.0-1) ...
+Setting up linux-libc-dev:amd64 (5.19.0-38.39) ...
+Setting up libctf-nobfd0:amd64 (2.39-3ubuntu1.1) ...
+Setting up m4 (1.4.19-1) ...
+Setting up libgomp1:amd64 (12.2.0-3ubuntu1) ...
+Setting up perl-modules-5.34 (5.34.0-5ubuntu1.1) ...
+Setting up pypy3 (7.3.9+dfsg-4) ...
+running pypy3 rtupdate hooks for 7.3
+running pypy3 post-rtupdate hooks for 7.3
+Setting up libkrb5support0:amd64 (1.20-1ubuntu0.1) ...
+Setting up libsasl2-modules-db:amd64 (2.1.28+dfsg-6ubuntu2) ...
+Setting up autotools-dev (20220109.1) ...
+Setting up libuv1:amd64 (1.44.2-1) ...
+Setting up rpcsvc-proto (1.4.2-0ubuntu6) ...
+Setting up emacsen-common (3.0.4) ...
+Setting up make (4.3-4.1build1) ...
+Setting up libmpfr6:amd64 (4.1.0-3build3) ...
+Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2build4) ...
+Setting up dh-elpa-helper (2.0.9ubuntu1) ...
+Setting up libquadmath0:amd64 (12.2.0-3ubuntu1) ...
+Setting up libmpc3:amd64 (1.2.1-2build1) ...
+Setting up libatomic1:amd64 (12.2.0-3ubuntu1) ...
+Setting up libjsoncpp25:amd64 (1.9.5-4) ...
+Setting up libgdbm-compat4:amd64 (1.23-1) ...
+Setting up libk5crypto3:amd64 (1.20-1ubuntu0.1) ...
+Setting up libsasl2-2:amd64 (2.1.28+dfsg-6ubuntu2) ...
+Setting up libubsan1:amd64 (12.2.0-3ubuntu1) ...
+Setting up librhash0:amd64 (1.4.2-1ubuntu1) ...
+Setting up libcrypt-dev:amd64 (1:4.4.28-2) ...
+Setting up libasan8:amd64 (12.2.0-3ubuntu1) ...
+Setting up cmake-data (3.24.2-1ubuntu1) ...
+Setting up libkrb5-3:amd64 (1.20-1ubuntu0.1) ...
+Setting up libtsan2:amd64 (12.2.0-3ubuntu1) ...
+Setting up libbinutils:amd64 (2.39-3ubuntu1.1) ...
+Setting up libisl23:amd64 (0.25-1) ...
+Setting up libc-dev-bin (2.36-0ubuntu4) ...
+Setting up libxml2:amd64 (2.9.14+dfsg-1ubuntu0.1) ...
+Setting up libcc1-0:amd64 (12.2.0-3ubuntu1) ...
+Setting up liblsan0:amd64 (12.2.0-3ubuntu1) ...
+Setting up libitm1:amd64 (12.2.0-3ubuntu1) ...
+Setting up libctf0:amd64 (2.39-3ubuntu1.1) ...
+Setting up libperl5.34:amd64 (5.34.0-5ubuntu1.1) ...
+Setting up cpp-12 (12.2.0-3ubuntu1) ...
+Setting up libarchive13:amd64 (3.6.0-1ubuntu1) ...
+Setting up libldap-2.5-0:amd64 (2.5.14+dfsg-0ubuntu0.22.10.1) ...
+Setting up perl (5.34.0-5ubuntu1.1) ...
+Setting up libgprofng0:amd64 (2.39-3ubuntu1.1) ...
+Setting up libgcc-12-dev:amd64 (12.2.0-3ubuntu1) ...
+Setting up libgssapi-krb5-2:amd64 (1.20-1ubuntu0.1) ...
+Setting up libssh-4:amd64 (0.9.6-2build1) ...
+Setting up autoconf (2.71-2) ...
+Setting up cpp (4:12.2.0-1ubuntu1) ...
+Setting up libcurl4:amd64 (7.85.0-1ubuntu0.5) ...
+Setting up binutils-x86-64-linux-gnu (2.39-3ubuntu1.1) ...
+Setting up automake (1:1.16.5-1.3) ...
+update-alternatives: using /usr/bin/automake-1.16 to provide /usr/bin/automake (automake) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/automake.1.gz because associated file /usr/share/man/man1/automake-1.16.1.gz (of link group automake) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/man1/aclocal.1.gz because associated file /usr/share/man/man1/aclocal-1.16.1.gz (of link group automake) doesn't exist
+Setting up libtirpc3:amd64 (1.3.3+ds-1) ...
+Setting up binutils (2.39-3ubuntu1.1) ...
+Setting up libtirpc-dev:amd64 (1.3.3+ds-1) ...
+Setting up gcc-12 (12.2.0-3ubuntu1) ...
+Setting up libnsl2:amd64 (1.3.0-2build2) ...
+Setting up cmake (3.24.2-1ubuntu1) ...
+Setting up gcc (4:12.2.0-1ubuntu1) ...
+Setting up libnsl-dev:amd64 (1.3.0-2build2) ...
+Setting up libc6-dev:amd64 (2.36-0ubuntu4) ...
+Setting up libstdc++-12-dev:amd64 (12.2.0-3ubuntu1) ...
+Setting up g++-12 (12.2.0-3ubuntu1) ...
+Setting up g++ (4:12.2.0-1ubuntu1) ...
+update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/c++.1.gz because associated file /usr/share/man/man1/g++.1.gz (of link group c++) doesn't exist
+Processing triggers for libc-bin (2.36-0ubuntu4) ...
+rm -rf .obj
+rm -f *~ *.pyc
+rm -f Makefile.depend gmon.out PROFILE core
+rm -f sas_plan
+rm -rf .obj
+rm -f *~ *.pyc
+rm -f Makefile.depend gmon.out PROFILE core
+rm -f output
+rm -f Makefile.temp
+for source in planner.cc axiom.cc causal_graph.cc domain_transition_graph.cc helper_functions.cc max_dag.cc mutex_group.cc operator.cc scc.cc state.cc successor_generator.cc variable.cc rng.cc h2_mutexes.cc ; do \
+    g++ -MM $source > Makefile.temp0; \
+    objfile=${source%%.cc}.o; \
+    sed -i -e "s@^[^:]*:@$objfile:@" Makefile.temp0; \
+    cat Makefile.temp0 >> Makefile.temp; \
+done
+rm -f Makefile.temp0 Makefile.depend
+sed -e "s@\(.*\)\.o:\(.*\)@.obj/\1.o:\2@" Makefile.temp >> Makefile.depend
+sed -e "s@\(.*\)\.o:\(.*\)@.obj/\1.debug.o:\2@" Makefile.temp >> Makefile.depend
+sed -e "s@\(.*\)\.o:\(.*\)@.obj/\1.profile.o:\2@" Makefile.temp >> Makefile.depend
+rm -f Makefile.temp
+g++ -m64 -g -Wall -W -Wno-sign-compare -Wno-deprecated -std=c++11 -pedantic -Werror -O3 -DNDEBUG -fomit-frame-pointer -c planner.cc -o .obj/planner.o
+g++ -m64 -g -Wall -W -Wno-sign-compare -Wno-deprecated -std=c++11 -pedantic -Werror -O3 -DNDEBUG -fomit-frame-pointer -c axiom.cc -o .obj/axiom.o
+g++ -m64 -g -Wall -W -Wno-sign-compare -Wno-deprecated -std=c++11 -pedantic -Werror -O3 -DNDEBUG -fomit-frame-pointer -c causal_graph.cc -o .obj/causal_graph.o
+g++ -m64 -g -Wall -W -Wno-sign-compare -Wno-deprecated -std=c++11 -pedantic -Werror -O3 -DNDEBUG -fomit-frame-pointer -c domain_transition_graph.cc -o .obj/domain_transition_graph.o
+g++ -m64 -g -Wall -W -Wno-sign-compare -Wno-deprecated -std=c++11 -pedantic -Werror -O3 -DNDEBUG -fomit-frame-pointer -c helper_functions.cc -o .obj/helper_functions.o
+g++ -m64 -g -Wall -W -Wno-sign-compare -Wno-deprecated -std=c++11 -pedantic -Werror -O3 -DNDEBUG -fomit-frame-pointer -c max_dag.cc -o .obj/max_dag.o
+g++ -m64 -g -Wall -W -Wno-sign-compare -Wno-deprecated -std=c++11 -pedantic -Werror -O3 -DNDEBUG -fomit-frame-pointer -c mutex_group.cc -o .obj/mutex_group.o
+g++ -m64 -g -Wall -W -Wno-sign-compare -Wno-deprecated -std=c++11 -pedantic -Werror -O3 -DNDEBUG -fomit-frame-pointer -c operator.cc -o .obj/operator.o
+g++ -m64 -g -Wall -W -Wno-sign-compare -Wno-deprecated -std=c++11 -pedantic -Werror -O3 -DNDEBUG -fomit-frame-pointer -c scc.cc -o .obj/scc.o
+g++ -m64 -g -Wall -W -Wno-sign-compare -Wno-deprecated -std=c++11 -pedantic -Werror -O3 -DNDEBUG -fomit-frame-pointer -c state.cc -o .obj/state.o
+g++ -m64 -g -Wall -W -Wno-sign-compare -Wno-deprecated -std=c++11 -pedantic -Werror -O3 -DNDEBUG -fomit-frame-pointer -c successor_generator.cc -o .obj/successor_generator.o
+g++ -m64 -g -Wall -W -Wno-sign-compare -Wno-deprecated -std=c++11 -pedantic -Werror -O3 -DNDEBUG -fomit-frame-pointer -c variable.cc -o .obj/variable.o
+g++ -m64 -g -Wall -W -Wno-sign-compare -Wno-deprecated -std=c++11 -pedantic -Werror -O3 -DNDEBUG -fomit-frame-pointer -c rng.cc -o .obj/rng.o
+g++ -m64 -g -Wall -W -Wno-sign-compare -Wno-deprecated -std=c++11 -pedantic -Werror -O3 -DNDEBUG -fomit-frame-pointer -c h2_mutexes.cc -o .obj/h2_mutexes.o
+g++ -m64 -g -static -static-libgcc .obj/planner.o .obj/axiom.o .obj/causal_graph.o .obj/domain_transition_graph.o .obj/helper_functions.o .obj/max_dag.o .obj/mutex_group.o .obj/operator.o .obj/scc.o .obj/state.o .obj/successor_generator.o .obj/variable.o .obj/rng.o .obj/h2_mutexes.o   -o preprocess
+cd cudd-3.0.0 &&  aclocal && autoheader && automake --add-missing && autoconf && ./configure --enable-obj --build=i686-pc-linux-gnu "CFLAGS=-m64 -Wall -Wextra -g -O3" "CXXFLAGS=-m64 -Wall -Wextra -std=c++0x -g -O3" "LDFLAGS=-m64" && make && make cplusplus
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc... gcc3
+checking for g++... g++
+checking whether the compiler supports GNU C++... yes
+checking whether g++ accepts -g... yes
+checking for g++ option to enable C++11 features... none needed
+checking dependency style of g++... gcc3
+checking for ar... ar
+checking the archiver (ar) interface... ar
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert i686-pc-linux-gnu file names to i686-pc-linux-gnu format... func_convert_file_noop
+checking how to convert i686-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether byte ordering is bigendian... no
+checking for doxygen... no
+checking for pdflatex... no
+checking for makeindex... no
+checking for library containing pow... -lm
+checking for pthread_create in -lpthread... yes
+checking for library containing WSAStartup... no
+checking for library containing GetProcessMemoryInfo... no
+checking for float.h... yes
+checking for inttypes.h... (cached) yes
+checking for limits.h... yes
+checking for stddef.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for assert.h... yes
+checking for math.h... yes
+checking for unistd.h... (cached) yes
+checking for sys/time.h... yes
+checking for sys/times.h... yes
+checking for sys/resource.h... yes
+checking for sys/wait.h... yes
+checking for working C++ thread header... yes
+checking for _Bool... yes
+checking for stdbool.h that conforms to C99... yes
+checking for inline... inline
+checking for size_t... yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for ptrdiff_t... yes
+checking size of int... 4
+checking size of long... 8
+checking size of void *... 8
+checking size of long double... 16
+checking whether we are building for a Win32 host... no
+checking whether enough of C++11 is supported... yes
+checking for pow... yes
+checking for sqrt... yes
+checking for strchr... yes
+checking for strstr... yes
+checking for powl... yes
+checking for gethostname... yes
+checking for getrlimit... yes
+checking for getrusage... yes
+checking for sysconf... yes
+checking for +Infinity (IEEE 754 floating point)... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating dddmp/exp/test1.sh
+config.status: creating dddmp/exp/test2.sh
+config.status: creating dddmp/exp/test3.sh
+config.status: creating dddmp/exp/test4.sh
+config.status: creating dddmp/exp/test5.sh
+config.status: creating dddmp/exp/test6.sh
+config.status: creating dddmp/exp/test7.sh
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+--------------------------------------------------
+Configuration summary for cudd 3.0.0
+
+Build system   : i686-pc-linux-gnu
+Host system    : i686-pc-linux-gnu
+Prefix         : '/usr/local'
+Compilers      : 'gcc    -m64 -Wall -Wextra -g -O3'
+               : 'g++    -m64 -Wall -Wextra -std=c++0x -g -O3'
+Shared library : no
+ dddmp enabled : no
+ obj enabled   : yes
+--------------------------------------------------
+make[1]: Entering directory '/src/search/cudd-3.0.0'
+(CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash '/src/search/cudd-3.0.0/build-aux/missing' autoheader)
+rm -f stamp-h1
+touch config.h.in
+cd . && /bin/bash ./config.status config.h
+config.status: creating config.h
+config.status: config.h is unchanged
+make  all-am
+make[2]: Entering directory '/src/search/cudd-3.0.0'
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddAddAbs.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddAddAbs.Tpo -c -o cudd/libcudd_la-cuddAddAbs.lo `test -f 'cudd/cuddAddAbs.c' || echo './'`cudd/cuddAddAbs.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddAddAbs.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddAddAbs.Tpo -c cudd/cuddAddAbs.c -o cudd/libcudd_la-cuddAddAbs.o
+mv -f cudd/.deps/libcudd_la-cuddAddAbs.Tpo cudd/.deps/libcudd_la-cuddAddAbs.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddAddApply.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddAddApply.Tpo -c -o cudd/libcudd_la-cuddAddApply.lo `test -f 'cudd/cuddAddApply.c' || echo './'`cudd/cuddAddApply.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddAddApply.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddAddApply.Tpo -c cudd/cuddAddApply.c -o cudd/libcudd_la-cuddAddApply.o
+mv -f cudd/.deps/libcudd_la-cuddAddApply.Tpo cudd/.deps/libcudd_la-cuddAddApply.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddAddFind.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddAddFind.Tpo -c -o cudd/libcudd_la-cuddAddFind.lo `test -f 'cudd/cuddAddFind.c' || echo './'`cudd/cuddAddFind.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddAddFind.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddAddFind.Tpo -c cudd/cuddAddFind.c -o cudd/libcudd_la-cuddAddFind.o
+mv -f cudd/.deps/libcudd_la-cuddAddFind.Tpo cudd/.deps/libcudd_la-cuddAddFind.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddAddInv.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddAddInv.Tpo -c -o cudd/libcudd_la-cuddAddInv.lo `test -f 'cudd/cuddAddInv.c' || echo './'`cudd/cuddAddInv.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddAddInv.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddAddInv.Tpo -c cudd/cuddAddInv.c -o cudd/libcudd_la-cuddAddInv.o
+mv -f cudd/.deps/libcudd_la-cuddAddInv.Tpo cudd/.deps/libcudd_la-cuddAddInv.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddAddIte.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddAddIte.Tpo -c -o cudd/libcudd_la-cuddAddIte.lo `test -f 'cudd/cuddAddIte.c' || echo './'`cudd/cuddAddIte.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddAddIte.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddAddIte.Tpo -c cudd/cuddAddIte.c -o cudd/libcudd_la-cuddAddIte.o
+mv -f cudd/.deps/libcudd_la-cuddAddIte.Tpo cudd/.deps/libcudd_la-cuddAddIte.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddAddNeg.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddAddNeg.Tpo -c -o cudd/libcudd_la-cuddAddNeg.lo `test -f 'cudd/cuddAddNeg.c' || echo './'`cudd/cuddAddNeg.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddAddNeg.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddAddNeg.Tpo -c cudd/cuddAddNeg.c -o cudd/libcudd_la-cuddAddNeg.o
+mv -f cudd/.deps/libcudd_la-cuddAddNeg.Tpo cudd/.deps/libcudd_la-cuddAddNeg.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddAddWalsh.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddAddWalsh.Tpo -c -o cudd/libcudd_la-cuddAddWalsh.lo `test -f 'cudd/cuddAddWalsh.c' || echo './'`cudd/cuddAddWalsh.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddAddWalsh.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddAddWalsh.Tpo -c cudd/cuddAddWalsh.c -o cudd/libcudd_la-cuddAddWalsh.o
+mv -f cudd/.deps/libcudd_la-cuddAddWalsh.Tpo cudd/.deps/libcudd_la-cuddAddWalsh.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddAndAbs.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddAndAbs.Tpo -c -o cudd/libcudd_la-cuddAndAbs.lo `test -f 'cudd/cuddAndAbs.c' || echo './'`cudd/cuddAndAbs.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddAndAbs.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddAndAbs.Tpo -c cudd/cuddAndAbs.c -o cudd/libcudd_la-cuddAndAbs.o
+mv -f cudd/.deps/libcudd_la-cuddAndAbs.Tpo cudd/.deps/libcudd_la-cuddAndAbs.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddAnneal.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddAnneal.Tpo -c -o cudd/libcudd_la-cuddAnneal.lo `test -f 'cudd/cuddAnneal.c' || echo './'`cudd/cuddAnneal.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddAnneal.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddAnneal.Tpo -c cudd/cuddAnneal.c -o cudd/libcudd_la-cuddAnneal.o
+mv -f cudd/.deps/libcudd_la-cuddAnneal.Tpo cudd/.deps/libcudd_la-cuddAnneal.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddApa.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddApa.Tpo -c -o cudd/libcudd_la-cuddApa.lo `test -f 'cudd/cuddApa.c' || echo './'`cudd/cuddApa.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddApa.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddApa.Tpo -c cudd/cuddApa.c -o cudd/libcudd_la-cuddApa.o
+mv -f cudd/.deps/libcudd_la-cuddApa.Tpo cudd/.deps/libcudd_la-cuddApa.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddAPI.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddAPI.Tpo -c -o cudd/libcudd_la-cuddAPI.lo `test -f 'cudd/cuddAPI.c' || echo './'`cudd/cuddAPI.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddAPI.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddAPI.Tpo -c cudd/cuddAPI.c -o cudd/libcudd_la-cuddAPI.o
+mv -f cudd/.deps/libcudd_la-cuddAPI.Tpo cudd/.deps/libcudd_la-cuddAPI.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddApprox.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddApprox.Tpo -c -o cudd/libcudd_la-cuddApprox.lo `test -f 'cudd/cuddApprox.c' || echo './'`cudd/cuddApprox.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddApprox.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddApprox.Tpo -c cudd/cuddApprox.c -o cudd/libcudd_la-cuddApprox.o
+mv -f cudd/.deps/libcudd_la-cuddApprox.Tpo cudd/.deps/libcudd_la-cuddApprox.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddBddAbs.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddBddAbs.Tpo -c -o cudd/libcudd_la-cuddBddAbs.lo `test -f 'cudd/cuddBddAbs.c' || echo './'`cudd/cuddBddAbs.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddBddAbs.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddBddAbs.Tpo -c cudd/cuddBddAbs.c -o cudd/libcudd_la-cuddBddAbs.o
+mv -f cudd/.deps/libcudd_la-cuddBddAbs.Tpo cudd/.deps/libcudd_la-cuddBddAbs.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddBddCorr.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddBddCorr.Tpo -c -o cudd/libcudd_la-cuddBddCorr.lo `test -f 'cudd/cuddBddCorr.c' || echo './'`cudd/cuddBddCorr.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddBddCorr.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddBddCorr.Tpo -c cudd/cuddBddCorr.c -o cudd/libcudd_la-cuddBddCorr.o
+mv -f cudd/.deps/libcudd_la-cuddBddCorr.Tpo cudd/.deps/libcudd_la-cuddBddCorr.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddBddIte.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddBddIte.Tpo -c -o cudd/libcudd_la-cuddBddIte.lo `test -f 'cudd/cuddBddIte.c' || echo './'`cudd/cuddBddIte.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddBddIte.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddBddIte.Tpo -c cudd/cuddBddIte.c -o cudd/libcudd_la-cuddBddIte.o
+mv -f cudd/.deps/libcudd_la-cuddBddIte.Tpo cudd/.deps/libcudd_la-cuddBddIte.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddBridge.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddBridge.Tpo -c -o cudd/libcudd_la-cuddBridge.lo `test -f 'cudd/cuddBridge.c' || echo './'`cudd/cuddBridge.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddBridge.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddBridge.Tpo -c cudd/cuddBridge.c -o cudd/libcudd_la-cuddBridge.o
+mv -f cudd/.deps/libcudd_la-cuddBridge.Tpo cudd/.deps/libcudd_la-cuddBridge.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddCache.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddCache.Tpo -c -o cudd/libcudd_la-cuddCache.lo `test -f 'cudd/cuddCache.c' || echo './'`cudd/cuddCache.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddCache.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddCache.Tpo -c cudd/cuddCache.c -o cudd/libcudd_la-cuddCache.o
+mv -f cudd/.deps/libcudd_la-cuddCache.Tpo cudd/.deps/libcudd_la-cuddCache.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddCheck.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddCheck.Tpo -c -o cudd/libcudd_la-cuddCheck.lo `test -f 'cudd/cuddCheck.c' || echo './'`cudd/cuddCheck.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddCheck.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddCheck.Tpo -c cudd/cuddCheck.c -o cudd/libcudd_la-cuddCheck.o
+mv -f cudd/.deps/libcudd_la-cuddCheck.Tpo cudd/.deps/libcudd_la-cuddCheck.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddClip.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddClip.Tpo -c -o cudd/libcudd_la-cuddClip.lo `test -f 'cudd/cuddClip.c' || echo './'`cudd/cuddClip.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddClip.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddClip.Tpo -c cudd/cuddClip.c -o cudd/libcudd_la-cuddClip.o
+mv -f cudd/.deps/libcudd_la-cuddClip.Tpo cudd/.deps/libcudd_la-cuddClip.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddCof.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddCof.Tpo -c -o cudd/libcudd_la-cuddCof.lo `test -f 'cudd/cuddCof.c' || echo './'`cudd/cuddCof.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddCof.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddCof.Tpo -c cudd/cuddCof.c -o cudd/libcudd_la-cuddCof.o
+mv -f cudd/.deps/libcudd_la-cuddCof.Tpo cudd/.deps/libcudd_la-cuddCof.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddCompose.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddCompose.Tpo -c -o cudd/libcudd_la-cuddCompose.lo `test -f 'cudd/cuddCompose.c' || echo './'`cudd/cuddCompose.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddCompose.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddCompose.Tpo -c cudd/cuddCompose.c -o cudd/libcudd_la-cuddCompose.o
+mv -f cudd/.deps/libcudd_la-cuddCompose.Tpo cudd/.deps/libcudd_la-cuddCompose.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddDecomp.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddDecomp.Tpo -c -o cudd/libcudd_la-cuddDecomp.lo `test -f 'cudd/cuddDecomp.c' || echo './'`cudd/cuddDecomp.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddDecomp.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddDecomp.Tpo -c cudd/cuddDecomp.c -o cudd/libcudd_la-cuddDecomp.o
+mv -f cudd/.deps/libcudd_la-cuddDecomp.Tpo cudd/.deps/libcudd_la-cuddDecomp.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddEssent.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddEssent.Tpo -c -o cudd/libcudd_la-cuddEssent.lo `test -f 'cudd/cuddEssent.c' || echo './'`cudd/cuddEssent.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddEssent.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddEssent.Tpo -c cudd/cuddEssent.c -o cudd/libcudd_la-cuddEssent.o
+mv -f cudd/.deps/libcudd_la-cuddEssent.Tpo cudd/.deps/libcudd_la-cuddEssent.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddExact.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddExact.Tpo -c -o cudd/libcudd_la-cuddExact.lo `test -f 'cudd/cuddExact.c' || echo './'`cudd/cuddExact.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddExact.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddExact.Tpo -c cudd/cuddExact.c -o cudd/libcudd_la-cuddExact.o
+mv -f cudd/.deps/libcudd_la-cuddExact.Tpo cudd/.deps/libcudd_la-cuddExact.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddExport.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddExport.Tpo -c -o cudd/libcudd_la-cuddExport.lo `test -f 'cudd/cuddExport.c' || echo './'`cudd/cuddExport.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddExport.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddExport.Tpo -c cudd/cuddExport.c -o cudd/libcudd_la-cuddExport.o
+mv -f cudd/.deps/libcudd_la-cuddExport.Tpo cudd/.deps/libcudd_la-cuddExport.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddGenCof.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddGenCof.Tpo -c -o cudd/libcudd_la-cuddGenCof.lo `test -f 'cudd/cuddGenCof.c' || echo './'`cudd/cuddGenCof.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddGenCof.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddGenCof.Tpo -c cudd/cuddGenCof.c -o cudd/libcudd_la-cuddGenCof.o
+mv -f cudd/.deps/libcudd_la-cuddGenCof.Tpo cudd/.deps/libcudd_la-cuddGenCof.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddGenetic.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddGenetic.Tpo -c -o cudd/libcudd_la-cuddGenetic.lo `test -f 'cudd/cuddGenetic.c' || echo './'`cudd/cuddGenetic.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddGenetic.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddGenetic.Tpo -c cudd/cuddGenetic.c -o cudd/libcudd_la-cuddGenetic.o
+mv -f cudd/.deps/libcudd_la-cuddGenetic.Tpo cudd/.deps/libcudd_la-cuddGenetic.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddGroup.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddGroup.Tpo -c -o cudd/libcudd_la-cuddGroup.lo `test -f 'cudd/cuddGroup.c' || echo './'`cudd/cuddGroup.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddGroup.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddGroup.Tpo -c cudd/cuddGroup.c -o cudd/libcudd_la-cuddGroup.o
+mv -f cudd/.deps/libcudd_la-cuddGroup.Tpo cudd/.deps/libcudd_la-cuddGroup.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddHarwell.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddHarwell.Tpo -c -o cudd/libcudd_la-cuddHarwell.lo `test -f 'cudd/cuddHarwell.c' || echo './'`cudd/cuddHarwell.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddHarwell.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddHarwell.Tpo -c cudd/cuddHarwell.c -o cudd/libcudd_la-cuddHarwell.o
+mv -f cudd/.deps/libcudd_la-cuddHarwell.Tpo cudd/.deps/libcudd_la-cuddHarwell.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddInit.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddInit.Tpo -c -o cudd/libcudd_la-cuddInit.lo `test -f 'cudd/cuddInit.c' || echo './'`cudd/cuddInit.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddInit.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddInit.Tpo -c cudd/cuddInit.c -o cudd/libcudd_la-cuddInit.o
+mv -f cudd/.deps/libcudd_la-cuddInit.Tpo cudd/.deps/libcudd_la-cuddInit.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddInteract.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddInteract.Tpo -c -o cudd/libcudd_la-cuddInteract.lo `test -f 'cudd/cuddInteract.c' || echo './'`cudd/cuddInteract.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddInteract.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddInteract.Tpo -c cudd/cuddInteract.c -o cudd/libcudd_la-cuddInteract.o
+mv -f cudd/.deps/libcudd_la-cuddInteract.Tpo cudd/.deps/libcudd_la-cuddInteract.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddLCache.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddLCache.Tpo -c -o cudd/libcudd_la-cuddLCache.lo `test -f 'cudd/cuddLCache.c' || echo './'`cudd/cuddLCache.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddLCache.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddLCache.Tpo -c cudd/cuddLCache.c -o cudd/libcudd_la-cuddLCache.o
+mv -f cudd/.deps/libcudd_la-cuddLCache.Tpo cudd/.deps/libcudd_la-cuddLCache.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddLevelQ.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddLevelQ.Tpo -c -o cudd/libcudd_la-cuddLevelQ.lo `test -f 'cudd/cuddLevelQ.c' || echo './'`cudd/cuddLevelQ.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddLevelQ.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddLevelQ.Tpo -c cudd/cuddLevelQ.c -o cudd/libcudd_la-cuddLevelQ.o
+mv -f cudd/.deps/libcudd_la-cuddLevelQ.Tpo cudd/.deps/libcudd_la-cuddLevelQ.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddLinear.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddLinear.Tpo -c -o cudd/libcudd_la-cuddLinear.lo `test -f 'cudd/cuddLinear.c' || echo './'`cudd/cuddLinear.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddLinear.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddLinear.Tpo -c cudd/cuddLinear.c -o cudd/libcudd_la-cuddLinear.o
+mv -f cudd/.deps/libcudd_la-cuddLinear.Tpo cudd/.deps/libcudd_la-cuddLinear.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddLiteral.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddLiteral.Tpo -c -o cudd/libcudd_la-cuddLiteral.lo `test -f 'cudd/cuddLiteral.c' || echo './'`cudd/cuddLiteral.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddLiteral.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddLiteral.Tpo -c cudd/cuddLiteral.c -o cudd/libcudd_la-cuddLiteral.o
+mv -f cudd/.deps/libcudd_la-cuddLiteral.Tpo cudd/.deps/libcudd_la-cuddLiteral.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddMatMult.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddMatMult.Tpo -c -o cudd/libcudd_la-cuddMatMult.lo `test -f 'cudd/cuddMatMult.c' || echo './'`cudd/cuddMatMult.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddMatMult.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddMatMult.Tpo -c cudd/cuddMatMult.c -o cudd/libcudd_la-cuddMatMult.o
+mv -f cudd/.deps/libcudd_la-cuddMatMult.Tpo cudd/.deps/libcudd_la-cuddMatMult.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddPriority.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddPriority.Tpo -c -o cudd/libcudd_la-cuddPriority.lo `test -f 'cudd/cuddPriority.c' || echo './'`cudd/cuddPriority.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddPriority.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddPriority.Tpo -c cudd/cuddPriority.c -o cudd/libcudd_la-cuddPriority.o
+mv -f cudd/.deps/libcudd_la-cuddPriority.Tpo cudd/.deps/libcudd_la-cuddPriority.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddRead.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddRead.Tpo -c -o cudd/libcudd_la-cuddRead.lo `test -f 'cudd/cuddRead.c' || echo './'`cudd/cuddRead.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddRead.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddRead.Tpo -c cudd/cuddRead.c -o cudd/libcudd_la-cuddRead.o
+mv -f cudd/.deps/libcudd_la-cuddRead.Tpo cudd/.deps/libcudd_la-cuddRead.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddRef.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddRef.Tpo -c -o cudd/libcudd_la-cuddRef.lo `test -f 'cudd/cuddRef.c' || echo './'`cudd/cuddRef.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddRef.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddRef.Tpo -c cudd/cuddRef.c -o cudd/libcudd_la-cuddRef.o
+mv -f cudd/.deps/libcudd_la-cuddRef.Tpo cudd/.deps/libcudd_la-cuddRef.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddReorder.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddReorder.Tpo -c -o cudd/libcudd_la-cuddReorder.lo `test -f 'cudd/cuddReorder.c' || echo './'`cudd/cuddReorder.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddReorder.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddReorder.Tpo -c cudd/cuddReorder.c -o cudd/libcudd_la-cuddReorder.o
+mv -f cudd/.deps/libcudd_la-cuddReorder.Tpo cudd/.deps/libcudd_la-cuddReorder.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddSat.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddSat.Tpo -c -o cudd/libcudd_la-cuddSat.lo `test -f 'cudd/cuddSat.c' || echo './'`cudd/cuddSat.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddSat.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddSat.Tpo -c cudd/cuddSat.c -o cudd/libcudd_la-cuddSat.o
+mv -f cudd/.deps/libcudd_la-cuddSat.Tpo cudd/.deps/libcudd_la-cuddSat.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddSign.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddSign.Tpo -c -o cudd/libcudd_la-cuddSign.lo `test -f 'cudd/cuddSign.c' || echo './'`cudd/cuddSign.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddSign.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddSign.Tpo -c cudd/cuddSign.c -o cudd/libcudd_la-cuddSign.o
+mv -f cudd/.deps/libcudd_la-cuddSign.Tpo cudd/.deps/libcudd_la-cuddSign.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddSolve.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddSolve.Tpo -c -o cudd/libcudd_la-cuddSolve.lo `test -f 'cudd/cuddSolve.c' || echo './'`cudd/cuddSolve.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddSolve.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddSolve.Tpo -c cudd/cuddSolve.c -o cudd/libcudd_la-cuddSolve.o
+mv -f cudd/.deps/libcudd_la-cuddSolve.Tpo cudd/.deps/libcudd_la-cuddSolve.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddSplit.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddSplit.Tpo -c -o cudd/libcudd_la-cuddSplit.lo `test -f 'cudd/cuddSplit.c' || echo './'`cudd/cuddSplit.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddSplit.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddSplit.Tpo -c cudd/cuddSplit.c -o cudd/libcudd_la-cuddSplit.o
+mv -f cudd/.deps/libcudd_la-cuddSplit.Tpo cudd/.deps/libcudd_la-cuddSplit.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddSubsetHB.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddSubsetHB.Tpo -c -o cudd/libcudd_la-cuddSubsetHB.lo `test -f 'cudd/cuddSubsetHB.c' || echo './'`cudd/cuddSubsetHB.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddSubsetHB.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddSubsetHB.Tpo -c cudd/cuddSubsetHB.c -o cudd/libcudd_la-cuddSubsetHB.o
+mv -f cudd/.deps/libcudd_la-cuddSubsetHB.Tpo cudd/.deps/libcudd_la-cuddSubsetHB.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddSubsetSP.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddSubsetSP.Tpo -c -o cudd/libcudd_la-cuddSubsetSP.lo `test -f 'cudd/cuddSubsetSP.c' || echo './'`cudd/cuddSubsetSP.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddSubsetSP.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddSubsetSP.Tpo -c cudd/cuddSubsetSP.c -o cudd/libcudd_la-cuddSubsetSP.o
+mv -f cudd/.deps/libcudd_la-cuddSubsetSP.Tpo cudd/.deps/libcudd_la-cuddSubsetSP.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddSymmetry.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddSymmetry.Tpo -c -o cudd/libcudd_la-cuddSymmetry.lo `test -f 'cudd/cuddSymmetry.c' || echo './'`cudd/cuddSymmetry.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddSymmetry.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddSymmetry.Tpo -c cudd/cuddSymmetry.c -o cudd/libcudd_la-cuddSymmetry.o
+mv -f cudd/.deps/libcudd_la-cuddSymmetry.Tpo cudd/.deps/libcudd_la-cuddSymmetry.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddTable.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddTable.Tpo -c -o cudd/libcudd_la-cuddTable.lo `test -f 'cudd/cuddTable.c' || echo './'`cudd/cuddTable.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddTable.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddTable.Tpo -c cudd/cuddTable.c -o cudd/libcudd_la-cuddTable.o
+mv -f cudd/.deps/libcudd_la-cuddTable.Tpo cudd/.deps/libcudd_la-cuddTable.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddUtil.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddUtil.Tpo -c -o cudd/libcudd_la-cuddUtil.lo `test -f 'cudd/cuddUtil.c' || echo './'`cudd/cuddUtil.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddUtil.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddUtil.Tpo -c cudd/cuddUtil.c -o cudd/libcudd_la-cuddUtil.o
+mv -f cudd/.deps/libcudd_la-cuddUtil.Tpo cudd/.deps/libcudd_la-cuddUtil.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddWindow.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddWindow.Tpo -c -o cudd/libcudd_la-cuddWindow.lo `test -f 'cudd/cuddWindow.c' || echo './'`cudd/cuddWindow.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddWindow.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddWindow.Tpo -c cudd/cuddWindow.c -o cudd/libcudd_la-cuddWindow.o
+mv -f cudd/.deps/libcudd_la-cuddWindow.Tpo cudd/.deps/libcudd_la-cuddWindow.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddZddCount.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddZddCount.Tpo -c -o cudd/libcudd_la-cuddZddCount.lo `test -f 'cudd/cuddZddCount.c' || echo './'`cudd/cuddZddCount.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddZddCount.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddZddCount.Tpo -c cudd/cuddZddCount.c -o cudd/libcudd_la-cuddZddCount.o
+mv -f cudd/.deps/libcudd_la-cuddZddCount.Tpo cudd/.deps/libcudd_la-cuddZddCount.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddZddFuncs.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddZddFuncs.Tpo -c -o cudd/libcudd_la-cuddZddFuncs.lo `test -f 'cudd/cuddZddFuncs.c' || echo './'`cudd/cuddZddFuncs.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddZddFuncs.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddZddFuncs.Tpo -c cudd/cuddZddFuncs.c -o cudd/libcudd_la-cuddZddFuncs.o
+mv -f cudd/.deps/libcudd_la-cuddZddFuncs.Tpo cudd/.deps/libcudd_la-cuddZddFuncs.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddZddGroup.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddZddGroup.Tpo -c -o cudd/libcudd_la-cuddZddGroup.lo `test -f 'cudd/cuddZddGroup.c' || echo './'`cudd/cuddZddGroup.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddZddGroup.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddZddGroup.Tpo -c cudd/cuddZddGroup.c -o cudd/libcudd_la-cuddZddGroup.o
+mv -f cudd/.deps/libcudd_la-cuddZddGroup.Tpo cudd/.deps/libcudd_la-cuddZddGroup.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddZddIsop.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddZddIsop.Tpo -c -o cudd/libcudd_la-cuddZddIsop.lo `test -f 'cudd/cuddZddIsop.c' || echo './'`cudd/cuddZddIsop.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddZddIsop.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddZddIsop.Tpo -c cudd/cuddZddIsop.c -o cudd/libcudd_la-cuddZddIsop.o
+mv -f cudd/.deps/libcudd_la-cuddZddIsop.Tpo cudd/.deps/libcudd_la-cuddZddIsop.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddZddLin.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddZddLin.Tpo -c -o cudd/libcudd_la-cuddZddLin.lo `test -f 'cudd/cuddZddLin.c' || echo './'`cudd/cuddZddLin.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddZddLin.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddZddLin.Tpo -c cudd/cuddZddLin.c -o cudd/libcudd_la-cuddZddLin.o
+mv -f cudd/.deps/libcudd_la-cuddZddLin.Tpo cudd/.deps/libcudd_la-cuddZddLin.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddZddMisc.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddZddMisc.Tpo -c -o cudd/libcudd_la-cuddZddMisc.lo `test -f 'cudd/cuddZddMisc.c' || echo './'`cudd/cuddZddMisc.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddZddMisc.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddZddMisc.Tpo -c cudd/cuddZddMisc.c -o cudd/libcudd_la-cuddZddMisc.o
+mv -f cudd/.deps/libcudd_la-cuddZddMisc.Tpo cudd/.deps/libcudd_la-cuddZddMisc.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddZddPort.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddZddPort.Tpo -c -o cudd/libcudd_la-cuddZddPort.lo `test -f 'cudd/cuddZddPort.c' || echo './'`cudd/cuddZddPort.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddZddPort.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddZddPort.Tpo -c cudd/cuddZddPort.c -o cudd/libcudd_la-cuddZddPort.o
+mv -f cudd/.deps/libcudd_la-cuddZddPort.Tpo cudd/.deps/libcudd_la-cuddZddPort.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddZddReord.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddZddReord.Tpo -c -o cudd/libcudd_la-cuddZddReord.lo `test -f 'cudd/cuddZddReord.c' || echo './'`cudd/cuddZddReord.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddZddReord.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddZddReord.Tpo -c cudd/cuddZddReord.c -o cudd/libcudd_la-cuddZddReord.o
+mv -f cudd/.deps/libcudd_la-cuddZddReord.Tpo cudd/.deps/libcudd_la-cuddZddReord.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddZddSetop.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddZddSetop.Tpo -c -o cudd/libcudd_la-cuddZddSetop.lo `test -f 'cudd/cuddZddSetop.c' || echo './'`cudd/cuddZddSetop.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddZddSetop.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddZddSetop.Tpo -c cudd/cuddZddSetop.c -o cudd/libcudd_la-cuddZddSetop.o
+mv -f cudd/.deps/libcudd_la-cuddZddSetop.Tpo cudd/.deps/libcudd_la-cuddZddSetop.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddZddSymm.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddZddSymm.Tpo -c -o cudd/libcudd_la-cuddZddSymm.lo `test -f 'cudd/cuddZddSymm.c' || echo './'`cudd/cuddZddSymm.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddZddSymm.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddZddSymm.Tpo -c cudd/cuddZddSymm.c -o cudd/libcudd_la-cuddZddSymm.o
+mv -f cudd/.deps/libcudd_la-cuddZddSymm.Tpo cudd/.deps/libcudd_la-cuddZddSymm.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddZddUtil.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddZddUtil.Tpo -c -o cudd/libcudd_la-cuddZddUtil.lo `test -f 'cudd/cuddZddUtil.c' || echo './'`cudd/cuddZddUtil.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/libcudd_la-cuddZddUtil.lo -MD -MP -MF cudd/.deps/libcudd_la-cuddZddUtil.Tpo -c cudd/cuddZddUtil.c -o cudd/libcudd_la-cuddZddUtil.o
+mv -f cudd/.deps/libcudd_la-cuddZddUtil.Tpo cudd/.deps/libcudd_la-cuddZddUtil.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT util/cudd_libcudd_la-cpu_stats.lo -MD -MP -MF util/.deps/cudd_libcudd_la-cpu_stats.Tpo -c -o util/cudd_libcudd_la-cpu_stats.lo `test -f 'util/cpu_stats.c' || echo './'`util/cpu_stats.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT util/cudd_libcudd_la-cpu_stats.lo -MD -MP -MF util/.deps/cudd_libcudd_la-cpu_stats.Tpo -c util/cpu_stats.c -o util/cudd_libcudd_la-cpu_stats.o
+mv -f util/.deps/cudd_libcudd_la-cpu_stats.Tpo util/.deps/cudd_libcudd_la-cpu_stats.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT util/cudd_libcudd_la-cpu_time.lo -MD -MP -MF util/.deps/cudd_libcudd_la-cpu_time.Tpo -c -o util/cudd_libcudd_la-cpu_time.lo `test -f 'util/cpu_time.c' || echo './'`util/cpu_time.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT util/cudd_libcudd_la-cpu_time.lo -MD -MP -MF util/.deps/cudd_libcudd_la-cpu_time.Tpo -c util/cpu_time.c -o util/cudd_libcudd_la-cpu_time.o
+mv -f util/.deps/cudd_libcudd_la-cpu_time.Tpo util/.deps/cudd_libcudd_la-cpu_time.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT util/cudd_libcudd_la-cstringstream.lo -MD -MP -MF util/.deps/cudd_libcudd_la-cstringstream.Tpo -c -o util/cudd_libcudd_la-cstringstream.lo `test -f 'util/cstringstream.c' || echo './'`util/cstringstream.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT util/cudd_libcudd_la-cstringstream.lo -MD -MP -MF util/.deps/cudd_libcudd_la-cstringstream.Tpo -c util/cstringstream.c -o util/cudd_libcudd_la-cstringstream.o
+mv -f util/.deps/cudd_libcudd_la-cstringstream.Tpo util/.deps/cudd_libcudd_la-cstringstream.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT util/cudd_libcudd_la-datalimit.lo -MD -MP -MF util/.deps/cudd_libcudd_la-datalimit.Tpo -c -o util/cudd_libcudd_la-datalimit.lo `test -f 'util/datalimit.c' || echo './'`util/datalimit.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT util/cudd_libcudd_la-datalimit.lo -MD -MP -MF util/.deps/cudd_libcudd_la-datalimit.Tpo -c util/datalimit.c -o util/cudd_libcudd_la-datalimit.o
+mv -f util/.deps/cudd_libcudd_la-datalimit.Tpo util/.deps/cudd_libcudd_la-datalimit.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT util/cudd_libcudd_la-pathsearch.lo -MD -MP -MF util/.deps/cudd_libcudd_la-pathsearch.Tpo -c -o util/cudd_libcudd_la-pathsearch.lo `test -f 'util/pathsearch.c' || echo './'`util/pathsearch.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT util/cudd_libcudd_la-pathsearch.lo -MD -MP -MF util/.deps/cudd_libcudd_la-pathsearch.Tpo -c util/pathsearch.c -o util/cudd_libcudd_la-pathsearch.o
+mv -f util/.deps/cudd_libcudd_la-pathsearch.Tpo util/.deps/cudd_libcudd_la-pathsearch.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT util/cudd_libcudd_la-pipefork.lo -MD -MP -MF util/.deps/cudd_libcudd_la-pipefork.Tpo -c -o util/cudd_libcudd_la-pipefork.lo `test -f 'util/pipefork.c' || echo './'`util/pipefork.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT util/cudd_libcudd_la-pipefork.lo -MD -MP -MF util/.deps/cudd_libcudd_la-pipefork.Tpo -c util/pipefork.c -o util/cudd_libcudd_la-pipefork.o
+mv -f util/.deps/cudd_libcudd_la-pipefork.Tpo util/.deps/cudd_libcudd_la-pipefork.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT util/cudd_libcudd_la-prtime.lo -MD -MP -MF util/.deps/cudd_libcudd_la-prtime.Tpo -c -o util/cudd_libcudd_la-prtime.lo `test -f 'util/prtime.c' || echo './'`util/prtime.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT util/cudd_libcudd_la-prtime.lo -MD -MP -MF util/.deps/cudd_libcudd_la-prtime.Tpo -c util/prtime.c -o util/cudd_libcudd_la-prtime.o
+mv -f util/.deps/cudd_libcudd_la-prtime.Tpo util/.deps/cudd_libcudd_la-prtime.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT util/cudd_libcudd_la-safe_mem.lo -MD -MP -MF util/.deps/cudd_libcudd_la-safe_mem.Tpo -c -o util/cudd_libcudd_la-safe_mem.lo `test -f 'util/safe_mem.c' || echo './'`util/safe_mem.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT util/cudd_libcudd_la-safe_mem.lo -MD -MP -MF util/.deps/cudd_libcudd_la-safe_mem.Tpo -c util/safe_mem.c -o util/cudd_libcudd_la-safe_mem.o
+mv -f util/.deps/cudd_libcudd_la-safe_mem.Tpo util/.deps/cudd_libcudd_la-safe_mem.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT util/cudd_libcudd_la-strsav.lo -MD -MP -MF util/.deps/cudd_libcudd_la-strsav.Tpo -c -o util/cudd_libcudd_la-strsav.lo `test -f 'util/strsav.c' || echo './'`util/strsav.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT util/cudd_libcudd_la-strsav.lo -MD -MP -MF util/.deps/cudd_libcudd_la-strsav.Tpo -c util/strsav.c -o util/cudd_libcudd_la-strsav.o
+mv -f util/.deps/cudd_libcudd_la-strsav.Tpo util/.deps/cudd_libcudd_la-strsav.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT util/cudd_libcudd_la-texpand.lo -MD -MP -MF util/.deps/cudd_libcudd_la-texpand.Tpo -c -o util/cudd_libcudd_la-texpand.lo `test -f 'util/texpand.c' || echo './'`util/texpand.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT util/cudd_libcudd_la-texpand.lo -MD -MP -MF util/.deps/cudd_libcudd_la-texpand.Tpo -c util/texpand.c -o util/cudd_libcudd_la-texpand.o
+mv -f util/.deps/cudd_libcudd_la-texpand.Tpo util/.deps/cudd_libcudd_la-texpand.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT util/cudd_libcudd_la-ucbqsort.lo -MD -MP -MF util/.deps/cudd_libcudd_la-ucbqsort.Tpo -c -o util/cudd_libcudd_la-ucbqsort.lo `test -f 'util/ucbqsort.c' || echo './'`util/ucbqsort.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT util/cudd_libcudd_la-ucbqsort.lo -MD -MP -MF util/.deps/cudd_libcudd_la-ucbqsort.Tpo -c util/ucbqsort.c -o util/cudd_libcudd_la-ucbqsort.o
+mv -f util/.deps/cudd_libcudd_la-ucbqsort.Tpo util/.deps/cudd_libcudd_la-ucbqsort.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT st/cudd_libcudd_la-st.lo -MD -MP -MF st/.deps/cudd_libcudd_la-st.Tpo -c -o st/cudd_libcudd_la-st.lo `test -f 'st/st.c' || echo './'`st/st.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT st/cudd_libcudd_la-st.lo -MD -MP -MF st/.deps/cudd_libcudd_la-st.Tpo -c st/st.c -o st/cudd_libcudd_la-st.o
+mv -f st/.deps/cudd_libcudd_la-st.Tpo st/.deps/cudd_libcudd_la-st.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT epd/cudd_libcudd_la-epd.lo -MD -MP -MF epd/.deps/cudd_libcudd_la-epd.Tpo -c -o epd/cudd_libcudd_la-epd.lo `test -f 'epd/epd.c' || echo './'`epd/epd.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT epd/cudd_libcudd_la-epd.lo -MD -MP -MF epd/.deps/cudd_libcudd_la-epd.Tpo -c epd/epd.c -o epd/cudd_libcudd_la-epd.o
+mv -f epd/.deps/cudd_libcudd_la-epd.Tpo epd/.deps/cudd_libcudd_la-epd.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT mtr/cudd_libcudd_la-mtrBasic.lo -MD -MP -MF mtr/.deps/cudd_libcudd_la-mtrBasic.Tpo -c -o mtr/cudd_libcudd_la-mtrBasic.lo `test -f 'mtr/mtrBasic.c' || echo './'`mtr/mtrBasic.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT mtr/cudd_libcudd_la-mtrBasic.lo -MD -MP -MF mtr/.deps/cudd_libcudd_la-mtrBasic.Tpo -c mtr/mtrBasic.c -o mtr/cudd_libcudd_la-mtrBasic.o
+mv -f mtr/.deps/cudd_libcudd_la-mtrBasic.Tpo mtr/.deps/cudd_libcudd_la-mtrBasic.Plo
+/bin/bash ./libtool  --tag=CC --tag=CXX  --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -g -O3 -MT mtr/cudd_libcudd_la-mtrGroup.lo -MD -MP -MF mtr/.deps/cudd_libcudd_la-mtrGroup.Tpo -c -o mtr/cudd_libcudd_la-mtrGroup.lo `test -f 'mtr/mtrGroup.c' || echo './'`mtr/mtrGroup.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT mtr/cudd_libcudd_la-mtrGroup.lo -MD -MP -MF mtr/.deps/cudd_libcudd_la-mtrGroup.Tpo -c mtr/mtrGroup.c -o mtr/cudd_libcudd_la-mtrGroup.o
+mv -f mtr/.deps/cudd_libcudd_la-mtrGroup.Tpo mtr/.deps/cudd_libcudd_la-mtrGroup.Plo
+/bin/bash ./libtool  --tag=CXX --tag=CXX  --mode=compile g++ -DHAVE_CONFIG_H -I.  -I./cudd -I./st -I./epd -I./mtr -I./util   -m64 -Wall -Wextra -std=c++0x -g -O3 -MT cplusplus/cudd_libcudd_la-cuddObj.lo -MD -MP -MF cplusplus/.deps/cudd_libcudd_la-cuddObj.Tpo -c -o cplusplus/cudd_libcudd_la-cuddObj.lo `test -f 'cplusplus/cuddObj.cc' || echo './'`cplusplus/cuddObj.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -std=c++0x -g -O3 -MT cplusplus/cudd_libcudd_la-cuddObj.lo -MD -MP -MF cplusplus/.deps/cudd_libcudd_la-cuddObj.Tpo -c cplusplus/cuddObj.cc -o cplusplus/cudd_libcudd_la-cuddObj.o
+mv -f cplusplus/.deps/cudd_libcudd_la-cuddObj.Tpo cplusplus/.deps/cudd_libcudd_la-cuddObj.Plo
+/bin/bash ./libtool  --tag=CXX --tag=CXX  --mode=link g++  -m64 -Wall -Wextra -std=c++0x -g -O3 -release 3.0.0 -version-info 0:0:0 -no-undefined -m64 -o cudd/libcudd.la -rpath /usr/local/lib cudd/libcudd_la-cuddAddAbs.lo cudd/libcudd_la-cuddAddApply.lo cudd/libcudd_la-cuddAddFind.lo cudd/libcudd_la-cuddAddInv.lo cudd/libcudd_la-cuddAddIte.lo cudd/libcudd_la-cuddAddNeg.lo cudd/libcudd_la-cuddAddWalsh.lo cudd/libcudd_la-cuddAndAbs.lo cudd/libcudd_la-cuddAnneal.lo cudd/libcudd_la-cuddApa.lo cudd/libcudd_la-cuddAPI.lo cudd/libcudd_la-cuddApprox.lo cudd/libcudd_la-cuddBddAbs.lo cudd/libcudd_la-cuddBddCorr.lo cudd/libcudd_la-cuddBddIte.lo cudd/libcudd_la-cuddBridge.lo cudd/libcudd_la-cuddCache.lo cudd/libcudd_la-cuddCheck.lo cudd/libcudd_la-cuddClip.lo cudd/libcudd_la-cuddCof.lo cudd/libcudd_la-cuddCompose.lo cudd/libcudd_la-cuddDecomp.lo cudd/libcudd_la-cuddEssent.lo cudd/libcudd_la-cuddExact.lo cudd/libcudd_la-cuddExport.lo cudd/libcudd_la-cuddGenCof.lo cudd/libcudd_la-cuddGenetic.lo cudd/libcudd_la-cuddGroup.lo cudd/libcudd_la-cuddHarwell.lo cudd/libcudd_la-cuddInit.lo cudd/libcudd_la-cuddInteract.lo cudd/libcudd_la-cuddLCache.lo cudd/libcudd_la-cuddLevelQ.lo cudd/libcudd_la-cuddLinear.lo cudd/libcudd_la-cuddLiteral.lo cudd/libcudd_la-cuddMatMult.lo cudd/libcudd_la-cuddPriority.lo cudd/libcudd_la-cuddRead.lo cudd/libcudd_la-cuddRef.lo cudd/libcudd_la-cuddReorder.lo cudd/libcudd_la-cuddSat.lo cudd/libcudd_la-cuddSign.lo cudd/libcudd_la-cuddSolve.lo cudd/libcudd_la-cuddSplit.lo cudd/libcudd_la-cuddSubsetHB.lo cudd/libcudd_la-cuddSubsetSP.lo cudd/libcudd_la-cuddSymmetry.lo cudd/libcudd_la-cuddTable.lo cudd/libcudd_la-cuddUtil.lo cudd/libcudd_la-cuddWindow.lo cudd/libcudd_la-cuddZddCount.lo cudd/libcudd_la-cuddZddFuncs.lo cudd/libcudd_la-cuddZddGroup.lo cudd/libcudd_la-cuddZddIsop.lo cudd/libcudd_la-cuddZddLin.lo cudd/libcudd_la-cuddZddMisc.lo cudd/libcudd_la-cuddZddPort.lo cudd/libcudd_la-cuddZddReord.lo cudd/libcudd_la-cuddZddSetop.lo cudd/libcudd_la-cuddZddSymm.lo cudd/libcudd_la-cuddZddUtil.lo util/cudd_libcudd_la-cpu_stats.lo util/cudd_libcudd_la-cpu_time.lo util/cudd_libcudd_la-cstringstream.lo util/cudd_libcudd_la-datalimit.lo util/cudd_libcudd_la-pathsearch.lo util/cudd_libcudd_la-pipefork.lo util/cudd_libcudd_la-prtime.lo util/cudd_libcudd_la-safe_mem.lo util/cudd_libcudd_la-strsav.lo util/cudd_libcudd_la-texpand.lo util/cudd_libcudd_la-ucbqsort.lo st/cudd_libcudd_la-st.lo epd/cudd_libcudd_la-epd.lo mtr/cudd_libcudd_la-mtrBasic.lo mtr/cudd_libcudd_la-mtrGroup.lo  cplusplus/cudd_libcudd_la-cuddObj.lo  -lm 
+libtool: link: ar cru cudd/.libs/libcudd.a  cudd/libcudd_la-cuddAddAbs.o cudd/libcudd_la-cuddAddApply.o cudd/libcudd_la-cuddAddFind.o cudd/libcudd_la-cuddAddInv.o cudd/libcudd_la-cuddAddIte.o cudd/libcudd_la-cuddAddNeg.o cudd/libcudd_la-cuddAddWalsh.o cudd/libcudd_la-cuddAndAbs.o cudd/libcudd_la-cuddAnneal.o cudd/libcudd_la-cuddApa.o cudd/libcudd_la-cuddAPI.o cudd/libcudd_la-cuddApprox.o cudd/libcudd_la-cuddBddAbs.o cudd/libcudd_la-cuddBddCorr.o cudd/libcudd_la-cuddBddIte.o cudd/libcudd_la-cuddBridge.o cudd/libcudd_la-cuddCache.o cudd/libcudd_la-cuddCheck.o cudd/libcudd_la-cuddClip.o cudd/libcudd_la-cuddCof.o cudd/libcudd_la-cuddCompose.o cudd/libcudd_la-cuddDecomp.o cudd/libcudd_la-cuddEssent.o cudd/libcudd_la-cuddExact.o cudd/libcudd_la-cuddExport.o cudd/libcudd_la-cuddGenCof.o cudd/libcudd_la-cuddGenetic.o cudd/libcudd_la-cuddGroup.o cudd/libcudd_la-cuddHarwell.o cudd/libcudd_la-cuddInit.o cudd/libcudd_la-cuddInteract.o cudd/libcudd_la-cuddLCache.o cudd/libcudd_la-cuddLevelQ.o cudd/libcudd_la-cuddLinear.o cudd/libcudd_la-cuddLiteral.o cudd/libcudd_la-cuddMatMult.o cudd/libcudd_la-cuddPriority.o cudd/libcudd_la-cuddRead.o cudd/libcudd_la-cuddRef.o cudd/libcudd_la-cuddReorder.o cudd/libcudd_la-cuddSat.o cudd/libcudd_la-cuddSign.o cudd/libcudd_la-cuddSolve.o cudd/libcudd_la-cuddSplit.o cudd/libcudd_la-cuddSubsetHB.o cudd/libcudd_la-cuddSubsetSP.o cudd/libcudd_la-cuddSymmetry.o cudd/libcudd_la-cuddTable.o cudd/libcudd_la-cuddUtil.o cudd/libcudd_la-cuddWindow.o cudd/libcudd_la-cuddZddCount.o cudd/libcudd_la-cuddZddFuncs.o cudd/libcudd_la-cuddZddGroup.o cudd/libcudd_la-cuddZddIsop.o cudd/libcudd_la-cuddZddLin.o cudd/libcudd_la-cuddZddMisc.o cudd/libcudd_la-cuddZddPort.o cudd/libcudd_la-cuddZddReord.o cudd/libcudd_la-cuddZddSetop.o cudd/libcudd_la-cuddZddSymm.o cudd/libcudd_la-cuddZddUtil.o util/cudd_libcudd_la-cpu_stats.o util/cudd_libcudd_la-cpu_time.o util/cudd_libcudd_la-cstringstream.o util/cudd_libcudd_la-datalimit.o util/cudd_libcudd_la-pathsearch.o util/cudd_libcudd_la-pipefork.o util/cudd_libcudd_la-prtime.o util/cudd_libcudd_la-safe_mem.o util/cudd_libcudd_la-strsav.o util/cudd_libcudd_la-texpand.o util/cudd_libcudd_la-ucbqsort.o st/cudd_libcudd_la-st.o epd/cudd_libcudd_la-epd.o mtr/cudd_libcudd_la-mtrBasic.o mtr/cudd_libcudd_la-mtrGroup.o cplusplus/cudd_libcudd_la-cuddObj.o
+libtool: link: ranlib cudd/.libs/libcudd.a
+libtool: link: ( cd "cudd/.libs" && rm -f "libcudd.la" && ln -s "../libcudd.la" "libcudd.la" )
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./util -I./mtr -I./epd -I./cudd -I./st   -m64 -Wall -Wextra -g -O3 -MT dddmp/libdddmp_la-dddmpBinary.lo -MD -MP -MF dddmp/.deps/libdddmp_la-dddmpBinary.Tpo -c -o dddmp/libdddmp_la-dddmpBinary.lo `test -f 'dddmp/dddmpBinary.c' || echo './'`dddmp/dddmpBinary.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./util -I./mtr -I./epd -I./cudd -I./st -m64 -Wall -Wextra -g -O3 -MT dddmp/libdddmp_la-dddmpBinary.lo -MD -MP -MF dddmp/.deps/libdddmp_la-dddmpBinary.Tpo -c dddmp/dddmpBinary.c -o dddmp/libdddmp_la-dddmpBinary.o
+mv -f dddmp/.deps/libdddmp_la-dddmpBinary.Tpo dddmp/.deps/libdddmp_la-dddmpBinary.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./util -I./mtr -I./epd -I./cudd -I./st   -m64 -Wall -Wextra -g -O3 -MT dddmp/libdddmp_la-dddmpConvert.lo -MD -MP -MF dddmp/.deps/libdddmp_la-dddmpConvert.Tpo -c -o dddmp/libdddmp_la-dddmpConvert.lo `test -f 'dddmp/dddmpConvert.c' || echo './'`dddmp/dddmpConvert.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./util -I./mtr -I./epd -I./cudd -I./st -m64 -Wall -Wextra -g -O3 -MT dddmp/libdddmp_la-dddmpConvert.lo -MD -MP -MF dddmp/.deps/libdddmp_la-dddmpConvert.Tpo -c dddmp/dddmpConvert.c -o dddmp/libdddmp_la-dddmpConvert.o
+mv -f dddmp/.deps/libdddmp_la-dddmpConvert.Tpo dddmp/.deps/libdddmp_la-dddmpConvert.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./util -I./mtr -I./epd -I./cudd -I./st   -m64 -Wall -Wextra -g -O3 -MT dddmp/libdddmp_la-dddmpDbg.lo -MD -MP -MF dddmp/.deps/libdddmp_la-dddmpDbg.Tpo -c -o dddmp/libdddmp_la-dddmpDbg.lo `test -f 'dddmp/dddmpDbg.c' || echo './'`dddmp/dddmpDbg.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./util -I./mtr -I./epd -I./cudd -I./st -m64 -Wall -Wextra -g -O3 -MT dddmp/libdddmp_la-dddmpDbg.lo -MD -MP -MF dddmp/.deps/libdddmp_la-dddmpDbg.Tpo -c dddmp/dddmpDbg.c -o dddmp/libdddmp_la-dddmpDbg.o
+mv -f dddmp/.deps/libdddmp_la-dddmpDbg.Tpo dddmp/.deps/libdddmp_la-dddmpDbg.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./util -I./mtr -I./epd -I./cudd -I./st   -m64 -Wall -Wextra -g -O3 -MT dddmp/libdddmp_la-dddmpLoad.lo -MD -MP -MF dddmp/.deps/libdddmp_la-dddmpLoad.Tpo -c -o dddmp/libdddmp_la-dddmpLoad.lo `test -f 'dddmp/dddmpLoad.c' || echo './'`dddmp/dddmpLoad.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./util -I./mtr -I./epd -I./cudd -I./st -m64 -Wall -Wextra -g -O3 -MT dddmp/libdddmp_la-dddmpLoad.lo -MD -MP -MF dddmp/.deps/libdddmp_la-dddmpLoad.Tpo -c dddmp/dddmpLoad.c -o dddmp/libdddmp_la-dddmpLoad.o
+mv -f dddmp/.deps/libdddmp_la-dddmpLoad.Tpo dddmp/.deps/libdddmp_la-dddmpLoad.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./util -I./mtr -I./epd -I./cudd -I./st   -m64 -Wall -Wextra -g -O3 -MT dddmp/libdddmp_la-dddmpLoadCnf.lo -MD -MP -MF dddmp/.deps/libdddmp_la-dddmpLoadCnf.Tpo -c -o dddmp/libdddmp_la-dddmpLoadCnf.lo `test -f 'dddmp/dddmpLoadCnf.c' || echo './'`dddmp/dddmpLoadCnf.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./util -I./mtr -I./epd -I./cudd -I./st -m64 -Wall -Wextra -g -O3 -MT dddmp/libdddmp_la-dddmpLoadCnf.lo -MD -MP -MF dddmp/.deps/libdddmp_la-dddmpLoadCnf.Tpo -c dddmp/dddmpLoadCnf.c -o dddmp/libdddmp_la-dddmpLoadCnf.o
+mv -f dddmp/.deps/libdddmp_la-dddmpLoadCnf.Tpo dddmp/.deps/libdddmp_la-dddmpLoadCnf.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./util -I./mtr -I./epd -I./cudd -I./st   -m64 -Wall -Wextra -g -O3 -MT dddmp/libdddmp_la-dddmpNodeAdd.lo -MD -MP -MF dddmp/.deps/libdddmp_la-dddmpNodeAdd.Tpo -c -o dddmp/libdddmp_la-dddmpNodeAdd.lo `test -f 'dddmp/dddmpNodeAdd.c' || echo './'`dddmp/dddmpNodeAdd.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./util -I./mtr -I./epd -I./cudd -I./st -m64 -Wall -Wextra -g -O3 -MT dddmp/libdddmp_la-dddmpNodeAdd.lo -MD -MP -MF dddmp/.deps/libdddmp_la-dddmpNodeAdd.Tpo -c dddmp/dddmpNodeAdd.c -o dddmp/libdddmp_la-dddmpNodeAdd.o
+mv -f dddmp/.deps/libdddmp_la-dddmpNodeAdd.Tpo dddmp/.deps/libdddmp_la-dddmpNodeAdd.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./util -I./mtr -I./epd -I./cudd -I./st   -m64 -Wall -Wextra -g -O3 -MT dddmp/libdddmp_la-dddmpNodeBdd.lo -MD -MP -MF dddmp/.deps/libdddmp_la-dddmpNodeBdd.Tpo -c -o dddmp/libdddmp_la-dddmpNodeBdd.lo `test -f 'dddmp/dddmpNodeBdd.c' || echo './'`dddmp/dddmpNodeBdd.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./util -I./mtr -I./epd -I./cudd -I./st -m64 -Wall -Wextra -g -O3 -MT dddmp/libdddmp_la-dddmpNodeBdd.lo -MD -MP -MF dddmp/.deps/libdddmp_la-dddmpNodeBdd.Tpo -c dddmp/dddmpNodeBdd.c -o dddmp/libdddmp_la-dddmpNodeBdd.o
+mv -f dddmp/.deps/libdddmp_la-dddmpNodeBdd.Tpo dddmp/.deps/libdddmp_la-dddmpNodeBdd.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./util -I./mtr -I./epd -I./cudd -I./st   -m64 -Wall -Wextra -g -O3 -MT dddmp/libdddmp_la-dddmpNodeCnf.lo -MD -MP -MF dddmp/.deps/libdddmp_la-dddmpNodeCnf.Tpo -c -o dddmp/libdddmp_la-dddmpNodeCnf.lo `test -f 'dddmp/dddmpNodeCnf.c' || echo './'`dddmp/dddmpNodeCnf.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./util -I./mtr -I./epd -I./cudd -I./st -m64 -Wall -Wextra -g -O3 -MT dddmp/libdddmp_la-dddmpNodeCnf.lo -MD -MP -MF dddmp/.deps/libdddmp_la-dddmpNodeCnf.Tpo -c dddmp/dddmpNodeCnf.c -o dddmp/libdddmp_la-dddmpNodeCnf.o
+mv -f dddmp/.deps/libdddmp_la-dddmpNodeCnf.Tpo dddmp/.deps/libdddmp_la-dddmpNodeCnf.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./util -I./mtr -I./epd -I./cudd -I./st   -m64 -Wall -Wextra -g -O3 -MT dddmp/libdddmp_la-dddmpStoreAdd.lo -MD -MP -MF dddmp/.deps/libdddmp_la-dddmpStoreAdd.Tpo -c -o dddmp/libdddmp_la-dddmpStoreAdd.lo `test -f 'dddmp/dddmpStoreAdd.c' || echo './'`dddmp/dddmpStoreAdd.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./util -I./mtr -I./epd -I./cudd -I./st -m64 -Wall -Wextra -g -O3 -MT dddmp/libdddmp_la-dddmpStoreAdd.lo -MD -MP -MF dddmp/.deps/libdddmp_la-dddmpStoreAdd.Tpo -c dddmp/dddmpStoreAdd.c -o dddmp/libdddmp_la-dddmpStoreAdd.o
+mv -f dddmp/.deps/libdddmp_la-dddmpStoreAdd.Tpo dddmp/.deps/libdddmp_la-dddmpStoreAdd.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./util -I./mtr -I./epd -I./cudd -I./st   -m64 -Wall -Wextra -g -O3 -MT dddmp/libdddmp_la-dddmpStoreBdd.lo -MD -MP -MF dddmp/.deps/libdddmp_la-dddmpStoreBdd.Tpo -c -o dddmp/libdddmp_la-dddmpStoreBdd.lo `test -f 'dddmp/dddmpStoreBdd.c' || echo './'`dddmp/dddmpStoreBdd.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./util -I./mtr -I./epd -I./cudd -I./st -m64 -Wall -Wextra -g -O3 -MT dddmp/libdddmp_la-dddmpStoreBdd.lo -MD -MP -MF dddmp/.deps/libdddmp_la-dddmpStoreBdd.Tpo -c dddmp/dddmpStoreBdd.c -o dddmp/libdddmp_la-dddmpStoreBdd.o
+mv -f dddmp/.deps/libdddmp_la-dddmpStoreBdd.Tpo dddmp/.deps/libdddmp_la-dddmpStoreBdd.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./util -I./mtr -I./epd -I./cudd -I./st   -m64 -Wall -Wextra -g -O3 -MT dddmp/libdddmp_la-dddmpStoreCnf.lo -MD -MP -MF dddmp/.deps/libdddmp_la-dddmpStoreCnf.Tpo -c -o dddmp/libdddmp_la-dddmpStoreCnf.lo `test -f 'dddmp/dddmpStoreCnf.c' || echo './'`dddmp/dddmpStoreCnf.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./util -I./mtr -I./epd -I./cudd -I./st -m64 -Wall -Wextra -g -O3 -MT dddmp/libdddmp_la-dddmpStoreCnf.lo -MD -MP -MF dddmp/.deps/libdddmp_la-dddmpStoreCnf.Tpo -c dddmp/dddmpStoreCnf.c -o dddmp/libdddmp_la-dddmpStoreCnf.o
+mv -f dddmp/.deps/libdddmp_la-dddmpStoreCnf.Tpo dddmp/.deps/libdddmp_la-dddmpStoreCnf.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./util -I./mtr -I./epd -I./cudd -I./st   -m64 -Wall -Wextra -g -O3 -MT dddmp/libdddmp_la-dddmpStoreMisc.lo -MD -MP -MF dddmp/.deps/libdddmp_la-dddmpStoreMisc.Tpo -c -o dddmp/libdddmp_la-dddmpStoreMisc.lo `test -f 'dddmp/dddmpStoreMisc.c' || echo './'`dddmp/dddmpStoreMisc.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./util -I./mtr -I./epd -I./cudd -I./st -m64 -Wall -Wextra -g -O3 -MT dddmp/libdddmp_la-dddmpStoreMisc.lo -MD -MP -MF dddmp/.deps/libdddmp_la-dddmpStoreMisc.Tpo -c dddmp/dddmpStoreMisc.c -o dddmp/libdddmp_la-dddmpStoreMisc.o
+mv -f dddmp/.deps/libdddmp_la-dddmpStoreMisc.Tpo dddmp/.deps/libdddmp_la-dddmpStoreMisc.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./util -I./mtr -I./epd -I./cudd -I./st   -m64 -Wall -Wextra -g -O3 -MT dddmp/libdddmp_la-dddmpUtil.lo -MD -MP -MF dddmp/.deps/libdddmp_la-dddmpUtil.Tpo -c -o dddmp/libdddmp_la-dddmpUtil.lo `test -f 'dddmp/dddmpUtil.c' || echo './'`dddmp/dddmpUtil.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./util -I./mtr -I./epd -I./cudd -I./st -m64 -Wall -Wextra -g -O3 -MT dddmp/libdddmp_la-dddmpUtil.lo -MD -MP -MF dddmp/.deps/libdddmp_la-dddmpUtil.Tpo -c dddmp/dddmpUtil.c -o dddmp/libdddmp_la-dddmpUtil.o
+mv -f dddmp/.deps/libdddmp_la-dddmpUtil.Tpo dddmp/.deps/libdddmp_la-dddmpUtil.Plo
+/bin/bash ./libtool  --tag=CC   --mode=link gcc  -m64 -Wall -Wextra -g -O3  -m64 -o dddmp/libdddmp.la  dddmp/libdddmp_la-dddmpBinary.lo dddmp/libdddmp_la-dddmpConvert.lo dddmp/libdddmp_la-dddmpDbg.lo dddmp/libdddmp_la-dddmpLoad.lo dddmp/libdddmp_la-dddmpLoadCnf.lo dddmp/libdddmp_la-dddmpNodeAdd.lo dddmp/libdddmp_la-dddmpNodeBdd.lo dddmp/libdddmp_la-dddmpNodeCnf.lo dddmp/libdddmp_la-dddmpStoreAdd.lo dddmp/libdddmp_la-dddmpStoreBdd.lo dddmp/libdddmp_la-dddmpStoreCnf.lo dddmp/libdddmp_la-dddmpStoreMisc.lo dddmp/libdddmp_la-dddmpUtil.lo  -lm 
+libtool: link: rm -fr  dddmp/.libs/libdddmp.la
+libtool: link: ar cru dddmp/.libs/libdddmp.a  dddmp/libdddmp_la-dddmpBinary.o dddmp/libdddmp_la-dddmpConvert.o dddmp/libdddmp_la-dddmpDbg.o dddmp/libdddmp_la-dddmpLoad.o dddmp/libdddmp_la-dddmpLoadCnf.o dddmp/libdddmp_la-dddmpNodeAdd.o dddmp/libdddmp_la-dddmpNodeBdd.o dddmp/libdddmp_la-dddmpNodeCnf.o dddmp/libdddmp_la-dddmpStoreAdd.o dddmp/libdddmp_la-dddmpStoreBdd.o dddmp/libdddmp_la-dddmpStoreCnf.o dddmp/libdddmp_la-dddmpStoreMisc.o dddmp/libdddmp_la-dddmpUtil.o
+libtool: link: ranlib dddmp/.libs/libdddmp.a
+libtool: link: ( cd "dddmp/.libs" && rm -f "libdddmp.la" && ln -s "../libdddmp.la" "libdddmp.la" )
+make[2]: Leaving directory '/src/search/cudd-3.0.0'
+make[1]: Leaving directory '/src/search/cudd-3.0.0'
+make[1]: Entering directory '/src/search/cudd-3.0.0'
+make[1]: Nothing to be done for 'cplusplus'.
+make[1]: Leaving directory '/src/search/cudd-3.0.0'
+rm -f Makefile.temp
+for source in planner.cc axioms.cc causal_graph.cc combining_evaluator.cc domain_transition_graph.cc eager_search.cc enforced_hill_climbing_search.cc equivalence_relation.cc exact_timer.cc g_evaluator.cc globals.cc heuristic.cc prune_heuristic.cc mutex_pruning.cc int_packer.cc ipc_max_heuristic.cc iterated_search.cc lazy_search.cc legacy_causal_graph.cc mutex_group.cc max_evaluator.cc operator.cc operator_cost.cc option_parser.cc option_parser_util.cc segmented_vector.cc per_state_information.cc pref_evaluator.cc relaxation_heuristic.cc rng.cc scc.cc search_engine.cc search_node_info.cc search_progress.cc search_space.cc state.cc state_id.cc state_registry.cc successor_generator.cc sum_evaluator.cc timer.cc utilities.cc weighted_evaluator.cc open_lists/alternation_open_list.cc open_lists/open_list_buckets.cc open_lists/pareto_open_list.cc open_lists/standard_scalar_open_list.cc open_lists/tiebreaking_open_list.cc additive_heuristic.cc blind_search_heuristic.cc cea_heuristic.cc cg_heuristic.cc cg_cache.cc ff_heuristic.cc goal_count_heuristic.cc hm_heuristic.cc lm_cut_heuristic.cc max_heuristic.cc merge_and_shrink/abstraction.cc merge_and_shrink/label.cc merge_and_shrink/labels.cc merge_and_shrink/label_reducer.cc merge_and_shrink/merge_and_shrink_heuristic.cc merge_and_shrink/merge_criterion.cc merge_and_shrink/merge_dfp.cc merge_and_shrink/merge_linear.cc merge_and_shrink/merge_linear_criteria.cc merge_and_shrink/merge_strategy.cc merge_and_shrink/shrink_bisimulation.cc merge_and_shrink/shrink_bucket_based.cc merge_and_shrink/shrink_composite.cc merge_and_shrink/shrink_fh.cc merge_and_shrink/shrink_own_labels.cc merge_and_shrink/shrink_random.cc merge_and_shrink/shrink_strategy.cc merge_and_shrink/variable_order_finder.cc merge_and_shrink/simulation_relation.cc merge_and_shrink/dominance_relation.cc merge_and_shrink/dominance_pruning_simulation.cc merge_and_shrink/alternative_label_relation.cc merge_and_shrink/label_relation.cc merge_and_shrink/label_relation_identity.cc merge_and_shrink/label_relation_noop.cc merge_and_shrink/labelled_transition_system.cc merge_and_shrink/simulation_simple.cc merge_and_shrink/simulation_identity.cc merge_and_shrink/ld_simulation.cc merge_and_shrink/variable_partition_finder.cc merge_and_shrink/opt_order.cc merge_and_shrink/abstraction_builder.cc numeric_dominance/numeric_simulation_relation.cc numeric_dominance/numeric_dominance_relation.cc numeric_dominance/numeric_label_relation.cc numeric_dominance/numeric_dominance_pruning.cc numeric_dominance/int_epsilon.cc numeric_dominance/dijkstra_search_epsilon.cc numeric_dominance/tau_labels.cc numeric_dominance/breadth_first_search.cc landmarks/exploration.cc landmarks/h_m_landmarks.cc landmarks/lama_ff_synergy.cc landmarks/landmark_cost_assignment.cc landmarks/landmark_count_heuristic.cc landmarks/landmark_status_manager.cc landmarks/landmark_graph_merged.cc landmarks/landmark_graph.cc landmarks/landmark_factory.cc landmarks/landmark_factory_rpg_exhaust.cc landmarks/landmark_factory_rpg_sasp.cc landmarks/landmark_factory_zhu_givan.cc landmarks/util.cc pdbs/canonical_pdbs_heuristic.cc pdbs/dominance_pruner.cc pdbs/match_tree.cc pdbs/max_cliques.cc pdbs/pattern_generation_edelkamp.cc pdbs/pattern_generation_haslum.cc pdbs/pdb_heuristic.cc pdbs/util.cc pdbs/zero_one_pdbs_heuristic.cc sym/sym_controller.cc sym/sym_engine.cc sym/symba.cc sym/symba_unsat.cc sym/sym_variables.cc sym/sym_manager.cc sym/sym_util.cc sym/sym_enums.cc sym/sym_abstraction.cc sym/sym_pdb.cc sym/sym_ph_minimization.cc sym/sym_abs_minimization.cc sym/sym_transition.cc sym/sym_params.cc sym/sym_heuristic.cc sym/sym_bucket.cc sym/sym_exploration.cc sym/sym_astar.cc sym/sym_astar_closed.cc sym/sym_astar_open.cc sym/sym_breadth_first_search.cc sym/sym_hnode.cc sym/sym_bdexp.cc sym/sym_ph.cc sym/sym_ph_pdbs.cc sym/sym_estimate.cc sym/sym_estimate_linear.cc sym/sym_solution.cc sym/spmas_heuristic.cc sym/test/sym_test.cc sym/test/sym_test_mutex.cc sym/sym_prune_heuristic.cc sym/sym_uct_pdbs.cc ; do \
+    g++ -MM -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus $source > Makefile.temp0; \
+    objfile=${source%%.cc}.o; \
+    sed -i -e "s@^[^:]*:@$objfile:@" Makefile.temp0; \
+    cat Makefile.temp0 >> Makefile.temp; \
+done
+rm -f Makefile.temp0 Makefile.depend
+sed -e "s@\(.*\)\.o:\(.*\)@.obj/\1.release.o:\2@" Makefile.temp >> Makefile.depend
+sed -e "s@\(.*\)\.o:\(.*\)@.obj/\1.debug.o:\2@" Makefile.temp >> Makefile.depend
+sed -e "s@\(.*\)\.o:\(.*\)@.obj/\1.profile.o:\2@" Makefile.temp >> Makefile.depend
+rm -f Makefile.temp
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c planner.cc -o .obj/planner.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c axioms.cc -o .obj/axioms.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c combining_evaluator.cc -o .obj/combining_evaluator.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c causal_graph.cc -o .obj/causal_graph.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c domain_transition_graph.cc -o .obj/domain_transition_graph.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c eager_search.cc -o .obj/eager_search.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c enforced_hill_climbing_search.cc -o .obj/enforced_hill_climbing_search.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c equivalence_relation.cc -o .obj/equivalence_relation.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c exact_timer.cc -o .obj/exact_timer.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c g_evaluator.cc -o .obj/g_evaluator.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c globals.cc -o .obj/globals.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c heuristic.cc -o .obj/heuristic.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c prune_heuristic.cc -o .obj/prune_heuristic.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c mutex_pruning.cc -o .obj/mutex_pruning.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c int_packer.cc -o .obj/int_packer.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c ipc_max_heuristic.cc -o .obj/ipc_max_heuristic.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c iterated_search.cc -o .obj/iterated_search.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c lazy_search.cc -o .obj/lazy_search.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c legacy_causal_graph.cc -o .obj/legacy_causal_graph.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c mutex_group.cc -o .obj/mutex_group.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c max_evaluator.cc -o .obj/max_evaluator.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c operator.cc -o .obj/operator.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c operator_cost.cc -o .obj/operator_cost.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c option_parser.cc -o .obj/option_parser.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c option_parser_util.cc -o .obj/option_parser_util.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c segmented_vector.cc -o .obj/segmented_vector.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c per_state_information.cc -o .obj/per_state_information.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c pref_evaluator.cc -o .obj/pref_evaluator.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c relaxation_heuristic.cc -o .obj/relaxation_heuristic.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c rng.cc -o .obj/rng.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c scc.cc -o .obj/scc.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c search_engine.cc -o .obj/search_engine.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c search_node_info.cc -o .obj/search_node_info.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c search_progress.cc -o .obj/search_progress.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c search_space.cc -o .obj/search_space.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c state.cc -o .obj/state.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c state_id.cc -o .obj/state_id.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c state_registry.cc -o .obj/state_registry.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c successor_generator.cc -o .obj/successor_generator.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c sum_evaluator.cc -o .obj/sum_evaluator.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c timer.cc -o .obj/timer.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c utilities.cc -o .obj/utilities.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c weighted_evaluator.cc -o .obj/weighted_evaluator.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c open_lists/alternation_open_list.cc -o .obj/open_lists/alternation_open_list.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c open_lists/open_list_buckets.cc -o .obj/open_lists/open_list_buckets.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c open_lists/pareto_open_list.cc -o .obj/open_lists/pareto_open_list.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c open_lists/standard_scalar_open_list.cc -o .obj/open_lists/standard_scalar_open_list.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c open_lists/tiebreaking_open_list.cc -o .obj/open_lists/tiebreaking_open_list.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c additive_heuristic.cc -o .obj/additive_heuristic.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c blind_search_heuristic.cc -o .obj/blind_search_heuristic.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c cea_heuristic.cc -o .obj/cea_heuristic.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c cg_heuristic.cc -o .obj/cg_heuristic.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c cg_cache.cc -o .obj/cg_cache.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c ff_heuristic.cc -o .obj/ff_heuristic.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c goal_count_heuristic.cc -o .obj/goal_count_heuristic.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c hm_heuristic.cc -o .obj/hm_heuristic.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c lm_cut_heuristic.cc -o .obj/lm_cut_heuristic.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c max_heuristic.cc -o .obj/max_heuristic.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c merge_and_shrink/abstraction.cc -o .obj/merge_and_shrink/abstraction.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c merge_and_shrink/label.cc -o .obj/merge_and_shrink/label.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c merge_and_shrink/labels.cc -o .obj/merge_and_shrink/labels.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c merge_and_shrink/label_reducer.cc -o .obj/merge_and_shrink/label_reducer.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c merge_and_shrink/merge_and_shrink_heuristic.cc -o .obj/merge_and_shrink/merge_and_shrink_heuristic.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c merge_and_shrink/merge_criterion.cc -o .obj/merge_and_shrink/merge_criterion.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c merge_and_shrink/merge_dfp.cc -o .obj/merge_and_shrink/merge_dfp.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c merge_and_shrink/merge_linear.cc -o .obj/merge_and_shrink/merge_linear.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c merge_and_shrink/merge_linear_criteria.cc -o .obj/merge_and_shrink/merge_linear_criteria.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c merge_and_shrink/merge_strategy.cc -o .obj/merge_and_shrink/merge_strategy.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c merge_and_shrink/shrink_bisimulation.cc -o .obj/merge_and_shrink/shrink_bisimulation.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c merge_and_shrink/shrink_bucket_based.cc -o .obj/merge_and_shrink/shrink_bucket_based.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c merge_and_shrink/shrink_composite.cc -o .obj/merge_and_shrink/shrink_composite.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c merge_and_shrink/shrink_fh.cc -o .obj/merge_and_shrink/shrink_fh.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c merge_and_shrink/shrink_own_labels.cc -o .obj/merge_and_shrink/shrink_own_labels.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c merge_and_shrink/shrink_random.cc -o .obj/merge_and_shrink/shrink_random.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c merge_and_shrink/shrink_strategy.cc -o .obj/merge_and_shrink/shrink_strategy.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c merge_and_shrink/variable_order_finder.cc -o .obj/merge_and_shrink/variable_order_finder.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c merge_and_shrink/simulation_relation.cc -o .obj/merge_and_shrink/simulation_relation.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c merge_and_shrink/dominance_relation.cc -o .obj/merge_and_shrink/dominance_relation.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c merge_and_shrink/dominance_pruning_simulation.cc -o .obj/merge_and_shrink/dominance_pruning_simulation.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c merge_and_shrink/alternative_label_relation.cc -o .obj/merge_and_shrink/alternative_label_relation.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c merge_and_shrink/label_relation.cc -o .obj/merge_and_shrink/label_relation.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c merge_and_shrink/label_relation_identity.cc -o .obj/merge_and_shrink/label_relation_identity.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c merge_and_shrink/label_relation_noop.cc -o .obj/merge_and_shrink/label_relation_noop.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c merge_and_shrink/labelled_transition_system.cc -o .obj/merge_and_shrink/labelled_transition_system.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c merge_and_shrink/simulation_simple.cc -o .obj/merge_and_shrink/simulation_simple.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c merge_and_shrink/simulation_identity.cc -o .obj/merge_and_shrink/simulation_identity.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c merge_and_shrink/ld_simulation.cc -o .obj/merge_and_shrink/ld_simulation.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c merge_and_shrink/variable_partition_finder.cc -o .obj/merge_and_shrink/variable_partition_finder.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c merge_and_shrink/opt_order.cc -o .obj/merge_and_shrink/opt_order.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c merge_and_shrink/abstraction_builder.cc -o .obj/merge_and_shrink/abstraction_builder.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c numeric_dominance/numeric_simulation_relation.cc -o .obj/numeric_dominance/numeric_simulation_relation.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c numeric_dominance/numeric_dominance_relation.cc -o .obj/numeric_dominance/numeric_dominance_relation.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c numeric_dominance/numeric_label_relation.cc -o .obj/numeric_dominance/numeric_label_relation.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c numeric_dominance/numeric_dominance_pruning.cc -o .obj/numeric_dominance/numeric_dominance_pruning.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c numeric_dominance/int_epsilon.cc -o .obj/numeric_dominance/int_epsilon.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c numeric_dominance/dijkstra_search_epsilon.cc -o .obj/numeric_dominance/dijkstra_search_epsilon.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c numeric_dominance/tau_labels.cc -o .obj/numeric_dominance/tau_labels.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c numeric_dominance/breadth_first_search.cc -o .obj/numeric_dominance/breadth_first_search.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c landmarks/exploration.cc -o .obj/landmarks/exploration.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c landmarks/h_m_landmarks.cc -o .obj/landmarks/h_m_landmarks.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c landmarks/lama_ff_synergy.cc -o .obj/landmarks/lama_ff_synergy.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c landmarks/landmark_cost_assignment.cc -o .obj/landmarks/landmark_cost_assignment.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c landmarks/landmark_count_heuristic.cc -o .obj/landmarks/landmark_count_heuristic.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c landmarks/landmark_status_manager.cc -o .obj/landmarks/landmark_status_manager.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c landmarks/landmark_graph_merged.cc -o .obj/landmarks/landmark_graph_merged.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c landmarks/landmark_graph.cc -o .obj/landmarks/landmark_graph.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c landmarks/landmark_factory.cc -o .obj/landmarks/landmark_factory.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c landmarks/landmark_factory_rpg_exhaust.cc -o .obj/landmarks/landmark_factory_rpg_exhaust.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c landmarks/landmark_factory_rpg_sasp.cc -o .obj/landmarks/landmark_factory_rpg_sasp.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c landmarks/landmark_factory_zhu_givan.cc -o .obj/landmarks/landmark_factory_zhu_givan.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c landmarks/util.cc -o .obj/landmarks/util.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c pdbs/canonical_pdbs_heuristic.cc -o .obj/pdbs/canonical_pdbs_heuristic.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c pdbs/dominance_pruner.cc -o .obj/pdbs/dominance_pruner.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c pdbs/match_tree.cc -o .obj/pdbs/match_tree.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c pdbs/max_cliques.cc -o .obj/pdbs/max_cliques.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c pdbs/pattern_generation_edelkamp.cc -o .obj/pdbs/pattern_generation_edelkamp.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c pdbs/pattern_generation_haslum.cc -o .obj/pdbs/pattern_generation_haslum.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c pdbs/pdb_heuristic.cc -o .obj/pdbs/pdb_heuristic.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c pdbs/util.cc -o .obj/pdbs/util.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c pdbs/zero_one_pdbs_heuristic.cc -o .obj/pdbs/zero_one_pdbs_heuristic.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c sym/sym_controller.cc -o .obj/sym/sym_controller.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c sym/sym_engine.cc -o .obj/sym/sym_engine.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c sym/symba.cc -o .obj/sym/symba.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c sym/symba_unsat.cc -o .obj/sym/symba_unsat.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c sym/sym_variables.cc -o .obj/sym/sym_variables.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c sym/sym_manager.cc -o .obj/sym/sym_manager.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c sym/sym_util.cc -o .obj/sym/sym_util.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c sym/sym_enums.cc -o .obj/sym/sym_enums.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c sym/sym_abstraction.cc -o .obj/sym/sym_abstraction.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c sym/sym_pdb.cc -o .obj/sym/sym_pdb.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c sym/sym_ph_minimization.cc -o .obj/sym/sym_ph_minimization.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c sym/sym_abs_minimization.cc -o .obj/sym/sym_abs_minimization.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c sym/sym_transition.cc -o .obj/sym/sym_transition.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c sym/sym_params.cc -o .obj/sym/sym_params.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c sym/sym_heuristic.cc -o .obj/sym/sym_heuristic.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c sym/sym_bucket.cc -o .obj/sym/sym_bucket.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c sym/sym_exploration.cc -o .obj/sym/sym_exploration.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c sym/sym_astar.cc -o .obj/sym/sym_astar.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c sym/sym_astar_closed.cc -o .obj/sym/sym_astar_closed.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c sym/sym_astar_open.cc -o .obj/sym/sym_astar_open.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c sym/sym_breadth_first_search.cc -o .obj/sym/sym_breadth_first_search.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c sym/sym_hnode.cc -o .obj/sym/sym_hnode.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c sym/sym_bdexp.cc -o .obj/sym/sym_bdexp.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c sym/sym_ph.cc -o .obj/sym/sym_ph.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c sym/sym_ph_pdbs.cc -o .obj/sym/sym_ph_pdbs.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c sym/sym_estimate.cc -o .obj/sym/sym_estimate.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c sym/sym_estimate_linear.cc -o .obj/sym/sym_estimate_linear.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c sym/sym_solution.cc -o .obj/sym/sym_solution.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c sym/spmas_heuristic.cc -o .obj/sym/spmas_heuristic.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c sym/test/sym_test.cc -o .obj/sym/test/sym_test.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c sym/test/sym_test_mutex.cc -o .obj/sym/test/sym_test_mutex.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c sym/sym_prune_heuristic.cc -o .obj/sym/sym_prune_heuristic.release.o
+g++ -Iext -g -m64 -Wall -W -Wno-sign-compare -Wno-deprecated -pedantic -Werror -Icudd-3.0.0/cudd -Icudd-3.0.0/cplusplus -O3 -DNDEBUG -fomit-frame-pointer -c sym/sym_uct_pdbs.cc -o .obj/sym/sym_uct_pdbs.release.o
+g++ -m64 -static -static-libgcc .obj/planner.release.o .obj/axioms.release.o .obj/causal_graph.release.o .obj/combining_evaluator.release.o .obj/domain_transition_graph.release.o .obj/eager_search.release.o .obj/enforced_hill_climbing_search.release.o .obj/equivalence_relation.release.o .obj/exact_timer.release.o .obj/g_evaluator.release.o .obj/globals.release.o .obj/heuristic.release.o .obj/prune_heuristic.release.o .obj/mutex_pruning.release.o .obj/int_packer.release.o .obj/ipc_max_heuristic.release.o .obj/iterated_search.release.o .obj/lazy_search.release.o .obj/legacy_causal_graph.release.o .obj/mutex_group.release.o .obj/max_evaluator.release.o .obj/operator.release.o .obj/operator_cost.release.o .obj/option_parser.release.o .obj/option_parser_util.release.o .obj/segmented_vector.release.o .obj/per_state_information.release.o .obj/pref_evaluator.release.o .obj/relaxation_heuristic.release.o .obj/rng.release.o .obj/scc.release.o .obj/search_engine.release.o .obj/search_node_info.release.o .obj/search_progress.release.o .obj/search_space.release.o .obj/state.release.o .obj/state_id.release.o .obj/state_registry.release.o .obj/successor_generator.release.o .obj/sum_evaluator.release.o .obj/timer.release.o .obj/utilities.release.o .obj/weighted_evaluator.release.o .obj/open_lists/alternation_open_list.release.o .obj/open_lists/open_list_buckets.release.o .obj/open_lists/pareto_open_list.release.o .obj/open_lists/standard_scalar_open_list.release.o .obj/open_lists/tiebreaking_open_list.release.o .obj/additive_heuristic.release.o .obj/blind_search_heuristic.release.o .obj/cea_heuristic.release.o .obj/cg_heuristic.release.o .obj/cg_cache.release.o .obj/ff_heuristic.release.o .obj/goal_count_heuristic.release.o .obj/hm_heuristic.release.o .obj/lm_cut_heuristic.release.o .obj/max_heuristic.release.o .obj/merge_and_shrink/abstraction.release.o .obj/merge_and_shrink/label.release.o .obj/merge_and_shrink/labels.release.o .obj/merge_and_shrink/label_reducer.release.o .obj/merge_and_shrink/merge_and_shrink_heuristic.release.o .obj/merge_and_shrink/merge_criterion.release.o .obj/merge_and_shrink/merge_dfp.release.o .obj/merge_and_shrink/merge_linear.release.o .obj/merge_and_shrink/merge_linear_criteria.release.o .obj/merge_and_shrink/merge_strategy.release.o .obj/merge_and_shrink/shrink_bisimulation.release.o .obj/merge_and_shrink/shrink_bucket_based.release.o .obj/merge_and_shrink/shrink_composite.release.o .obj/merge_and_shrink/shrink_fh.release.o .obj/merge_and_shrink/shrink_own_labels.release.o .obj/merge_and_shrink/shrink_random.release.o .obj/merge_and_shrink/shrink_strategy.release.o .obj/merge_and_shrink/variable_order_finder.release.o .obj/merge_and_shrink/simulation_relation.release.o .obj/merge_and_shrink/dominance_relation.release.o .obj/merge_and_shrink/dominance_pruning_simulation.release.o .obj/merge_and_shrink/alternative_label_relation.release.o .obj/merge_and_shrink/label_relation.release.o .obj/merge_and_shrink/label_relation_identity.release.o .obj/merge_and_shrink/label_relation_noop.release.o .obj/merge_and_shrink/labelled_transition_system.release.o .obj/merge_and_shrink/simulation_simple.release.o .obj/merge_and_shrink/simulation_identity.release.o .obj/merge_and_shrink/ld_simulation.release.o .obj/merge_and_shrink/variable_partition_finder.release.o .obj/merge_and_shrink/opt_order.release.o .obj/merge_and_shrink/abstraction_builder.release.o .obj/numeric_dominance/numeric_simulation_relation.release.o .obj/numeric_dominance/numeric_dominance_relation.release.o .obj/numeric_dominance/numeric_label_relation.release.o .obj/numeric_dominance/numeric_dominance_pruning.release.o .obj/numeric_dominance/int_epsilon.release.o .obj/numeric_dominance/dijkstra_search_epsilon.release.o .obj/numeric_dominance/tau_labels.release.o .obj/numeric_dominance/breadth_first_search.release.o .obj/landmarks/exploration.release.o .obj/landmarks/h_m_landmarks.release.o .obj/landmarks/lama_ff_synergy.release.o .obj/landmarks/landmark_cost_assignment.release.o .obj/landmarks/landmark_count_heuristic.release.o .obj/landmarks/landmark_status_manager.release.o .obj/landmarks/landmark_graph_merged.release.o .obj/landmarks/landmark_graph.release.o .obj/landmarks/landmark_factory.release.o .obj/landmarks/landmark_factory_rpg_exhaust.release.o .obj/landmarks/landmark_factory_rpg_sasp.release.o .obj/landmarks/landmark_factory_zhu_givan.release.o .obj/landmarks/util.release.o .obj/pdbs/canonical_pdbs_heuristic.release.o .obj/pdbs/dominance_pruner.release.o .obj/pdbs/match_tree.release.o .obj/pdbs/max_cliques.release.o .obj/pdbs/pattern_generation_edelkamp.release.o .obj/pdbs/pattern_generation_haslum.release.o .obj/pdbs/pdb_heuristic.release.o .obj/pdbs/util.release.o .obj/pdbs/zero_one_pdbs_heuristic.release.o .obj/sym/sym_controller.release.o .obj/sym/sym_engine.release.o .obj/sym/symba.release.o .obj/sym/symba_unsat.release.o .obj/sym/sym_variables.release.o .obj/sym/sym_manager.release.o .obj/sym/sym_util.release.o .obj/sym/sym_enums.release.o .obj/sym/sym_abstraction.release.o .obj/sym/sym_pdb.release.o .obj/sym/sym_ph_minimization.release.o .obj/sym/sym_abs_minimization.release.o .obj/sym/sym_transition.release.o .obj/sym/sym_params.release.o .obj/sym/sym_heuristic.release.o .obj/sym/sym_bucket.release.o .obj/sym/sym_exploration.release.o .obj/sym/sym_astar.release.o .obj/sym/sym_astar_closed.release.o .obj/sym/sym_astar_open.release.o .obj/sym/sym_breadth_first_search.release.o .obj/sym/sym_hnode.release.o .obj/sym/sym_bdexp.release.o .obj/sym/sym_ph.release.o .obj/sym/sym_ph_pdbs.release.o .obj/sym/sym_estimate.release.o .obj/sym/sym_estimate_linear.release.o .obj/sym/sym_solution.release.o .obj/sym/spmas_heuristic.release.o .obj/sym/test/sym_test.release.o .obj/sym/test/sym_test_mutex.release.o .obj/sym/sym_prune_heuristic.release.o .obj/sym/sym_uct_pdbs.release.o  -Wl,-Bstatic -lrt cudd-3.0.0/cudd/.libs/libcudd.a cudd-3.0.0/dddmp/.libs/libdddmp.a -o downward-release
+Get:1 http://archive.ubuntu.com/ubuntu kinetic InRelease [267 kB]
+Get:2 http://security.ubuntu.com/ubuntu kinetic-security InRelease [109 kB]
+Get:3 http://archive.ubuntu.com/ubuntu kinetic-updates InRelease [118 kB]
+Get:4 http://archive.ubuntu.com/ubuntu kinetic-backports InRelease [99.9 kB]
+Get:5 http://archive.ubuntu.com/ubuntu kinetic/universe amd64 Packages [17.9 MB]
+Get:6 http://security.ubuntu.com/ubuntu kinetic-security/multiverse amd64 Packages [6296 B]
+Get:7 http://security.ubuntu.com/ubuntu kinetic-security/restricted amd64 Packages [318 kB]
+Get:8 http://security.ubuntu.com/ubuntu kinetic-security/main amd64 Packages [327 kB]
+Get:9 http://security.ubuntu.com/ubuntu kinetic-security/universe amd64 Packages [190 kB]
+Get:10 http://archive.ubuntu.com/ubuntu kinetic/restricted amd64 Packages [151 kB]
+Get:11 http://archive.ubuntu.com/ubuntu kinetic/main amd64 Packages [1778 kB]
+Get:12 http://archive.ubuntu.com/ubuntu kinetic/multiverse amd64 Packages [289 kB]
+Get:13 http://archive.ubuntu.com/ubuntu kinetic-updates/restricted amd64 Packages [318 kB]
+Get:14 http://archive.ubuntu.com/ubuntu kinetic-updates/multiverse amd64 Packages [7021 B]
+Get:15 http://archive.ubuntu.com/ubuntu kinetic-updates/universe amd64 Packages [327 kB]
+Get:16 http://archive.ubuntu.com/ubuntu kinetic-updates/main amd64 Packages [455 kB]
+Get:17 http://archive.ubuntu.com/ubuntu kinetic-backports/universe amd64 Packages [4521 B]
+Fetched 22.7 MB in 8s (2899 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libexpat1 libgdbm6 libsqlite3-0 libssl3 pypy3-lib
+Suggested packages:
+  gdbm-l10n pypy3-doc pypy3-tk
+The following NEW packages will be installed:
+  libexpat1 libgdbm6 libsqlite3-0 libssl3 pypy3 pypy3-lib
+0 upgraded, 6 newly installed, 0 to remove and 0 not upgraded.
+Need to get 18.2 MB of archives.
+After this operation, 92.2 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu kinetic/universe amd64 pypy3-lib amd64 7.3.9+dfsg-4 [2746 kB]
+Get:2 http://archive.ubuntu.com/ubuntu kinetic-updates/main amd64 libexpat1 amd64 2.4.8-2ubuntu0.22.10.1 [84.3 kB]
+Get:3 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libgdbm6 amd64 1.23-1 [33.9 kB]
+Get:4 http://archive.ubuntu.com/ubuntu kinetic/main amd64 libsqlite3-0 amd64 3.39.3-1 [655 kB]
+Get:5 http://archive.ubuntu.com/ubuntu kinetic-updates/main amd64 libssl3 amd64 3.0.5-2ubuntu2.1 [1896 kB]
+Get:6 http://archive.ubuntu.com/ubuntu kinetic/universe amd64 pypy3 amd64 7.3.9+dfsg-4 [12.8 MB]
+Fetched 18.2 MB in 6s (2904 kB/s)
+Selecting previously unselected package pypy3-lib:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4399 files and directories currently installed.)
+Preparing to unpack .../pypy3-lib_7.3.9+dfsg-4_amd64.deb ...
+Unpacking pypy3-lib:amd64 (7.3.9+dfsg-4) ...
+Selecting previously unselected package libexpat1:amd64.
+Preparing to unpack .../libexpat1_2.4.8-2ubuntu0.22.10.1_amd64.deb ...
+Unpacking libexpat1:amd64 (2.4.8-2ubuntu0.22.10.1) ...
+Selecting previously unselected package libgdbm6:amd64.
+Preparing to unpack .../libgdbm6_1.23-1_amd64.deb ...
+Unpacking libgdbm6:amd64 (1.23-1) ...
+Selecting previously unselected package libsqlite3-0:amd64.
+Preparing to unpack .../libsqlite3-0_3.39.3-1_amd64.deb ...
+Unpacking libsqlite3-0:amd64 (3.39.3-1) ...
+Selecting previously unselected package libssl3:amd64.
+Preparing to unpack .../libssl3_3.0.5-2ubuntu2.1_amd64.deb ...
+Unpacking libssl3:amd64 (3.0.5-2ubuntu2.1) ...
+Setting up pypy3-lib:amd64 (7.3.9+dfsg-4) ...
+Setting up libexpat1:amd64 (2.4.8-2ubuntu0.22.10.1) ...
+Setting up libgdbm6:amd64 (1.23-1) ...
+Setting up libsqlite3-0:amd64 (3.39.3-1) ...
+Setting up libssl3:amd64 (3.0.5-2ubuntu2.1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 78.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.34.0 /usr/local/share/perl/5.34.0 /usr/lib/x86_64-linux-gnu/perl5/5.34 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.34 /usr/share/perl/5.34 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Selecting previously unselected package pypy3.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 5655 files and directories currently installed.)
+Preparing to unpack .../pypy3_7.3.9+dfsg-4_amd64.deb ...
+Unpacking pypy3 (7.3.9+dfsg-4) ...
+Setting up pypy3 (7.3.9+dfsg-4) ...
+running pypy3 rtupdate hooks for 7.3
+running pypy3 post-rtupdate hooks for 7.3
+Processing triggers for libc-bin (2.36-0ubuntu4) ...

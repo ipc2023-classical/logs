@@ -1,0 +1,278 @@
+INFO:    Starting build...
+Getting image source signatures
+Copying blob sha256:5c19388d38e1ea904672812dd0aac505220c9254e2621a1684e0fe29e2dba80e
+Copying config sha256:558d44db75c8f69c29f427cf88e6a71c39320f7607584baa6860f6e4f6121892
+Writing manifest to image destination
+Storing signatures
+2023/03/28 15:56:18  info unpack layer: sha256:5c19388d38e1ea904672812dd0aac505220c9254e2621a1684e0fe29e2dba80e
+INFO:    Copying src to 
+INFO:    Copying driver to 
+INFO:    Copying build_configs.py to 
+INFO:    Copying build.py to 
+INFO:    Copying fast-downward.py to 
+INFO:    Copying $IPC_THIRD_PARTY/cplex_studio2211.linux_x86_64.bin to cplex.bin
+INFO:    Copying Osi-0.108.6.tgz to 
+INFO:    Running post scriptlet
++ apt-get update
++ apt-get -y install --no-install-recommends cmake make g++ python3 default-jre-headless zlib1g-dev
+debconf: delaying package configuration, since apt-utils is not installed
++ rm -rf /builds
++ ./cplex.bin -DLICENSE_ACCEPTED=TRUE -i silent
++ export DOWNWARD_CPLEX_ROOT=/opt/ibm/ILOG/CPLEX_Studio2211/cplex/
++ tar xvzf Osi-0.108.6.tgz
++ cd Osi-0.108.6
++ export DOWNWARD_COIN_ROOT=/opt/coin/
++ ./configure CC=gcc CFLAGS=-pthread -Wno-long-long CXX=g++ CXXFLAGS=-pthread -Wno-long-long LDFLAGS=-L/opt/ibm/ILOG/CPLEX_Studio2211/cplex//lib/x86-64_linux/static_pic --without-lapack --enable-static=yes --prefix=/opt/coin/ --disable-bzlib --with-cplex-incdir=/opt/ibm/ILOG/CPLEX_Studio2211/cplex//include/ilcplex --with-cplex-lib=-lcplex -lm -ldl
+configure: WARNING: Failed to find a Fortran compiler!
+./configure: line 6415: /usr/bin/file: No such file or directory
+./configure: line 16348: unavailable: command not found
+configure: WARNING: Failed to find a Fortran compiler!
++ make
+In file included from CoinOslFactorization.cpp:12:
+CoinOslC.h:37:43: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+   37 | int c_ekkbtrn(register const EKKfactinfo *fact,
+      |                                           ^~~~
+CoinOslC.h:40:50: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+   40 | int c_ekkbtrn_ipivrw(register const EKKfactinfo *fact,
+      |                                                  ^~~~
+CoinOslC.h:44:47: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+   44 | int c_ekketsj(register /*const*/ EKKfactinfo *fact,
+      |                                               ^~~~
+CoinOslC.h:49:43: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+   49 | int c_ekkftrn(register const EKKfactinfo *fact,
+      |                                           ^~~~
+CoinOslC.h:53:40: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+   53 | int c_ekkftrn_ft(register EKKfactinfo *fact,
+      |                                        ^~~~
+CoinOslC.h:55:39: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+   55 | void c_ekkftrn2(register EKKfactinfo *fact, double *dwork1,
+      |                                       ^~~~
+CoinOslC.h:59:37: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+   59 | int c_ekklfct(register EKKfactinfo *fact);
+      |                                     ^~~~
+CoinOslC.h:60:43: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+   60 | int c_ekkslcf(register const EKKfactinfo *fact);
+      |                                           ^~~~
+In file included from CoinOslFactorization2.cpp:17:
+CoinOslC.h:37:43: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+   37 | int c_ekkbtrn(register const EKKfactinfo *fact,
+      |                                           ^~~~
+CoinOslC.h:40:50: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+   40 | int c_ekkbtrn_ipivrw(register const EKKfactinfo *fact,
+      |                                                  ^~~~
+CoinOslC.h:44:47: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+   44 | int c_ekketsj(register /*const*/ EKKfactinfo *fact,
+      |                                               ^~~~
+CoinOslC.h:49:43: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+   49 | int c_ekkftrn(register const EKKfactinfo *fact,
+      |                                           ^~~~
+CoinOslC.h:53:40: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+   53 | int c_ekkftrn_ft(register EKKfactinfo *fact,
+      |                                        ^~~~
+CoinOslC.h:55:39: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+   55 | void c_ekkftrn2(register EKKfactinfo *fact, double *dwork1,
+      |                                       ^~~~
+CoinOslC.h:59:37: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+   59 | int c_ekklfct(register EKKfactinfo *fact);
+      |                                     ^~~~
+CoinOslC.h:60:43: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+   60 | int c_ekkslcf(register const EKKfactinfo *fact);
+      |                                           ^~~~
+CoinOslFactorization2.cpp:32:81: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+   32 | static int c_ekkshfpo_scan2zero(COIN_REGISTER const EKKfactinfo *COIN_RESTRICT2 fact, const int *COIN_RESTRICT mpermu,
+      |                                                                                 ^~~~
+CoinOslFactorization2.cpp:286:70: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+  286 | static int c_ekkscmv(COIN_REGISTER const EKKfactinfo *COIN_RESTRICT2 fact, int n, double *COIN_RESTRICT dwork, int *COIN_RESTRICT mptr,
+      |                                                                      ^~~~
+CoinOslFactorization2.cpp:565:72: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+  565 | static void c_ekkbtj4p(COIN_REGISTER const EKKfactinfo *COIN_RESTRICT2 fact,
+      |                                                                        ^~~~
+CoinOslFactorization2.cpp:1209:64: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+ 1209 | int c_ekkbtrn(COIN_REGISTER3 const EKKfactinfo *COIN_RESTRICT2 fact,
+      |                                                                ^~~~
+CoinOslFactorization2.cpp:1302:76: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+ 1302 | static int c_ekkbtrn0_new(COIN_REGISTER3 const EKKfactinfo *COIN_RESTRICT2 fact,
+      |                                                                            ^~~~
+CoinOslFactorization2.cpp:1439:75: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+ 1439 | static int c_ekkbtrn_mpt(COIN_REGISTER3 const EKKfactinfo *COIN_RESTRICT2 fact,
+      |                                                                           ^~~~
+CoinOslFactorization2.cpp:1517:71: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+ 1517 | int c_ekkbtrn_ipivrw(COIN_REGISTER3 const EKKfactinfo *COIN_RESTRICT2 fact,
+      |                                                                       ^~~~
+CoinOslFactorization2.cpp:1717:65: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+ 1717 | static void c_ekketju(COIN_REGISTER EKKfactinfo *COIN_RESTRICT2 fact, double *dluval, int *hrowi,
+      |                                                                 ^~~~
+CoinOslFactorization2.cpp:3332:72: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+ 3332 | static int c_ekkftjup(COIN_REGISTER3 const EKKfactinfo *COIN_RESTRICT2 fact,
+      |                                                                        ^~~~
+CoinOslFactorization2.cpp:3599:77: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+ 3599 | static int c_ekkftjup_pack(COIN_REGISTER3 const EKKfactinfo *COIN_RESTRICT2 fact,
+      |                                                                             ^~~~
+CoinOslFactorization2.cpp:3788:63: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+ 3788 | int c_ekkftrn(COIN_REGISTER const EKKfactinfo *COIN_RESTRICT2 fact,
+      |                                                               ^~~~
+CoinOslFactorization2.cpp:3815:60: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+ 3815 | int c_ekkftrn_ft(COIN_REGISTER EKKfactinfo *COIN_RESTRICT2 fact,
+      |                                                            ^~~~
+CoinOslFactorization2.cpp:3989:59: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+ 3989 | void c_ekkftrn2(COIN_REGISTER EKKfactinfo *COIN_RESTRICT2 fact, double *COIN_RESTRICT dwork1,
+      |                                                           ^~~~
+In file included from CoinOslFactorization3.cpp:11:
+CoinOslC.h:37:43: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+   37 | int c_ekkbtrn(register const EKKfactinfo *fact,
+      |                                           ^~~~
+CoinOslC.h:40:50: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+   40 | int c_ekkbtrn_ipivrw(register const EKKfactinfo *fact,
+      |                                                  ^~~~
+CoinOslC.h:44:47: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+   44 | int c_ekketsj(register /*const*/ EKKfactinfo *fact,
+      |                                               ^~~~
+CoinOslC.h:49:43: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+   49 | int c_ekkftrn(register const EKKfactinfo *fact,
+      |                                           ^~~~
+CoinOslC.h:53:40: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+   53 | int c_ekkftrn_ft(register EKKfactinfo *fact,
+      |                                        ^~~~
+CoinOslC.h:55:39: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+   55 | void c_ekkftrn2(register EKKfactinfo *fact, double *dwork1,
+      |                                       ^~~~
+CoinOslC.h:59:37: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+   59 | int c_ekklfct(register EKKfactinfo *fact);
+      |                                     ^~~~
+CoinOslC.h:60:43: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+   60 | int c_ekkslcf(register const EKKfactinfo *fact);
+      |                                           ^~~~
+CoinOslFactorization3.cpp:1365:37: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+ 1365 | int c_ekklfct(register EKKfactinfo *fact)
+      |                                     ^~~~
+CoinOslFactorization3.cpp:2594:43: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+ 2594 | int c_ekkslcf(register const EKKfactinfo *fact)
+      |                                           ^~~~
+CoinLpIO.cpp: In member function 'void CoinLpIO::readLp()':
+CoinLpIO.cpp:2412:72: warning: '%s' directive writing up to 1023 bytes into a region of size 475 [-Wformat-overflow=]
+ 2412 |             sprintf(printBuffer, "### CoinLpIO::readLp(): bad SOS item %s", buff);
+      |                                                                        ^~   ~~~~
+CoinLpIO.cpp:2412:20: note: 'sprintf' output between 38 and 1061 bytes into a destination of size 512
+ 2412 |             sprintf(printBuffer, "### CoinLpIO::readLp(): bad SOS item %s", buff);
+      |             ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CoinLpIO.cpp:2391:76: warning: '%s' directive writing up to 1023 bytes into a region of size 479 [-Wformat-overflow=]
+ 2391 |                     sprintf(printBuffer, "### CoinLpIO::readLp(): Variable %s not found or no weight",
+      |                                                                            ^~
+ 2392 |                       buff);
+      |                       ~~~~                                                  
+CoinLpIO.cpp:2391:28: note: 'sprintf' output between 57 and 1080 bytes into a destination of size 512
+ 2391 |                     sprintf(printBuffer, "### CoinLpIO::readLp(): Variable %s not found or no weight",
+      |                     ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2392 |                       buff);
+      |                       ~~~~~ 
+CoinLpIO.cpp:2252:82: warning: '%s' directive writing up to 1023 bytes into a region of size 463 [-Wformat-overflow=]
+ 2252 |           sprintf(printBuffer, "### CoinLpIO::readLp(): Semi-continuous variable %s does not appear in objective function or constraints", buff);
+      |                                                                                  ^~                                                        ~~~~
+CoinLpIO.cpp:2252:18: note: 'sprintf' output between 103 and 1126 bytes into a destination of size 512
+ 2252 |           sprintf(printBuffer, "### CoinLpIO::readLp(): Semi-continuous variable %s does not appear in objective function or constraints", buff);
+      |           ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CoinLpIO.cpp:2212:73: warning: '%s' directive writing up to 1023 bytes into a region of size 472 [-Wformat-overflow=]
+ 2212 |           sprintf(printBuffer, "### CoinLpIO::readLp(): Binary variable %s does not appear in objective function or constraints", buff);
+      |                                                                         ^~                                                        ~~~~
+CoinLpIO.cpp:2212:18: note: 'sprintf' output between 94 and 1117 bytes into a destination of size 512
+ 2212 |           sprintf(printBuffer, "### CoinLpIO::readLp(): Binary variable %s does not appear in objective function or constraints", buff);
+      |           ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CoinLpIO.cpp:2174:74: warning: '%s' directive writing up to 1023 bytes into a region of size 471 [-Wformat-overflow=]
+ 2174 |           sprintf(printBuffer, "### CoinLpIO::readLp(): Integer variable %s does not appear in objective function or constraints", buff);
+      |                                                                          ^~                                                        ~~~~
+CoinLpIO.cpp:2174:18: note: 'sprintf' output between 95 and 1118 bytes into a destination of size 512
+ 2174 |           sprintf(printBuffer, "### CoinLpIO::readLp(): Integer variable %s does not appear in objective function or constraints", buff);
+      |           ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CoinLpIO.cpp:2053:66: warning: '%s' directive writing up to 1023 bytes into a region of size 479 [-Wformat-overflow=]
+ 2053 |           sprintf(printBuffer, "### CoinLpIO::readLp(): Variable %s does not appear in objective function or constraints", buff);
+      |                                                                  ^~                                                        ~~~~
+CoinLpIO.cpp:2053:18: note: 'sprintf' output between 87 and 1110 bytes into a destination of size 512
+ 2053 |           sprintf(printBuffer, "### CoinLpIO::readLp(): Variable %s does not appear in objective function or constraints", buff);
+      |           ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+OsiSolverInterfaceTest.cpp: In function 'bool {anonymous}::test16SebastianNowozin(OsiSolverInterface*)':
+OsiSolverInterfaceTest.cpp:1321:17: warning: 'std::binder2nd<_Operation> std::bind2nd(const _Operation&, const _Tp&) [with _Operation = plus<double>; _Tp = double]' is deprecated: use 'std::bind' instead [-Wdeprecated-declarations]
+ 1321 |     std::bind2nd(std::plus< double >(), 0.15));
+      |     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/12/bits/stl_function.h:1438,
+                 from /usr/include/c++/12/bits/refwrap.h:39,
+                 from /usr/include/c++/12/vector:66,
+                 from OsiSolverInterfaceTest.cpp:57:
+/usr/include/c++/12/backward/binders.h:172:5: note: declared here
+  172 |     bind2nd(const _Operation& __fn, const _Tp& __x)
+      |     ^~~~~~~
+ar: `u' modifier ignored since `D' is the default (see `U')
+OsiCpxSolverInterface.cpp: In function 'void OsiCpxMessageCallbackResultLog(void*, const char*)':
+OsiCpxSolverInterface.cpp:125:11: warning: format not a string literal and no format arguments [-Wformat-security]
+  125 |     printf(msg);
+      |     ~~~~~~^~~~~
+OsiCpxSolverInterface.cpp: In function 'void OsiCpxMessageCallbackWarning(void*, const char*)':
+OsiCpxSolverInterface.cpp:135:11: warning: format not a string literal and no format arguments [-Wformat-security]
+  135 |     printf(msg);
+      |     ~~~~~~^~~~~
+OsiCpxSolverInterface.cpp: In function 'void OsiCpxMessageCallbackError(void*, const char*)':
+OsiCpxSolverInterface.cpp:144:12: warning: format not a string literal and no format arguments [-Wformat-security]
+  144 |     fprintf(stderr, msg);
+      |     ~~~~~~~^~~~~~~~~~~~~
+OsiCpxSolverInterface.cpp: In member function 'virtual void OsiCpxSolverInterface::setColSetBounds(const int*, const int*, const double*)':
+OsiCpxSolverInterface.cpp:1737:24: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+ 1737 |     register const int j = 2 * i;
+      |                        ^
+ar: `u' modifier ignored since `D' is the default (see `U')
++ make install
+libtool: install: warning: relinking `libOsi.la'
+libtool: install: warning: relinking `libOsiCommonTests.la'
+libtool: install: warning: relinking `libOsiCpx.la'
++ cd ..
++ ./build.py -j4
+/src/search/operator_counting/pho_abstraction_constraints.cc: In constructor ‘operator_counting::SenseEntry::SenseEntry(std::vector<int>&&, std::vector<double>&&, std::vector<double>&&, std::vector<double>&&, double)’:
+/src/search/operator_counting/pho_abstraction_constraints.cc:25:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   25 |     for (int i = 0; i < current.size(); i++) {
+      |                     ~~^~~~~~~~~~~~~~~~
+/src/search/operator_counting/pho_abstraction_constraints.cc: In function ‘std::ostream& operator_counting::operator<<(std::ostream&, const SenseInterval&)’:
+/src/search/operator_counting/pho_abstraction_constraints.cc:101:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  101 | }
+      | ^
+/src/search/operator_counting/pho_abstraction_constraints.cc: In member function ‘virtual bool operator_counting::PhOAbstractionConstraints::update_constraints(const State&, lp::LPSolver&)’:
+/src/search/operator_counting/pho_abstraction_constraints.cc:266:18: warning: unused parameter ‘state’ [-Wunused-parameter]
+  266 |     const State &state, lp::LPSolver &lp_solver) {
+      |     ~~~~~~~~~~~~~^~~~~
+/src/search/operator_counting/pho_abstraction_constraints.cc: In member function ‘void operator_counting::PhOAbstractionConstraints::set_distance_tuple(const State&)’:
+/src/search/operator_counting/pho_abstraction_constraints.cc:309:65: warning: unused parameter ‘state’ [-Wunused-parameter]
+  309 | void PhOAbstractionConstraints::set_distance_tuple(const State &state) {
+      |                                                    ~~~~~~~~~~~~~^~~~~
+/src/search/operator_counting/pho_abstraction_constraints.cc: In member function ‘virtual void operator_counting::PhOAbstractionConstraints::cache_heuristic(const State&, lp::LPSolver&, double)’:
+/src/search/operator_counting/pho_abstraction_constraints.cc:373:62: warning: unused parameter ‘state’ [-Wunused-parameter]
+  373 | void PhOAbstractionConstraints::cache_heuristic(const State &state, lp::LPSolver &lp_solver, double h) {
+      |                                                 ~~~~~~~~~~~~~^~~~~
+/src/search/operator_counting/pho_abstraction_constraints.cc: In member function ‘virtual int operator_counting::PhOAbstractionConstraints::get_cached_heuristic_value(const State&)’:
+/src/search/operator_counting/pho_abstraction_constraints.cc:389:72: warning: unused parameter ‘state’ [-Wunused-parameter]
+  389 | int PhOAbstractionConstraints::get_cached_heuristic_value(const State &state) {
+      |                                                           ~~~~~~~~~~~~~^~~~~
+/src/search/operator_counting/constraint_generator.cc: In member function ‘virtual void operator_counting::ConstraintGenerator::cache_heuristic(const State&, lp::LPSolver&, double)’:
+/src/search/operator_counting/constraint_generator.cc:13:81: warning: unused parameter ‘h’ [-Wunused-parameter]
+   13 | void ConstraintGenerator::cache_heuristic(const State &, lp::LPSolver &, double h) {
+      |                                                                          ~~~~~~~^
++ strip --strip-all builds/release/bin/downward builds/release/bin/preprocess-h2
+Getting image source signatures
+Copying blob sha256:5c19388d38e1ea904672812dd0aac505220c9254e2621a1684e0fe29e2dba80e
+Copying config sha256:558d44db75c8f69c29f427cf88e6a71c39320f7607584baa6860f6e4f6121892
+Writing manifest to image destination
+Storing signatures
+2023/03/28 16:08:30  info unpack layer: sha256:5c19388d38e1ea904672812dd0aac505220c9254e2621a1684e0fe29e2dba80e
+INFO:    Copying builds/release/bin/ to 
+INFO:    Copying /opt/ibm/ILOG/CPLEX_Studio2211/cplex/ to 
+INFO:    Copying /opt/coin/ to 
+INFO:    Copying driver to 
+INFO:    Copying fast-downward.py to 
+INFO:    Running post scriptlet
++ apt-get update
++ apt-get -y install --no-install-recommends python3 zlib1g-dev
+debconf: delaying package configuration, since apt-utils is not installed
++ apt-get clean
++ rm -rf /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic-backports_InRelease /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic-backports_universe_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic-updates_InRelease /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic-updates_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic-updates_multiverse_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic-updates_restricted_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic-updates_universe_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic_InRelease /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic_multiverse_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic_restricted_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic_universe_binary-amd64_Packages.lz4 /var/lib/apt/lists/auxfiles /var/lib/apt/lists/lock /var/lib/apt/lists/partial /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_kinetic-security_InRelease /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_kinetic-security_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_kinetic-security_multiverse_binary-amd64_Packages.lz4 /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_kinetic-security_restricted_binary-amd64_Packages.lz4 /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_kinetic-security_universe_binary-amd64_Packages.lz4
+INFO:    Adding labels
+INFO:    Adding runscript
+INFO:    Creating SIF file...
+INFO:    Build complete: /tmp/dofri.img
