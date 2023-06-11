@@ -1,0 +1,2273 @@
+INFO:    Starting build...
+Getting image source signatures
+Copying blob sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+Copying config sha256:f9a80a55f492e823bf5d51f1bd5f87ea3eed1cb31788686aa99a2fb61a27af6a
+Writing manifest to image destination
+Storing signatures
+2023/06/11 10:41:22  info unpack layer: sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+INFO:    Copying planners/ipc2018-opt-scorpion to /planner/planners/ipc2018-opt-scorpion
+INFO:    Running post scriptlet
++ apt-get update
++ apt-get -y install --no-install-recommends cmake g++ make python
+debconf: delaying package configuration, since apt-utils is not installed
++ cd /planner/planners/ipc2018-opt-scorpion
++ ./build.py release64
++ mkdir -p builds/h2-mutexes/
++ cd builds/h2-mutexes/
++ cmake ../../h2-mutexes/
++ make -j4
++ strip --strip-all /planner/planners/ipc2018-opt-scorpion/builds/release64/bin/downward /planner/planners/ipc2018-opt-scorpion/builds/h2-mutexes/bin/preprocess
+Getting image source signatures
+Copying blob sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+Copying config sha256:f9a80a55f492e823bf5d51f1bd5f87ea3eed1cb31788686aa99a2fb61a27af6a
+Writing manifest to image destination
+Storing signatures
+2023/06/11 10:44:19  info unpack layer: sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+INFO:    Copying planners/ipc2018-saarplan to /planner/planners/ipc2018-saarplan
+INFO:    Running post scriptlet
++ apt-get update
++ apt-get -y install python cmake make libboost-dev clang
+debconf: delaying package configuration, since apt-utils is not installed
++ cd /planner/planners/ipc2018-saarplan/fast-downward-conjunctions
++ ./build.py release64 -j4
++ strip --strip-all /planner/planners/ipc2018-saarplan/fast-downward-conjunctions/builds/release64/bin/preprocess
++ strip --strip-all /planner/planners/ipc2018-saarplan/fast-downward-conjunctions/builds/release64/bin/downward
+Getting image source signatures
+Copying blob sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+Copying config sha256:f9a80a55f492e823bf5d51f1bd5f87ea3eed1cb31788686aa99a2fb61a27af6a
+Writing manifest to image destination
+Storing signatures
+2023/06/11 10:47:06  info unpack layer: sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+INFO:    Copying planners/ipc2018-opt-complementary2 to /planner/planners/ipc2018-opt-complementary2
+INFO:    Running post scriptlet
++ apt-get update
++ apt-get -y install --no-install-recommends cmake g++ make python autotools-dev automake gcc g++-multilib
+debconf: delaying package configuration, since apt-utils is not installed
++ cd /planner/planners/ipc2018-opt-complementary2
++ ./build.py release64 -j8
+libcudd 64-bits build
+configure: WARNING: Doxygen not found - continuing without Doxygen support
+configure: WARNING: pdflatex not found - unable to compile manual to PDF
+configure: WARNING: makeindex not found - unable to compile manual to PDF
+make[3]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+cudd/cuddWindow.c: In function 'ddPermuteWindow3':
+cudd/cuddWindow.c:386:18: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case BCA: if (!cuddSwapInPlace(table,y,z)) return(0);
+                  ^
+cudd/cuddWindow.c:387:5: note: here
+     case CBA: if (!cuddSwapInPlace(table,x,y)) return(0);
+     ^~~~
+cudd/cuddWindow.c:387:18: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case CBA: if (!cuddSwapInPlace(table,x,y)) return(0);
+                  ^
+cudd/cuddWindow.c:388:5: note: here
+     case ABC: if (!cuddSwapInPlace(table,y,z)) return(0);
+     ^~~~
+cudd/cuddWindow.c:390:18: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case BAC: if (!cuddSwapInPlace(table,y,z)) return(0);
+                  ^
+cudd/cuddWindow.c:391:5: note: here
+     case CAB: if (!cuddSwapInPlace(table,x,y)) return(0);
+     ^~~~
+cudd/cuddWindow.c: In function 'ddPermuteWindow4':
+cudd/cuddWindow.c:759:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case DBCA: if (!cuddSwapInPlace(table,y,z)) return(0);
+                   ^
+cudd/cuddWindow.c:760:5: note: here
+     case BDCA: if (!cuddSwapInPlace(table,x,y)) return(0);
+     ^~~~
+cudd/cuddWindow.c:760:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case BDCA: if (!cuddSwapInPlace(table,x,y)) return(0);
+                   ^
+cudd/cuddWindow.c:761:5: note: here
+     case CDBA: if (!cuddSwapInPlace(table,w,x)) return(0);
+     ^~~~
+cudd/cuddWindow.c:761:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case CDBA: if (!cuddSwapInPlace(table,w,x)) return(0);
+                   ^
+cudd/cuddWindow.c:762:5: note: here
+     case ADBC: if (!cuddSwapInPlace(table,y,z)) return(0);
+     ^~~~
+cudd/cuddWindow.c:762:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case ADBC: if (!cuddSwapInPlace(table,y,z)) return(0);
+                   ^
+cudd/cuddWindow.c:763:5: note: here
+     case ABDC: if (!cuddSwapInPlace(table,x,y)) return(0);
+     ^~~~
+cudd/cuddWindow.c:763:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case ABDC: if (!cuddSwapInPlace(table,x,y)) return(0);
+                   ^
+cudd/cuddWindow.c:764:5: note: here
+     case ACDB: if (!cuddSwapInPlace(table,y,z)) return(0);
+     ^~~~
+cudd/cuddWindow.c:766:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case DCBA: if (!cuddSwapInPlace(table,y,z)) return(0);
+                   ^
+cudd/cuddWindow.c:767:5: note: here
+     case BCDA: if (!cuddSwapInPlace(table,x,y)) return(0);
+     ^~~~
+cudd/cuddWindow.c:767:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case BCDA: if (!cuddSwapInPlace(table,x,y)) return(0);
+                   ^
+cudd/cuddWindow.c:768:5: note: here
+     case CBDA: if (!cuddSwapInPlace(table,w,x)) return(0);
+     ^~~~
+cudd/cuddWindow.c:772:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case DBAC: if (!cuddSwapInPlace(table,x,y)) return(0);
+                   ^
+cudd/cuddWindow.c:773:5: note: here
+     case DCAB: if (!cuddSwapInPlace(table,w,x)) return(0);
+     ^~~~
+cudd/cuddWindow.c:773:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case DCAB: if (!cuddSwapInPlace(table,w,x)) return(0);
+                   ^
+cudd/cuddWindow.c:774:5: note: here
+     case DACB: if (!cuddSwapInPlace(table,y,z)) return(0);
+     ^~~~
+cudd/cuddWindow.c:774:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case DACB: if (!cuddSwapInPlace(table,y,z)) return(0);
+                   ^
+cudd/cuddWindow.c:775:5: note: here
+     case BACD: if (!cuddSwapInPlace(table,x,y)) return(0);
+     ^~~~
+cudd/cuddWindow.c:775:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case BACD: if (!cuddSwapInPlace(table,x,y)) return(0);
+                   ^
+cudd/cuddWindow.c:776:5: note: here
+     case CABD: if (!cuddSwapInPlace(table,w,x)) return(0);
+     ^~~~
+cudd/cuddWindow.c:778:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case DABC: if (!cuddSwapInPlace(table,y,z)) return(0);
+                   ^
+cudd/cuddWindow.c:779:5: note: here
+     case BADC: if (!cuddSwapInPlace(table,x,y)) return(0);
+     ^~~~
+cudd/cuddWindow.c:779:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case BADC: if (!cuddSwapInPlace(table,x,y)) return(0);
+                   ^
+cudd/cuddWindow.c:780:5: note: here
+     case CADB: if (!cuddSwapInPlace(table,w,x)) return(0);
+     ^~~~
+cudd/cuddWindow.c:783:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case BDAC: if (!cuddSwapInPlace(table,x,y)) return(0);
+                   ^
+cudd/cuddWindow.c:784:5: note: here
+     case CDAB: if (!cuddSwapInPlace(table,w,x)) return(0);
+     ^~~~
+cudd/cuddWindow.c:784:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case CDAB: if (!cuddSwapInPlace(table,w,x)) return(0);
+                   ^
+cudd/cuddWindow.c:785:5: note: here
+     case ADCB: if (!cuddSwapInPlace(table,y,z)) return(0);
+     ^~~~
+cudd/cuddWindow.c:785:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case ADCB: if (!cuddSwapInPlace(table,y,z)) return(0);
+                   ^
+cudd/cuddWindow.c:786:5: note: here
+     case ABCD: if (!cuddSwapInPlace(table,x,y)) return(0);
+     ^~~~
+cudd/cuddWindow.c:788:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case BCAD: if (!cuddSwapInPlace(table,x,y)) return(0);
+                   ^
+cudd/cuddWindow.c:789:5: note: here
+     case CBAD: if (!cuddSwapInPlace(table,w,x)) return(0);
+     ^~~~
+In file included from /usr/include/assert.h:35:0,
+                 from util/util.h:70,
+                 from util/cpu_stats.c:66:
+/usr/include/features.h:184:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+ # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+   ^~~~~~~
+In file included from dddmp/dddmpInt.h:39:0,
+                 from dddmp/dddmpStoreCnf.c:29:
+dddmp/dddmpStoreCnf.c: In function 'DddmpCuddBddArrayStoreCnf':
+dddmp/dddmp.h:238:12: warning: this statement may fall through [-Wimplicit-fallthrough=]
+         if ((expr) == 1) { \
+            ^
+dddmp/dddmpStoreCnf.c:599:7: note: in expansion of macro 'Dddmp_Warning'
+       Dddmp_Warning (1, "Wrong DDDMP Store Mode. Force DDDMP_MODE_BEST.");
+       ^~~~~~~~~~~~~
+dddmp/dddmpStoreCnf.c:600:5: note: here
+     case DDDMP_CNF_MODE_BEST:
+     ^~~~
+In file included from dddmp/dddmpInt.h:39:0,
+                 from dddmp/dddmpStoreCnf.c:29:
+dddmp/dddmp.h:238:12: warning: this statement may fall through [-Wimplicit-fallthrough=]
+         if ((expr) == 1) { \
+            ^
+dddmp/dddmpStoreCnf.c:645:7: note: in expansion of macro 'Dddmp_Warning'
+       Dddmp_Warning (1, "Wrong DDDMP Store Mode. Force DDDMP_MODE_BEST.");
+       ^~~~~~~~~~~~~
+dddmp/dddmpStoreCnf.c:646:5: note: here
+     case DDDMP_CNF_MODE_BEST:
+     ^~~~
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
++ strip --strip-all /planner/planners/ipc2018-opt-complementary2/builds/release64/bin/downward
+Getting image source signatures
+Copying blob sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+Copying config sha256:f9a80a55f492e823bf5d51f1bd5f87ea3eed1cb31788686aa99a2fb61a27af6a
+Writing manifest to image destination
+Storing signatures
+2023/06/11 10:51:07  info unpack layer: sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+INFO:    Copying planners/ipc2018-opt-delfi to /planner/planners/ipc2018-opt-delfi
+INFO:    Running post scriptlet
++ apt-get update
++ apt-get -y install --no-install-recommends python cmake g++ make
+debconf: delaying package configuration, since apt-utils is not installed
++ cd /planner/planners/ipc2018-opt-delfi
++ ./build.py release64 -j4
++ strip --strip-all /planner/planners/ipc2018-opt-delfi/builds/release64/bin/downward /planner/planners/ipc2018-opt-delfi/builds/release64/bin/preprocess
+Getting image source signatures
+Copying blob sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+Copying config sha256:f9a80a55f492e823bf5d51f1bd5f87ea3eed1cb31788686aa99a2fb61a27af6a
+Writing manifest to image destination
+Storing signatures
+2023/06/11 10:54:36  info unpack layer: sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+INFO:    Copying planners/ipc2018-symple1 to /planner/planners/ipc2018-symple1
+INFO:    Running post scriptlet
++ apt-get update
++ apt-get -y install --no-install-recommends cmake g++ make python automake autoconf libtool flex bison
+debconf: delaying package configuration, since apt-utils is not installed
++ cd /planner/planners/ipc2018-symple1
++ ./build -j4
+In file included from planner.cc:17:0:
+h2_mutexes.h: In member function 'bool H2Mutexes::are_mutex(int, int, int, int) const':
+h2_mutexes.h:76:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   if (val1 == -1 || val2 == -1)
+   ^~
+h2_mutexes.h:79:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (var1 == var2) // same variable: mutex iff different value
+     ^~
+In file included from operator.cc:4:0:
+h2_mutexes.h: In member function 'bool H2Mutexes::are_mutex(int, int, int, int) const':
+h2_mutexes.h:76:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   if (val1 == -1 || val2 == -1)
+   ^~
+h2_mutexes.h:79:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (var1 == var2) // same variable: mutex iff different value
+     ^~
+In file included from h2_mutexes.cc:3:0:
+h2_mutexes.h: In member function 'bool H2Mutexes::are_mutex(int, int, int, int) const':
+h2_mutexes.h:76:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   if (val1 == -1 || val2 == -1)
+   ^~
+h2_mutexes.h:79:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (var1 == var2) // same variable: mutex iff different value
+     ^~
+autoreconf: Entering directory `.'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal --force -I m4
+autoreconf: configure.ac: tracing
+autoreconf: running: libtoolize --copy --force
+autoreconf: running: /usr/bin/autoconf --force
+autoreconf: running: /usr/bin/autoheader --force
+autoreconf: running: automake --add-missing --copy --force-missing
+configure.ac:22: installing './ar-lib'
+configure.ac:20: installing './compile'
+configure.ac:23: installing './config.guess'
+configure.ac:23: installing './config.sub'
+configure.ac:9: installing './install-sh'
+configure.ac:9: installing './missing'
+examples/Makefile.am: installing './depcomp'
+parallel-tests: installing './test-driver'
+autoreconf: Leaving directory `.'
+global_rebuilder.cc: In destructor 'MEDDLY::global_rebuilder::~global_rebuilder()':
+global_rebuilder.cc:45:10: warning: deleting object of abstract class type 'MEDDLY::global_rebuilder::SignatureGenerator' which has non-virtual destructor will cause undefined behavior [-Wdelete-non-virtual-dtor]
+   delete _sg;
+          ^~~
+global_rebuilder.cc: In member function 'int MEDDLY::global_rebuilder::check_dependency(MEDDLY::node_handle, int) const':
+global_rebuilder.cc:53:7: warning: unused variable 'level' [-Wunused-variable]
+   int level = target_level;
+       ^~~~~
+global_rebuilder.cc: In member function 'MEDDLY::node_handle MEDDLY::global_rebuilder::transform(MEDDLY::node_handle, int, std::vector<int>&)':
+global_rebuilder.cc:156:7: warning: unused variable 'level' [-Wunused-variable]
+   int level = target_level;
+       ^~~~~
+global_rebuilder.cc: In member function 'bool MEDDLY::global_rebuilder::restrict_exist(MEDDLY::node_handle, const std::vector<int>&, int, MEDDLY::node_handle&)':
+global_rebuilder.cc:328:13: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (start == pa.size()) {
+       ~~~~~~^~~~~~~~~~~~
+forests/mtmxd.cc: In member function 'void MEDDLY::mtmxd_forest::swapAdjacentVariablesByVarSwap(int)':
+forests/mtmxd.cc:65:7: warning: unused variable 'lsize' [-Wunused-variable]
+   int lsize = getVariableSize(lvar);
+       ^~~~~
+forests/mtmxd.cc: In member function 'virtual void MEDDLY::mtmxd_forest::dynamicReorderVariables(int, int)':
+forests/mtmxd.cc:487:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < vars.size(); i++) {
+                   ~~^~~~~~~~~~~~~
+forests/mtmxd.cc:490:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int j = i + 1; j < vars.size(); j++){
+                         ~~^~~~~~~~~~~~~
+forests/mtmxd.cc: In member function 'void MEDDLY::mtmxd_forest::sifting(int, int, int)':
+forests/mtmxd.cc:512:7: warning: unused variable 'num' [-Wunused-variable]
+   int num = getCurrentNumNodes();
+       ^~~
+operations/prepostimage.cc: In instantiation of 'MEDDLY::node_handle MEDDLY::mtvect_mtmatr<RTYPE>::processTerminals(MEDDLY::node_handle, MEDDLY::node_handle) [with RTYPE = bool; MEDDLY::node_handle = int]':
+operations/prepostimage.cc:749:1:   required from here
+operations/prepostimage.cc:483:23: warning: '*' in boolean context, suggest '&&' instead [-Wint-in-bool-context]
+         rval = mddval * mxdval;
+                ~~~~~~~^~~~~~~~
+operations/prepostimage.cc: In instantiation of 'MEDDLY::node_handle MEDDLY::mtmatr_mtvect<RTYPE>::processTerminals(MEDDLY::node_handle, MEDDLY::node_handle) [with RTYPE = bool; MEDDLY::node_handle = int]':
+operations/prepostimage.cc:749:1:   required from here
+operations/prepostimage.cc:446:23: warning: '*' in boolean context, suggest '&&' instead [-Wint-in-bool-context]
+         rval = mddval * mxdval;
+                ~~~~~~~^~~~~~~~
+operations/reach_dfs.cc: In member function 'void MEDDLY::common_dfs_mt::splitMxd(MEDDLY::node_handle)':
+operations/reach_dfs.cc:520:43: warning: 'maxDiag' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     splits[level] = mxdDifference->compute(mxd, maxDiag);
+                     ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+storage/hm_array.cc: In member function 'virtual MEDDLY::node_address MEDDLY::hm_array::requestChunk(int)':
+storage/hm_array.cc:127:34: warning: format '%lu' expects argument of type 'long unsigned int', but argument 3 has type 'int' [-Wformat=]
+         slots, __FILE__, __LINE__);
+                                  ^
+storage/hm_heap.cc: In member function 'virtual MEDDLY::node_address MEDDLY::hm_heap::requestChunk(int)':
+storage/hm_heap.cc:150:34: warning: format '%lu' expects argument of type 'long unsigned int', but argument 3 has type 'int' [-Wformat=]
+         slots, __FILE__, __LINE__);
+                                  ^
+storage/hm_none.cc: In member function 'virtual MEDDLY::node_address MEDDLY::hm_none::requestChunk(int)':
+storage/hm_none.cc:59:34: warning: format '%lu' expects argument of type 'long unsigned int', but argument 3 has type 'int' [-Wformat=]
+         slots, __FILE__, __LINE__);
+                                  ^
+ar: `u' modifier ignored since `D' is the default (see `U')
+test_mtmxd.cc: In function 'int main(int, char**)':
+test_mtmxd.cc:403:16: warning: variable 'curr' set but not used [-Wunused-but-set-variable]
+     const int* curr = 0;
+                ^~~~
+test_mtmxd.cc:404:16: warning: variable 'end' set but not used [-Wunused-but-set-variable]
+     const int* end = 0;
+                ^~~
+test_evmdd.cc: In function 'int main(int, char**)':
+test_evmdd.cc:228:8: warning: ignoring return value of 'int scanf(const char*, ...)', declared with attribute warn_unused_result [-Wunused-result]
+   scanf("%d", &randomGeneratorBound);
+   ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+dining_phils.cc: In function 'int main(int, char**)':
+dining_phils.cc:846:10: warning: ignoring return value of 'int scanf(const char*, ...)', declared with attribute warn_unused_result [-Wunused-result]
+     scanf("%d", &nPhilosophers);
+     ~~~~~^~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/7/cassert:44:0,
+                 from ../src/defines.h:50,
+                 from ../src/timer.h:37,
+                 from rubiks_cube_phase.cc:72:
+rubiks_cube_phase.cc: In function 'RubiksCubeModelConfig buildModelConfig(int, RubiksCubeModelType)':
+rubiks_cube_phase.cc:496:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   assert(config.num_phases == config.moves.size());
+          ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+rubiks_cube_phase.cc:497:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   assert(config.num_phases == config.level2components.size());
+          ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+rubiks_cube_phase.cc: In member function 'std::vector<int> RubiksCubeModel::convertToVariableOrder(const std::vector<Component>&)':
+rubiks_cube_phase.cc:624:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   assert(level2component.size() - 1 == _config.num_components());
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+rubiks_cube_phase.cc: In member function 'std::vector<MEDDLY::dd_edge> RubiksCubeModel::buildNextStateFunctions()':
+rubiks_cube_phase.cc:665:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   assert(_relations.size() == _config.num_phases);
+          ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+In file included from lm_cut_heuristic.cc:1:0:
+lm_cut_heuristic.h: In member function 'virtual void LandmarkCutHeuristic::initialize()':
+lm_cut_heuristic.h:79:8: warning: '<anonymous>.RelaxedProposition::status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+ struct RelaxedProposition {
+        ^~~~~~~~~~~~~~~~~~
+lm_cut_heuristic.h:79:8: warning: '<anonymous>.RelaxedProposition::h_max_cost' may be used uninitialized in this function [-Wmaybe-uninitialized]
+In file included from lm_cut_heuristic.cc:1:0:
+lm_cut_heuristic.h: In member function 'virtual void LandmarkCutHeuristic::initialize()':
+lm_cut_heuristic.h:79:8: warning: '<anonymous>.RelaxedProposition::status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+ struct RelaxedProposition {
+        ^~~~~~~~~~~~~~~~~~
+lm_cut_heuristic.h:79:8: warning: '<anonymous>.RelaxedProposition::h_max_cost' may be used uninitialized in this function [-Wmaybe-uninitialized]
+In file included from lm_cut_heuristic.cc:1:0:
+lm_cut_heuristic.h: In member function 'virtual void LandmarkCutHeuristic::initialize()':
+lm_cut_heuristic.h:79:8: warning: '<anonymous>.RelaxedProposition::status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+ struct RelaxedProposition {
+        ^~~~~~~~~~~~~~~~~~
+lm_cut_heuristic.h:79:8: warning: '<anonymous>.RelaxedProposition::h_max_cost' may be used uninitialized in this function [-Wmaybe-uninitialized]
+src/Proposition.cpp: In member function 'std::__cxx11::string VAL::Comparison::getExprnString(const VAL::expression*, const VAL::Environment&) const':
+src/Proposition.cpp:3077:7: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+       if(LaTeX) return "\\exprn{"+ s + "}";
+       ^~
+src/Proposition.cpp:3078:3: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   return s;
+   ^~~~~~
+src/Proposition.cpp: In member function 'std::__cxx11::string VAL::Comparison::getExprnString(const VAL::expression*, const VAL::Environment&, const VAL::State*) const':
+src/Proposition.cpp:3149:7: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+       if(LaTeX) return "\\exprn{"+ toString(fexp)  + "}$[=" + toString(fexp->evaluate(s)) + "]$";
+       ^~
+src/Proposition.cpp:3150:3: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   return toString(fexp) + "[=" + toString(fexp->evaluate(s)) + "]";
+   ^~~~~~
+src/Validator.cpp: In member function 'std::pair<const VAL::plan_step*, std::pair<bool, bool> > VAL::PlanRepair::repairPlanOneAction(const VAL::plan*, const VAL::plan_step*)':
+src/Validator.cpp:3216:11: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+        {  if(planRepairValidator->checkGoal(theGoal)) //goalSatisfied = true;
+           ^~
+src/Validator.cpp:3218:36: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+                actionFixed = true; planRepaired = true; break;
+                                    ^~~~~~~~~~~~
+src/Polynomial.cpp: In member function 'void VAL::Intervals::writeOffset(double) const':
+src/Polynomial.cpp:143:7: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+       if(LaTeX) *report << "$";
+       ^~
+src/Polynomial.cpp:144:3: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   for(vector< pair<intervalEnd,intervalEnd> >::const_iterator i = intervals.begin(); i != intervals.end();)
+   ^~~
+src/RobustAnalyse.cpp: In function 'std::__cxx11::string VAL::getPlanStepString(const VAL::plan_step*)':
+src/RobustAnalyse.cpp:691:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+     if(ps == 0) return "";
+     ^~
+src/RobustAnalyse.cpp:692:3: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   string act = "("+ps->op_sym->getName();
+   ^~~~~~
++ strip --strip-all /planner/planners/ipc2018-symple1/src/preprocess/preprocess /planner/planners/ipc2018-symple1/src/search/downward-1 /planner/planners/ipc2018-symple1/src/search/downward-2 /planner/planners/ipc2018-symple1/src/search/downward-4
+Getting image source signatures
+Copying blob sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+Copying config sha256:f9a80a55f492e823bf5d51f1bd5f87ea3eed1cb31788686aa99a2fb61a27af6a
+Writing manifest to image destination
+Storing signatures
+2023/06/11 10:59:52  info unpack layer: sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+INFO:    Copying planners/ipc2018-symple2 to /planner/planners/ipc2018-symple2
+INFO:    Running post scriptlet
++ apt-get update
++ apt-get -y install --no-install-recommends cmake g++ make python-dev automake autoconf libtool flex bison unzip
+debconf: delaying package configuration, since apt-utils is not installed
++ cd /planner/planners/ipc2018-symple2
++ ./build -j4
+In file included from planner.cc:17:0:
+h2_mutexes.h: In member function 'bool H2Mutexes::are_mutex(int, int, int, int) const':
+h2_mutexes.h:76:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   if (val1 == -1 || val2 == -1)
+   ^~
+h2_mutexes.h:79:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (var1 == var2) // same variable: mutex iff different value
+     ^~
+In file included from operator.cc:4:0:
+h2_mutexes.h: In member function 'bool H2Mutexes::are_mutex(int, int, int, int) const':
+h2_mutexes.h:76:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   if (val1 == -1 || val2 == -1)
+   ^~
+h2_mutexes.h:79:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (var1 == var2) // same variable: mutex iff different value
+     ^~
+In file included from h2_mutexes.cc:3:0:
+h2_mutexes.h: In member function 'bool H2Mutexes::are_mutex(int, int, int, int) const':
+h2_mutexes.h:76:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   if (val1 == -1 || val2 == -1)
+   ^~
+h2_mutexes.h:79:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (var1 == var2) // same variable: mutex iff different value
+     ^~
+autoreconf: Entering directory `.'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal --force -I m4
+autoreconf: configure.ac: tracing
+autoreconf: running: libtoolize --copy --force
+autoreconf: running: /usr/bin/autoconf --force
+autoreconf: running: /usr/bin/autoheader --force
+autoreconf: running: automake --add-missing --copy --force-missing
+configure.ac:22: installing './ar-lib'
+configure.ac:20: installing './compile'
+configure.ac:23: installing './config.guess'
+configure.ac:23: installing './config.sub'
+configure.ac:9: installing './install-sh'
+configure.ac:9: installing './missing'
+examples/Makefile.am: installing './depcomp'
+parallel-tests: installing './test-driver'
+autoreconf: Leaving directory `.'
+global_rebuilder.cc: In destructor 'MEDDLY::global_rebuilder::~global_rebuilder()':
+global_rebuilder.cc:45:10: warning: deleting object of abstract class type 'MEDDLY::global_rebuilder::SignatureGenerator' which has non-virtual destructor will cause undefined behavior [-Wdelete-non-virtual-dtor]
+   delete _sg;
+          ^~~
+global_rebuilder.cc: In member function 'int MEDDLY::global_rebuilder::check_dependency(MEDDLY::node_handle, int) const':
+global_rebuilder.cc:53:7: warning: unused variable 'level' [-Wunused-variable]
+   int level = target_level;
+       ^~~~~
+global_rebuilder.cc: In member function 'MEDDLY::node_handle MEDDLY::global_rebuilder::transform(MEDDLY::node_handle, int, std::vector<int>&)':
+global_rebuilder.cc:156:7: warning: unused variable 'level' [-Wunused-variable]
+   int level = target_level;
+       ^~~~~
+global_rebuilder.cc: In member function 'bool MEDDLY::global_rebuilder::restrict_exist(MEDDLY::node_handle, const std::vector<int>&, int, MEDDLY::node_handle&)':
+global_rebuilder.cc:328:13: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (start == pa.size()) {
+       ~~~~~~^~~~~~~~~~~~
+forests/mtmxd.cc: In member function 'void MEDDLY::mtmxd_forest::swapAdjacentVariablesByVarSwap(int)':
+forests/mtmxd.cc:65:7: warning: unused variable 'lsize' [-Wunused-variable]
+   int lsize = getVariableSize(lvar);
+       ^~~~~
+forests/mtmxd.cc: In member function 'virtual void MEDDLY::mtmxd_forest::dynamicReorderVariables(int, int)':
+forests/mtmxd.cc:487:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < vars.size(); i++) {
+                   ~~^~~~~~~~~~~~~
+forests/mtmxd.cc:490:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int j = i + 1; j < vars.size(); j++){
+                         ~~^~~~~~~~~~~~~
+forests/mtmxd.cc: In member function 'void MEDDLY::mtmxd_forest::sifting(int, int, int)':
+forests/mtmxd.cc:512:7: warning: unused variable 'num' [-Wunused-variable]
+   int num = getCurrentNumNodes();
+       ^~~
+operations/prepostimage.cc: In instantiation of 'MEDDLY::node_handle MEDDLY::mtvect_mtmatr<RTYPE>::processTerminals(MEDDLY::node_handle, MEDDLY::node_handle) [with RTYPE = bool; MEDDLY::node_handle = int]':
+operations/prepostimage.cc:749:1:   required from here
+operations/prepostimage.cc:483:23: warning: '*' in boolean context, suggest '&&' instead [-Wint-in-bool-context]
+         rval = mddval * mxdval;
+                ~~~~~~~^~~~~~~~
+operations/prepostimage.cc: In instantiation of 'MEDDLY::node_handle MEDDLY::mtmatr_mtvect<RTYPE>::processTerminals(MEDDLY::node_handle, MEDDLY::node_handle) [with RTYPE = bool; MEDDLY::node_handle = int]':
+operations/prepostimage.cc:749:1:   required from here
+operations/prepostimage.cc:446:23: warning: '*' in boolean context, suggest '&&' instead [-Wint-in-bool-context]
+         rval = mddval * mxdval;
+                ~~~~~~~^~~~~~~~
+operations/reach_dfs.cc: In member function 'void MEDDLY::common_dfs_mt::splitMxd(MEDDLY::node_handle)':
+operations/reach_dfs.cc:520:43: warning: 'maxDiag' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     splits[level] = mxdDifference->compute(mxd, maxDiag);
+                     ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+storage/hm_array.cc: In member function 'virtual MEDDLY::node_address MEDDLY::hm_array::requestChunk(int)':
+storage/hm_array.cc:127:34: warning: format '%lu' expects argument of type 'long unsigned int', but argument 3 has type 'int' [-Wformat=]
+         slots, __FILE__, __LINE__);
+                                  ^
+storage/hm_heap.cc: In member function 'virtual MEDDLY::node_address MEDDLY::hm_heap::requestChunk(int)':
+storage/hm_heap.cc:150:34: warning: format '%lu' expects argument of type 'long unsigned int', but argument 3 has type 'int' [-Wformat=]
+         slots, __FILE__, __LINE__);
+                                  ^
+storage/hm_none.cc: In member function 'virtual MEDDLY::node_address MEDDLY::hm_none::requestChunk(int)':
+storage/hm_none.cc:59:34: warning: format '%lu' expects argument of type 'long unsigned int', but argument 3 has type 'int' [-Wformat=]
+         slots, __FILE__, __LINE__);
+                                  ^
+ar: `u' modifier ignored since `D' is the default (see `U')
+test_mtmxd.cc: In function 'int main(int, char**)':
+test_mtmxd.cc:403:16: warning: variable 'curr' set but not used [-Wunused-but-set-variable]
+     const int* curr = 0;
+                ^~~~
+test_mtmxd.cc:404:16: warning: variable 'end' set but not used [-Wunused-but-set-variable]
+     const int* end = 0;
+                ^~~
+test_evmdd.cc: In function 'int main(int, char**)':
+test_evmdd.cc:228:8: warning: ignoring return value of 'int scanf(const char*, ...)', declared with attribute warn_unused_result [-Wunused-result]
+   scanf("%d", &randomGeneratorBound);
+   ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+dining_phils.cc: In function 'int main(int, char**)':
+dining_phils.cc:846:10: warning: ignoring return value of 'int scanf(const char*, ...)', declared with attribute warn_unused_result [-Wunused-result]
+     scanf("%d", &nPhilosophers);
+     ~~~~~^~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/7/cassert:44:0,
+                 from ../src/defines.h:50,
+                 from ../src/timer.h:37,
+                 from rubiks_cube_phase.cc:72:
+rubiks_cube_phase.cc: In function 'RubiksCubeModelConfig buildModelConfig(int, RubiksCubeModelType)':
+rubiks_cube_phase.cc:496:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   assert(config.num_phases == config.moves.size());
+          ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+rubiks_cube_phase.cc:497:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   assert(config.num_phases == config.level2components.size());
+          ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+rubiks_cube_phase.cc: In member function 'std::vector<int> RubiksCubeModel::convertToVariableOrder(const std::vector<Component>&)':
+rubiks_cube_phase.cc:624:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   assert(level2component.size() - 1 == _config.num_components());
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+rubiks_cube_phase.cc: In member function 'std::vector<MEDDLY::dd_edge> RubiksCubeModel::buildNextStateFunctions()':
+rubiks_cube_phase.cc:665:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   assert(_relations.size() == _config.num_phases);
+          ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+In file included from lm_cut_heuristic.cc:1:0:
+lm_cut_heuristic.h: In member function 'virtual void LandmarkCutHeuristic::initialize()':
+lm_cut_heuristic.h:79:8: warning: '<anonymous>.RelaxedProposition::status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+ struct RelaxedProposition {
+        ^~~~~~~~~~~~~~~~~~
+lm_cut_heuristic.h:79:8: warning: '<anonymous>.RelaxedProposition::h_max_cost' may be used uninitialized in this function [-Wmaybe-uninitialized]
+In file included from lm_cut_heuristic.cc:1:0:
+lm_cut_heuristic.h: In member function 'virtual void LandmarkCutHeuristic::initialize()':
+lm_cut_heuristic.h:79:8: warning: '<anonymous>.RelaxedProposition::status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+ struct RelaxedProposition {
+        ^~~~~~~~~~~~~~~~~~
+lm_cut_heuristic.h:79:8: warning: '<anonymous>.RelaxedProposition::h_max_cost' may be used uninitialized in this function [-Wmaybe-uninitialized]
+In file included from lm_cut_heuristic.cc:1:0:
+lm_cut_heuristic.h: In member function 'virtual void LandmarkCutHeuristic::initialize()':
+lm_cut_heuristic.h:79:8: warning: '<anonymous>.RelaxedProposition::status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+ struct RelaxedProposition {
+        ^~~~~~~~~~~~~~~~~~
+lm_cut_heuristic.h:79:8: warning: '<anonymous>.RelaxedProposition::h_max_cost' may be used uninitialized in this function [-Wmaybe-uninitialized]
+src/Proposition.cpp: In member function 'std::__cxx11::string VAL::Comparison::getExprnString(const VAL::expression*, const VAL::Environment&) const':
+src/Proposition.cpp:3077:7: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+       if(LaTeX) return "\\exprn{"+ s + "}";
+       ^~
+src/Proposition.cpp:3078:3: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   return s;
+   ^~~~~~
+src/Proposition.cpp: In member function 'std::__cxx11::string VAL::Comparison::getExprnString(const VAL::expression*, const VAL::Environment&, const VAL::State*) const':
+src/Proposition.cpp:3149:7: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+       if(LaTeX) return "\\exprn{"+ toString(fexp)  + "}$[=" + toString(fexp->evaluate(s)) + "]$";
+       ^~
+src/Proposition.cpp:3150:3: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   return toString(fexp) + "[=" + toString(fexp->evaluate(s)) + "]";
+   ^~~~~~
+src/Validator.cpp: In member function 'std::pair<const VAL::plan_step*, std::pair<bool, bool> > VAL::PlanRepair::repairPlanOneAction(const VAL::plan*, const VAL::plan_step*)':
+src/Validator.cpp:3216:11: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+        {  if(planRepairValidator->checkGoal(theGoal)) //goalSatisfied = true;
+           ^~
+src/Validator.cpp:3218:36: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+                actionFixed = true; planRepaired = true; break;
+                                    ^~~~~~~~~~~~
+src/Polynomial.cpp: In member function 'void VAL::Intervals::writeOffset(double) const':
+src/Polynomial.cpp:143:7: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+       if(LaTeX) *report << "$";
+       ^~
+src/Polynomial.cpp:144:3: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   for(vector< pair<intervalEnd,intervalEnd> >::const_iterator i = intervals.begin(); i != intervals.end();)
+   ^~~
+src/RobustAnalyse.cpp: In function 'std::__cxx11::string VAL::getPlanStepString(const VAL::plan_step*)':
+src/RobustAnalyse.cpp:691:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+     if(ps == 0) return "";
+     ^~
+src/RobustAnalyse.cpp:692:3: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   string act = "("+ps->op_sym->getName();
+   ^~~~~~
++ strip --strip-all /planner/planners/ipc2018-symple2/src/preprocess/preprocess /planner/planners/ipc2018-symple2/src/search/downward-1 /planner/planners/ipc2018-symple2/src/search/downward-2 /planner/planners/ipc2018-symple2/src/search/downward-4
+Getting image source signatures
+Copying blob sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+Copying config sha256:f9a80a55f492e823bf5d51f1bd5f87ea3eed1cb31788686aa99a2fb61a27af6a
+Writing manifest to image destination
+Storing signatures
+2023/06/11 11:05:01  info unpack layer: sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+INFO:    Copying planners/ipc2014-opt-symba to /planner/planners/ipc2014-opt-symba1
+INFO:    Running post scriptlet
++ apt-get update
++ apt-get -y install --no-install-recommends python cmake g++ g++-multilib make
+debconf: delaying package configuration, since apt-utils is not installed
++ cd /planner/planners/ipc2014-opt-symba1
++ ./build -j4
+make[1]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+ar: creating libcudd.a
+make[1]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+dddmpLoad.c: In function 'DddmpCuddDdArrayLoad':
+dddmpLoad.c:1112:3: warning: ignoring return value of 'fgets', declared with attribute warn_unused_result [-Wunused-result]
+   fgets (buf, DDDMP_MAXSTRLEN-1,fp);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+dddmpLoad.c: In function 'DddmpBddReadHeader':
+dddmpLoad.c:1276:7: warning: ignoring return value of 'fgets', declared with attribute warn_unused_result [-Wunused-result]
+       fgets(buf,DDDMP_MAXSTRLEN,fp);
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+dddmpLoad.c:1429:7: warning: ignoring return value of 'fgets', declared with attribute warn_unused_result [-Wunused-result]
+       fgets(buf,DDDMP_MAXSTRLEN,fp);
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+dddmpLoadCnf.c: In function 'DddmpBddReadHeaderCnf':
+dddmpLoadCnf.c:557:7: warning: ignoring return value of 'fscanf', declared with attribute warn_unused_result [-Wunused-result]
+       fscanf (fp, "%*s %d %d", &nv, &nc);
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+dddmpLoadCnf.c:572:7: warning: ignoring return value of 'fgets', declared with attribute warn_unused_result [-Wunused-result]
+       fgets (buf, DDDMP_MAXSTRLEN, fp);
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+dddmpLoadCnf.c: In function 'DddmpReadCnfClauses':
+dddmpLoadCnf.c:814:7: warning: ignoring return value of 'fgets', declared with attribute warn_unused_result [-Wunused-result]
+       fgets (word, DDDMP_MAX_CNF_ROW_LENGTH-1, fp);
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+dddmpDbg.c: In function 'Dddmp_cuddBddDisplayBinary':
+dddmpDbg.c:144:3: warning: ignoring return value of 'fgets', declared with attribute warn_unused_result [-Wunused-result]
+   fgets(buf, 999,fp);
+   ^~~~~~~~~~~~~~~~~~
+ar: creating libdddmp.a
+make[1]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+ar: creating libmtr.a
+make[1]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+ar: creating libst.a
+make[1]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+ar: creating libutil.a
+make[1]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+ar: creating libepd.a
+make[1]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+ar: creating libobj.a
+In file included from lm_cut_heuristic.cc:1:0:
+lm_cut_heuristic.h: In member function 'virtual void LandmarkCutHeuristic::initialize()':
+lm_cut_heuristic.h:79:8: warning: '<anonymous>.RelaxedProposition::status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+ struct RelaxedProposition {
+        ^~~~~~~~~~~~~~~~~~
+lm_cut_heuristic.h:79:8: warning: '<anonymous>.RelaxedProposition::h_max_cost' may be used uninitialized in this function [-Wmaybe-uninitialized]
+In file included from lm_cut_heuristic.cc:1:0:
+lm_cut_heuristic.h: In member function 'virtual void LandmarkCutHeuristic::initialize()':
+lm_cut_heuristic.h:79:8: warning: '<anonymous>.RelaxedProposition::status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+ struct RelaxedProposition {
+        ^~~~~~~~~~~~~~~~~~
+lm_cut_heuristic.h:79:8: warning: '<anonymous>.RelaxedProposition::h_max_cost' may be used uninitialized in this function [-Wmaybe-uninitialized]
+In file included from lm_cut_heuristic.cc:1:0:
+lm_cut_heuristic.h: In member function 'virtual void LandmarkCutHeuristic::initialize()':
+lm_cut_heuristic.h:79:8: warning: '<anonymous>.RelaxedProposition::status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+ struct RelaxedProposition {
+        ^~~~~~~~~~~~~~~~~~
+lm_cut_heuristic.h:79:8: warning: '<anonymous>.RelaxedProposition::h_max_cost' may be used uninitialized in this function [-Wmaybe-uninitialized]
++ strip --strip-all /planner/planners/ipc2014-opt-symba1/src/preprocess/preprocess /planner/planners/ipc2014-opt-symba1/src/search/downward-1 /planner/planners/ipc2014-opt-symba1/src/search/downward-2 /planner/planners/ipc2014-opt-symba1/src/search/downward-4
+Getting image source signatures
+Copying blob sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+Copying config sha256:f9a80a55f492e823bf5d51f1bd5f87ea3eed1cb31788686aa99a2fb61a27af6a
+Writing manifest to image destination
+Storing signatures
+2023/06/11 11:09:39  info unpack layer: sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+INFO:    Copying planners/ipc2018-agl-fdss-2018 to /planner/planners/ipc2018-fd-2018
+INFO:    Running post scriptlet
++ apt-get update
++ apt-get -y install --no-install-recommends cmake g++ make python
+debconf: delaying package configuration, since apt-utils is not installed
++ cd /planner/planners/ipc2018-fd-2018
++ ./build.py release64
++ mkdir -p builds/h2-mutexes/
++ cd builds/h2-mutexes/
++ cmake ../../h2-mutexes/
++ make -j4
++ strip --strip-all /planner/planners/ipc2018-fd-2018/builds/release64/bin/downward /planner/planners/ipc2018-fd-2018/builds/h2-mutexes/bin/preprocess
+Getting image source signatures
+Copying blob sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+Copying config sha256:f9a80a55f492e823bf5d51f1bd5f87ea3eed1cb31788686aa99a2fb61a27af6a
+Writing manifest to image destination
+Storing signatures
+2023/06/11 11:12:33  info unpack layer: sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+INFO:    Copying planners/ipc2018-agl-merwin to /planner/planners/ipc2018-agl-merwin
+INFO:    Running post scriptlet
++ apt-get update
++ apt-get -y install --no-install-recommends cmake g++ make python time gawk ca-certificates
+debconf: delaying package configuration, since apt-utils is not installed
++ cd /planner/planners/ipc2018-agl-merwin
++ ./build DOWNWARD_BITWIDTH=64
++ strip --strip-all /planner/planners/ipc2018-agl-merwin/src/search/downward-1 /planner/planners/ipc2018-agl-merwin/src/search/downward-2 /planner/planners/ipc2018-agl-merwin/src/search/downward-4 /planner/planners/ipc2018-agl-merwin/src/preprocess/preprocess
+Getting image source signatures
+Copying blob sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+Copying config sha256:f9a80a55f492e823bf5d51f1bd5f87ea3eed1cb31788686aa99a2fb61a27af6a
+Writing manifest to image destination
+Storing signatures
+2023/06/11 11:18:17  info unpack layer: sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+INFO:    Copying planners/ipc2018-agl-mercury2014 to /planner/planners/ipc2018-agl-mercury2014
+INFO:    Running post scriptlet
++ apt-get update
++ apt-get -y install bison flex make g++-multilib python gawk
+debconf: delaying package configuration, since apt-utils is not installed
++ apt-get -y install --no-install-recommends cmake g++ make python time gawk ca-certificates
+debconf: delaying package configuration, since apt-utils is not installed
++ cd /planner/planners/ipc2018-agl-mercury2014
++ ./build DOWNWARD_BITWIDTH=64
+./build: 4: ./build: source: not found
+red_black/red_black_DAG_fact_following_heuristic.cc: In member function 'void RedBlackDAGFactFollowingHeuristic::precalculate_shortest_paths_for_var(int)':
+red_black/red_black_DAG_fact_following_heuristic.cc:764:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+     if (!black_vars[var])
+     ^~
+red_black/red_black_DAG_fact_following_heuristic.cc:767:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  if (get_cg_predecessors(var).size() == 0) {
+  ^~
+red_black/red_black_DAG_fact_following_heuristic.cc: In member function 'void RedBlackDAGFactFollowingHeuristic::precalculate_shortest_paths_for_var(int)':
+red_black/red_black_DAG_fact_following_heuristic.cc:764:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+     if (!black_vars[var])
+     ^~
+red_black/red_black_DAG_fact_following_heuristic.cc:767:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  if (get_cg_predecessors(var).size() == 0) {
+  ^~
+red_black/red_black_DAG_fact_following_heuristic.cc: In member function 'void RedBlackDAGFactFollowingHeuristic::precalculate_shortest_paths_for_var(int)':
+red_black/red_black_DAG_fact_following_heuristic.cc:764:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+     if (!black_vars[var])
+     ^~
+red_black/red_black_DAG_fact_following_heuristic.cc:767:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  if (get_cg_predecessors(var).size() == 0) {
+  ^~
++ strip --strip-all /planner/planners/ipc2018-agl-mercury2014/src/search/downward-1 /planner/planners/ipc2018-agl-mercury2014/src/search/downward-2 /planner/planners/ipc2018-agl-mercury2014/src/search/downward-4 /planner/planners/ipc2018-agl-mercury2014/src/preprocess/preprocess
+Getting image source signatures
+Copying blob sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+Copying config sha256:f9a80a55f492e823bf5d51f1bd5f87ea3eed1cb31788686aa99a2fb61a27af6a
+Writing manifest to image destination
+Storing signatures
+2023/06/11 11:23:20  info unpack layer: sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+INFO:    Copying planners/ipc2018-opt-metis to /planner/planners/ipc2018-opt-metis
+INFO:    Running post scriptlet
++ apt-get update
++ apt-get -y install --no-install-recommends cmake g++ make python
+debconf: delaying package configuration, since apt-utils is not installed
++ cd /planner/planners/ipc2018-opt-metis
++ ./build.py release64 -j4
+In file included from /planner/planners/ipc2018-opt-metis/src/search/heuristics/ce_lm_cut_landmarks.cc:1:0:
+/planner/planners/ipc2018-opt-metis/src/search/heuristics/ce_lm_cut_landmarks.h: In constructor 'ce_lm_cut_heuristic::CELandmarkCutLandmarks::CELandmarkCutLandmarks(const TaskProxy&)':
+/planner/planners/ipc2018-opt-metis/src/search/heuristics/ce_lm_cut_landmarks.h:26:8: warning: '<anonymous>.ce_lm_cut_heuristic::RelaxedOperatorGroup::cost' may be used uninitialized in this function [-Wmaybe-uninitialized]
+ struct RelaxedOperatorGroup {
+        ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-opt-metis/src/search/heuristics/ce_lm_cut_landmarks.h:26:8: warning: '<anonymous>.ce_lm_cut_heuristic::RelaxedOperatorGroup::cost' may be used uninitialized in this function [-Wmaybe-uninitialized]
+ struct RelaxedOperatorGroup {
+        ^~~~~~~~~~~~~~~~~~~~
++ strip --strip-all /planner/planners/ipc2018-opt-metis/builds/release64/bin/downward /planner/planners/ipc2018-opt-metis/builds/release64/bin/preprocess
+Getting image source signatures
+Copying blob sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+Copying config sha256:f9a80a55f492e823bf5d51f1bd5f87ea3eed1cb31788686aa99a2fb61a27af6a
+Writing manifest to image destination
+Storing signatures
+2023/06/11 11:26:22  info unpack layer: sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+INFO:    Copying planners/ipc2018-agl-cerberus to /planner/planners/ipc2018-agl-cerberus
+INFO:    Running post scriptlet
++ apt-get update
++ apt-get -y install --no-install-recommends cmake g++ g++-multilib make python
+debconf: delaying package configuration, since apt-utils is not installed
++ cd /planner/planners/ipc2018-agl-cerberus
++ ./build.py release64 -j4
++ strip --strip-all /planner/planners/ipc2018-agl-cerberus/builds/release64/bin/downward /planner/planners/ipc2018-agl-cerberus/builds/release64/bin/preprocess
+Getting image source signatures
+Copying blob sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+Copying config sha256:f9a80a55f492e823bf5d51f1bd5f87ea3eed1cb31788686aa99a2fb61a27af6a
+Writing manifest to image destination
+Storing signatures
+2023/06/11 11:30:01  info unpack layer: sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+INFO:    Copying planners/ipc2018-agl-lapkt-dfs-plus to /planner/planners/ipc2018-lapkt-dfs-plus
+INFO:    Running post scriptlet
++ apt-get update
++ apt-get install --no-install-recommends -y cmake build-essential ca-certificates xutils-dev scons gcc-multilib flex bison python python-dev libboost-dev libjudy-dev libboost-python-dev libboost-program-options-dev g++-multilib g++ cython google-perftools libgoogle-perftools-dev
+debconf: delaying package configuration, since apt-utils is not installed
++ export LAPKT_PATH=/planner/planners/ipc2018-lapkt-dfs-plus/LAPKT-public
++ cd /planner/planners/ipc2018-lapkt-dfs-plus/LAPKT-public
++ cd external/libff
++ make clean
++ make depend
+makedepend: warning:  main.c (reading /usr/include/stdlib.h, line 31): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+makedepend: warning:  main.c (reading /usr/include/sys/types.h, line 145): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+makedepend: warning:  main.c (reading /usr/include/alloca.h, line 24): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+makedepend: warning:  main.c (reading /usr/include/stdio.h, line 33): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+makedepend: warning:  main.c (reading /usr/include/bits/_G_config.h, line 19): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+makedepend: warning:  main.c (reading /usr/include/bits/libio.h, line 53): cannot find include file "stdarg.h"
+	not in /usr/include/stdarg.h
+makedepend: warning:  main.c (reading /usr/include/strings.h, line 23): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+makedepend: warning:  main.c (reading /usr/include/string.h, line 33): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+makedepend: warning:  cannot open "scan-fct_pddl.tab.c"
+makedepend: warning:  cannot open "scan-ops_pddl.tab.c"
+makedepend: warning:  cannot open "scan-probname.tab.c"
+makedepend: warning:  cannot open "lex.fct_pddl.c"
+makedepend: warning:  cannot open "lex.ops_pddl.c"
+makedepend: warning:  test_main.cxx, line 3: cannot find include file "iostream"
+	not in /usr/include/iostream
+makedepend: warning:  test_main.cxx, line 4: cannot find include file "fstream"
+	not in /usr/include/fstream
++ make
+In file included from libff.c:1:0:
+libff.h:458:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+ #endif //libff.h
+        ^
+libff.c: In function 'FF_reinitialize_globals':
+libff.c:414:2: warning: statement with no effect [-Wunused-value]
+  gnum_actions;
+  ^~~~~~~~~~~~
+libff.c: In function 'FF_parse_problem':
+libff.c:454:2: warning: implicit declaration of function 'snprintf'; did you mean 'sprintf'? [-Wimplicit-function-declaration]
+  snprintf( ops_file, MAX_LENGTH, "%s", domain_file );
+  ^~~~~~~~
+  sprintf
+In file included from inst_easy.c:66:0:
+inst_easy.c: In function 'multiply_easy_non_constrained_effect_parameters':
+ff.h:319:37: warning: '*' in boolean context, suggest '&&' instead [-Wint-in-bool-context]
+ #define DECODE_VAR( val ) (val + 1) * (-1)
+                           ~~~~~~~~~~^~~~~~
+inst_easy.c:944:9: note: in expansion of macro 'DECODE_VAR'
+         DECODE_VAR( tmp->conditions[i].args[j] < lo->num_vars ) ) {
+         ^~~~~~~~~~
+inst_final.c: In function 'build_connectivity_graph':
+inst_final.c:1932:3: warning: implicit declaration of function 'srandom'; did you mean 'srand'? [-Wimplicit-function-declaration]
+   srandom( tp.millitm );
+   ^~~~~~~
+   srand
+inst_final.c:1948:24: warning: implicit declaration of function 'random'; did you mean 'rand'? [-Wimplicit-function-declaration]
+     gft_conn[i].rand = random() % BIG_INT;
+                        ^~~~~~
+                        rand
+search.c: In function 'do_best_first_search':
+search.c:936:5: warning: implicit declaration of function 'print_state'; did you mean 'print_State'? [-Wimplicit-function-declaration]
+     print_state( &(first->S) );
+     ^~~~~~~~~~~
+     print_State
+scan-fct_pddl.y: warning: 1 nonterminal useless in grammar [-Wother]
+scan-fct_pddl.y: warning: 2 rules useless in grammar [-Wother]
+scan-fct_pddl.y:135.17-33: warning: nonterminal useless in grammar: literal_name_plus [-Wother]
+ %type <pPlNode> literal_name_plus
+                 ^^^^^^^^^^^^^^^^^
+scan-fct_pddl.y:814.1-817.1: warning: rule useless in grammar [-Wother]
+ literal_name
+ ^^^^^^^^^^^^
+scan-fct_pddl.y:819.1-823.1: warning: rule useless in grammar [-Wother]
+ literal_name literal_name_plus
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+scan-fct_pddl.y: warning: 1 shift/reduce conflict [-Wconflicts-sr]
+scan-fct_pddl.y: warning: 1 reduce/reduce conflict [-Wconflicts-rr]
+scan-fct_pddl.tab.c: In function 'fct_pddlparse':
+scan-fct_pddl.tab.c:64:25: warning: implicit declaration of function 'fct_pddllex'; did you mean 'fct_pddlparse'? [-Wimplicit-function-declaration]
+ #define yylex           fct_pddllex
+                         ^
+scan-fct_pddl.tab.c:1382:16: note: in expansion of macro 'yylex'
+       yychar = yylex ();
+                ^~~~~
+scan-fct_pddl.y:194:3: warning: implicit declaration of function 'fcterr'; did you mean 'ftell'? [-Wimplicit-function-declaration]
+   fcterr( PROBNAME_EXPECTED, NULL );
+   ^~~~~~
+   ftell
+scan-fct_pddl.tab.c:65:25: warning: implicit declaration of function 'fct_pddlerror'; did you mean 'fct_pddlparse'? [-Wimplicit-function-declaration]
+ #define yyerror         fct_pddlerror
+                         ^
+scan-fct_pddl.y:222:5: note: in expansion of macro 'yyerror'
+     yyerror();
+     ^~~~~~~
+In file included from scan-fct_pddl.y:876:0:
+lex.fct_pddl.c: At top level:
+lex.fct_pddl.c:28:16: warning: prototype for 'fct_pddlwrap' follows non-prototype definition
+ #define yywrap fct_pddlwrap
+                ^
+lex.fct_pddl.c:913:12: note: in expansion of macro 'yywrap'
+ extern int yywrap ( void );
+            ^~~~~~
+In file included from scan-fct_pddl.y:876:0:
+lex.fct_pddl.c: In function 'fct_pddl_init_buffer':
+lex.fct_pddl.c:1962:48: warning: implicit declaration of function 'fileno'; did you mean 'mblen'? [-Wimplicit-function-declaration]
+         b->yy_is_interactive = file ? (isatty( fileno(file) ) > 0) : 0;
+                                                ^~~~~~
+                                                mblen
+scan-fct_pddl.y: At top level:
+scan-fct_pddl.y:887:6: warning: conflicting types for 'fcterr'
+ void fcterr( int errno, char *par ) {
+      ^~~~~~
+scan-fct_pddl.y:194:3: note: previous implicit declaration of 'fcterr' was here
+   fcterr( PROBNAME_EXPECTED, NULL );
+   ^~~~~~
+In file included from scan-fct_pddl.y:876:0:
+lex.fct_pddl.c:1759:16: warning: 'input' defined but not used [-Wunused-function]
+     static int input  (void)
+                ^~~~~
+lex.fct_pddl.c:1716:17: warning: 'yyunput' defined but not used [-Wunused-function]
+     static void yyunput (int c, char * yy_bp )
+                 ^~~~~~~
+scan-ops_pddl.y: warning: 1 shift/reduce conflict [-Wconflicts-sr]
+scan-ops_pddl.tab.c: In function 'ops_pddlparse':
+scan-ops_pddl.tab.c:64:25: warning: implicit declaration of function 'ops_pddllex'; did you mean 'ops_pddlparse'? [-Wimplicit-function-declaration]
+ #define yylex           ops_pddllex
+                         ^
+scan-ops_pddl.tab.c:1439:16: note: in expansion of macro 'yylex'
+       yychar = yylex ();
+                ^~~~~
+scan-ops_pddl.y:205:3: warning: implicit declaration of function 'opserr'; did you mean 'stderr'? [-Wimplicit-function-declaration]
+   opserr( DOMDEF_EXPECTED, NULL );
+   ^~~~~~
+   stderr
+scan-ops_pddl.tab.c:65:25: warning: implicit declaration of function 'ops_pddlerror'; did you mean 'ops_pddlparse'? [-Wimplicit-function-declaration]
+ #define yyerror         ops_pddlerror
+                         ^
+scan-ops_pddl.y:379:5: note: in expansion of macro 'yyerror'
+     yyerror();
+     ^~~~~~~
+In file included from scan-ops_pddl.y:994:0:
+lex.ops_pddl.c: At top level:
+lex.ops_pddl.c:28:16: warning: prototype for 'ops_pddlwrap' follows non-prototype definition
+ #define yywrap ops_pddlwrap
+                ^
+lex.ops_pddl.c:928:12: note: in expansion of macro 'yywrap'
+ extern int yywrap ( void );
+            ^~~~~~
+In file included from scan-ops_pddl.y:994:0:
+lex.ops_pddl.c: In function 'ops_pddl_init_buffer':
+lex.ops_pddl.c:2003:48: warning: implicit declaration of function 'fileno'; did you mean 'mblen'? [-Wimplicit-function-declaration]
+         b->yy_is_interactive = file ? (isatty( fileno(file) ) > 0) : 0;
+                                                ^~~~~~
+                                                mblen
+scan-ops_pddl.y: At top level:
+scan-ops_pddl.y:1005:6: warning: conflicting types for 'opserr'
+ void opserr( int errno, char *par )
+      ^~~~~~
+scan-ops_pddl.y:205:3: note: previous implicit declaration of 'opserr' was here
+   opserr( DOMDEF_EXPECTED, NULL );
+   ^~~~~~
+In file included from scan-ops_pddl.y:994:0:
+lex.ops_pddl.c:1800:16: warning: 'input' defined but not used [-Wunused-function]
+     static int input  (void)
+                ^~~~~
+lex.ops_pddl.c:1757:17: warning: 'yyunput' defined but not used [-Wunused-function]
+     static void yyunput (int c, char * yy_bp )
+                 ^~~~~~~
+ar: `u' modifier ignored since `D' is the default (see `U')
++ cd ../..
++ cd planners/dfs_plus-ffparser
++ scons -j4
+In file included from src/main.cxx:42:0:
+/planner/planners/ipc2018-lapkt-dfs-plus/LAPKT-public/include/aptk/dfs_plus.hxx: In instantiation of 'bool aptk::search::novelty_spaces::DFS_Plus<Search_Model, Search_Strategy, Search_Node>::dfs_search(aptk::State*, std::vector<int>&, float&, aptk::Fluent_Vec) [with Search_Model = aptk::agnostic::Fwd_Search_Problem; Search_Strategy = aptk::search::novelty_spaces::RP_IW<aptk::agnostic::Fwd_Search_Problem, aptk::agnostic::Novelty_Partition<aptk::agnostic::Fwd_Search_Problem, aptk::search::novelty_spaces::Node<aptk::State> >, aptk::agnostic::Relaxed_Plan_Heuristic<aptk::agnostic::Fwd_Search_Problem, aptk::agnostic::H1_Heuristic<aptk::agnostic::Fwd_Search_Problem, aptk::agnostic::H_Add_Evaluation_Function> > >; Search_Node = aptk::search::novelty_spaces::Node<aptk::State>; aptk::Fluent_Vec = std::vector<unsigned int>]':
+/planner/planners/ipc2018-lapkt-dfs-plus/LAPKT-public/include/aptk/dfs_plus.hxx:295:27:   required from 'bool aptk::search::novelty_spaces::DFS_Plus<Search_Model, Search_Strategy, Search_Node>::find_solution(float&, std::vector<int>&) [with Search_Model = aptk::agnostic::Fwd_Search_Problem; Search_Strategy = aptk::search::novelty_spaces::RP_IW<aptk::agnostic::Fwd_Search_Problem, aptk::agnostic::Novelty_Partition<aptk::agnostic::Fwd_Search_Problem, aptk::search::novelty_spaces::Node<aptk::State> >, aptk::agnostic::Relaxed_Plan_Heuristic<aptk::agnostic::Fwd_Search_Problem, aptk::agnostic::H1_Heuristic<aptk::agnostic::Fwd_Search_Problem, aptk::agnostic::H_Add_Evaluation_Function> > >; Search_Node = aptk::search::novelty_spaces::Node<aptk::State>]'
+src/main.cxx:97:2:   required from 'float do_search(Search_Engine&, aptk::STRIPS_Problem&, float, std::ofstream&) [with Search_Engine = aptk::search::novelty_spaces::DFS_Plus<aptk::agnostic::Fwd_Search_Problem, aptk::search::novelty_spaces::RP_IW<aptk::agnostic::Fwd_Search_Problem, aptk::agnostic::Novelty_Partition<aptk::agnostic::Fwd_Search_Problem, aptk::search::novelty_spaces::Node<aptk::State> >, aptk::agnostic::Relaxed_Plan_Heuristic<aptk::agnostic::Fwd_Search_Problem, aptk::agnostic::H1_Heuristic<aptk::agnostic::Fwd_Search_Problem, aptk::agnostic::H_Add_Evaluation_Function> > >, aptk::search::novelty_spaces::Node<aptk::State> >; std::ofstream = std::basic_ofstream<char>]'
+src/main.cxx:225:62:   required from here
+/planner/planners/ipc2018-lapkt-dfs-plus/LAPKT-public/include/aptk/dfs_plus.hxx:62:25: warning: unused variable 'gsize' [-Wunused-variable]
+   static const unsigned gsize = this->problem().task().goal().size();
+                         ^~~~~
++ cp dfs_plus /planner/planners/ipc2018-lapkt-dfs-plus/
++ strip --strip-all /planner/planners/ipc2018-lapkt-dfs-plus/dfs_plus
++ cd ../dfs_plus
+Getting image source signatures
+Copying blob sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+Copying config sha256:f9a80a55f492e823bf5d51f1bd5f87ea3eed1cb31788686aa99a2fb61a27af6a
+Writing manifest to image destination
+Storing signatures
+2023/06/11 11:32:14  info unpack layer: sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+INFO:    Copying planners/ipc2018-agl-lapkt-dual-bfws to /planner/planners/ipc2018-lapkt-bfws
+INFO:    Running post scriptlet
++ apt-get update
++ apt-get install --no-install-recommends -y cmake build-essential ca-certificates xutils-dev scons gcc-multilib flex bison python python-dev libboost-dev libjudy-dev libboost-python-dev libboost-program-options-dev g++-multilib g++
+debconf: delaying package configuration, since apt-utils is not installed
++ export LAPKT_PATH=/planner/planners/ipc2018-lapkt-bfws/LAPKT-public
++ cd /planner/planners/ipc2018-lapkt-bfws/LAPKT-public
++ cd external/libff
++ make clean
++ make depend
+makedepend: warning:  main.c (reading /usr/include/stdlib.h, line 31): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+makedepend: warning:  main.c (reading /usr/include/sys/types.h, line 145): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+makedepend: warning:  main.c (reading /usr/include/alloca.h, line 24): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+makedepend: warning:  main.c (reading /usr/include/stdio.h, line 33): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+makedepend: warning:  main.c (reading /usr/include/bits/_G_config.h, line 19): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+makedepend: warning:  main.c (reading /usr/include/bits/libio.h, line 53): cannot find include file "stdarg.h"
+	not in /usr/include/stdarg.h
+makedepend: warning:  main.c (reading /usr/include/strings.h, line 23): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+makedepend: warning:  main.c (reading /usr/include/string.h, line 33): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+makedepend: warning:  cannot open "scan-fct_pddl.tab.c"
+makedepend: warning:  cannot open "scan-ops_pddl.tab.c"
+makedepend: warning:  cannot open "scan-probname.tab.c"
+makedepend: warning:  cannot open "lex.fct_pddl.c"
+makedepend: warning:  cannot open "lex.ops_pddl.c"
+makedepend: warning:  test_main.cxx, line 3: cannot find include file "iostream"
+	not in /usr/include/iostream
+makedepend: warning:  test_main.cxx, line 4: cannot find include file "fstream"
+	not in /usr/include/fstream
++ make
+In file included from libff.c:1:0:
+libff.h:458:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+ #endif //libff.h
+        ^
+libff.c: In function 'FF_reinitialize_globals':
+libff.c:414:2: warning: statement with no effect [-Wunused-value]
+  gnum_actions;
+  ^~~~~~~~~~~~
+libff.c: In function 'FF_parse_problem':
+libff.c:454:2: warning: implicit declaration of function 'snprintf'; did you mean 'sprintf'? [-Wimplicit-function-declaration]
+  snprintf( ops_file, MAX_LENGTH, "%s", domain_file );
+  ^~~~~~~~
+  sprintf
+In file included from inst_easy.c:66:0:
+inst_easy.c: In function 'multiply_easy_non_constrained_effect_parameters':
+ff.h:319:37: warning: '*' in boolean context, suggest '&&' instead [-Wint-in-bool-context]
+ #define DECODE_VAR( val ) (val + 1) * (-1)
+                           ~~~~~~~~~~^~~~~~
+inst_easy.c:944:9: note: in expansion of macro 'DECODE_VAR'
+         DECODE_VAR( tmp->conditions[i].args[j] < lo->num_vars ) ) {
+         ^~~~~~~~~~
+inst_final.c: In function 'build_connectivity_graph':
+inst_final.c:1932:3: warning: implicit declaration of function 'srandom'; did you mean 'srand'? [-Wimplicit-function-declaration]
+   srandom( tp.millitm );
+   ^~~~~~~
+   srand
+inst_final.c:1948:24: warning: implicit declaration of function 'random'; did you mean 'rand'? [-Wimplicit-function-declaration]
+     gft_conn[i].rand = random() % BIG_INT;
+                        ^~~~~~
+                        rand
+search.c: In function 'do_best_first_search':
+search.c:936:5: warning: implicit declaration of function 'print_state'; did you mean 'print_State'? [-Wimplicit-function-declaration]
+     print_state( &(first->S) );
+     ^~~~~~~~~~~
+     print_State
+scan-fct_pddl.y: warning: 1 nonterminal useless in grammar [-Wother]
+scan-fct_pddl.y: warning: 2 rules useless in grammar [-Wother]
+scan-fct_pddl.y:135.17-33: warning: nonterminal useless in grammar: literal_name_plus [-Wother]
+ %type <pPlNode> literal_name_plus
+                 ^^^^^^^^^^^^^^^^^
+scan-fct_pddl.y:814.1-817.1: warning: rule useless in grammar [-Wother]
+ literal_name
+ ^^^^^^^^^^^^
+scan-fct_pddl.y:819.1-823.1: warning: rule useless in grammar [-Wother]
+ literal_name literal_name_plus
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+scan-fct_pddl.y: warning: 1 shift/reduce conflict [-Wconflicts-sr]
+scan-fct_pddl.y: warning: 1 reduce/reduce conflict [-Wconflicts-rr]
+scan-fct_pddl.tab.c: In function 'fct_pddlparse':
+scan-fct_pddl.tab.c:64:25: warning: implicit declaration of function 'fct_pddllex'; did you mean 'fct_pddlparse'? [-Wimplicit-function-declaration]
+ #define yylex           fct_pddllex
+                         ^
+scan-fct_pddl.tab.c:1382:16: note: in expansion of macro 'yylex'
+       yychar = yylex ();
+                ^~~~~
+scan-fct_pddl.y:194:3: warning: implicit declaration of function 'fcterr'; did you mean 'ftell'? [-Wimplicit-function-declaration]
+   fcterr( PROBNAME_EXPECTED, NULL );
+   ^~~~~~
+   ftell
+scan-fct_pddl.tab.c:65:25: warning: implicit declaration of function 'fct_pddlerror'; did you mean 'fct_pddlparse'? [-Wimplicit-function-declaration]
+ #define yyerror         fct_pddlerror
+                         ^
+scan-fct_pddl.y:222:5: note: in expansion of macro 'yyerror'
+     yyerror();
+     ^~~~~~~
+In file included from scan-fct_pddl.y:876:0:
+lex.fct_pddl.c: At top level:
+lex.fct_pddl.c:28:16: warning: prototype for 'fct_pddlwrap' follows non-prototype definition
+ #define yywrap fct_pddlwrap
+                ^
+lex.fct_pddl.c:913:12: note: in expansion of macro 'yywrap'
+ extern int yywrap ( void );
+            ^~~~~~
+In file included from scan-fct_pddl.y:876:0:
+lex.fct_pddl.c: In function 'fct_pddl_init_buffer':
+lex.fct_pddl.c:1962:48: warning: implicit declaration of function 'fileno'; did you mean 'mblen'? [-Wimplicit-function-declaration]
+         b->yy_is_interactive = file ? (isatty( fileno(file) ) > 0) : 0;
+                                                ^~~~~~
+                                                mblen
+scan-fct_pddl.y: At top level:
+scan-fct_pddl.y:887:6: warning: conflicting types for 'fcterr'
+ void fcterr( int errno, char *par ) {
+      ^~~~~~
+scan-fct_pddl.y:194:3: note: previous implicit declaration of 'fcterr' was here
+   fcterr( PROBNAME_EXPECTED, NULL );
+   ^~~~~~
+In file included from scan-fct_pddl.y:876:0:
+lex.fct_pddl.c:1759:16: warning: 'input' defined but not used [-Wunused-function]
+     static int input  (void)
+                ^~~~~
+lex.fct_pddl.c:1716:17: warning: 'yyunput' defined but not used [-Wunused-function]
+     static void yyunput (int c, char * yy_bp )
+                 ^~~~~~~
+scan-ops_pddl.y: warning: 1 shift/reduce conflict [-Wconflicts-sr]
+scan-ops_pddl.tab.c: In function 'ops_pddlparse':
+scan-ops_pddl.tab.c:64:25: warning: implicit declaration of function 'ops_pddllex'; did you mean 'ops_pddlparse'? [-Wimplicit-function-declaration]
+ #define yylex           ops_pddllex
+                         ^
+scan-ops_pddl.tab.c:1439:16: note: in expansion of macro 'yylex'
+       yychar = yylex ();
+                ^~~~~
+scan-ops_pddl.y:205:3: warning: implicit declaration of function 'opserr'; did you mean 'stderr'? [-Wimplicit-function-declaration]
+   opserr( DOMDEF_EXPECTED, NULL );
+   ^~~~~~
+   stderr
+scan-ops_pddl.tab.c:65:25: warning: implicit declaration of function 'ops_pddlerror'; did you mean 'ops_pddlparse'? [-Wimplicit-function-declaration]
+ #define yyerror         ops_pddlerror
+                         ^
+scan-ops_pddl.y:379:5: note: in expansion of macro 'yyerror'
+     yyerror();
+     ^~~~~~~
+In file included from scan-ops_pddl.y:994:0:
+lex.ops_pddl.c: At top level:
+lex.ops_pddl.c:28:16: warning: prototype for 'ops_pddlwrap' follows non-prototype definition
+ #define yywrap ops_pddlwrap
+                ^
+lex.ops_pddl.c:928:12: note: in expansion of macro 'yywrap'
+ extern int yywrap ( void );
+            ^~~~~~
+In file included from scan-ops_pddl.y:994:0:
+lex.ops_pddl.c: In function 'ops_pddl_init_buffer':
+lex.ops_pddl.c:2003:48: warning: implicit declaration of function 'fileno'; did you mean 'mblen'? [-Wimplicit-function-declaration]
+         b->yy_is_interactive = file ? (isatty( fileno(file) ) > 0) : 0;
+                                                ^~~~~~
+                                                mblen
+scan-ops_pddl.y: At top level:
+scan-ops_pddl.y:1005:6: warning: conflicting types for 'opserr'
+ void opserr( int errno, char *par )
+      ^~~~~~
+scan-ops_pddl.y:205:3: note: previous implicit declaration of 'opserr' was here
+   opserr( DOMDEF_EXPECTED, NULL );
+   ^~~~~~
+In file included from scan-ops_pddl.y:994:0:
+lex.ops_pddl.c:1800:16: warning: 'input' defined but not used [-Wunused-function]
+     static int input  (void)
+                ^~~~~
+lex.ops_pddl.c:1757:17: warning: 'yyunput' defined but not used [-Wunused-function]
+     static void yyunput (int c, char * yy_bp )
+                 ^~~~~~~
+ar: `u' modifier ignored since `D' is the default (see `U')
++ cd /planner/planners/ipc2018-lapkt-bfws/BFWS/ff-version
++ scons -j4
++ cd /planner/planners/ipc2018-lapkt-bfws/BFWS/fd-version
++ ./build.py
++ cd /planner/planners/ipc2018-lapkt-bfws/Fast-Downward-2018-2
++ ./build.py release64 -j4
++ cd /planner/planners/ipc2018-lapkt-bfws/h2-fd-preprocessor
++ mkdir -p builds/release32
++ cd builds/release32
++ cmake ../../
++ make -j4
++ strip --strip-all /planner/planners/ipc2018-lapkt-bfws/BFWS/ff-version/bfws /planner/planners/ipc2018-lapkt-bfws/Fast-Downward-2018-2/builds/release64/bin/downward /planner/planners/ipc2018-lapkt-bfws/h2-fd-preprocessor/builds/release32/bin/preprocess
+Getting image source signatures
+Copying blob sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+Copying config sha256:f9a80a55f492e823bf5d51f1bd5f87ea3eed1cb31788686aa99a2fb61a27af6a
+Writing manifest to image destination
+Storing signatures
+2023/06/11 11:36:33  info unpack layer: sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+INFO:    Copying planners/ipc2018-decstar to /planner/planners/ipc2018-decstar
+INFO:    Running post scriptlet
++ apt-get update
++ apt-get -y install g++ make python
+debconf: delaying package configuration, since apt-utils is not installed
++ cd /planner/planners/ipc2018-decstar/src
++ ./build_all -j4
+make[1]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+bliss.cc:62:15: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+   fprintf(fp, "bliss version %s (compiled "__DATE__")\n", bliss::version);
+               ^
+graph.cc: In member function 'void bliss::AbstractGraph::search(bool, bliss::Stats&)':
+graph.cc:977:16: warning: variable 'next_split_element_pos' set but not used [-Wunused-but-set-variable]
+  unsigned int* next_split_element_pos = 0;
+                ^~~~~~~~~~~~~~~~~~~~~~
++ strip --strip-all /planner/planners/ipc2018-decstar/src/preprocess/preprocess
++ strip --strip-all /planner/planners/ipc2018-decstar/src/search/downward-release
+Getting image source signatures
+Copying blob sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+Copying config sha256:f9a80a55f492e823bf5d51f1bd5f87ea3eed1cb31788686aa99a2fb61a27af6a
+Writing manifest to image destination
+Storing signatures
+2023/06/11 11:38:59  info unpack layer: sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+INFO:    Copying planners/ipc2018-agl-freelunch-madagascar to /planner/planners/ipc2018-agl-freelunch-madagascar
+INFO:    Running post scriptlet
++ apt-get update
++ apt-get -y install cmake g++ gcc make bison flex zlib1g-dev ca-certificates git
+debconf: delaying package configuration, since apt-utils is not installed
++ cd /planner/planners/ipc2018-agl-freelunch-madagascar
++ make
+lglib.c: In function 'lglstampall':
+lglib.c:19166:2: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  if (rootsonly) noimpls++; goto CONTINUE;
+  ^~
+lglib.c:19166:28: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  if (rootsonly) noimpls++; goto CONTINUE;
+                            ^~~~
+ilingeling.c: In function 'progress':
+ilingeling.c:212:23: warning: '%d' directive writing between 1 and 10 bytes into a region of size 6 [-Wformat-overflow=]
+   sprintf (fmt, "c %%0%dd", i);
+                       ^~
+ilingeling.c:212:17: note: directive argument in the range [1, 2147483646]
+   sprintf (fmt, "c %%0%dd", i);
+                 ^~~~~~~~~~
+In file included from /usr/include/stdio.h:862:0,
+                 from lglib.h:8,
+                 from ilingeling.c:5:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:33:10: note: '__builtin___sprintf_chk' output between 7 and 16 bytes into a destination of size 10
+   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+       __bos (__s), __fmt, __va_arg_pack ());
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+treengeling.c: In function 'mysrand':
+treengeling.c:1381:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   if (!z) z = ~z; if (!w) w = ~w;
+   ^~
+treengeling.c:1381:19: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   if (!z) z = ~z; if (!w) w = ~w;
+                   ^~
+In file included from /planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/carj/logging.h:33:0,
+                 from /planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/TimePointBasedSolver.h:7,
+                 from /planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/incplan.cpp:23:
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:279:44: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_DEBUG_LOGS) && (ELPP_LOGGING_ENABLED) && ((defined(_DEBUG)) || (!defined(NDEBUG))))
+                                            ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:284:43: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_INFO_LOGS) && (ELPP_LOGGING_ENABLED))
+                                           ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:289:46: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_WARNING_LOGS) && (ELPP_LOGGING_ENABLED))
+                                              ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:294:44: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_ERROR_LOGS) && (ELPP_LOGGING_ENABLED))
+                                            ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:299:44: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_FATAL_LOGS) && (ELPP_LOGGING_ENABLED))
+                                            ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:304:44: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_TRACE_LOGS) && (ELPP_LOGGING_ENABLED))
+                                            ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:309:46: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_VERBOSE_LOGS) && (ELPP_LOGGING_ENABLED))
+                                              ^~~~~~~~~~~~~~~~~~~~
+In file included from /planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/carj/logging.h:33:0,
+                 from /planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/TimePointBasedSolver.h:7,
+                 from /planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/incplan.cpp:23:
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:4964:5: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if ELPP_LOGGING_ENABLED
+     ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:4973:5: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if ELPP_LOGGING_ENABLED
+     ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:5047:5: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if ELPP_LOGGING_ENABLED
+     ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:5329:52: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if !defined(ELPP_DISABLE_PERFORMANCE_TRACKING) && ELPP_LOGGING_ENABLED
+                                                    ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:5346:52: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if !defined(ELPP_DISABLE_PERFORMANCE_TRACKING) && ELPP_LOGGING_ENABLED
+                                                    ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:5371:52: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if !defined(ELPP_DISABLE_PERFORMANCE_TRACKING) && ELPP_LOGGING_ENABLED
+                                                    ^~~~~~~~~~~~~~~~~~~~
+In file included from /planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/carj/logging.h:33:0,
+                 from /planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/carj/carj.h:3,
+                 from /planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/carj/carj.cpp:1:
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:279:44: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_DEBUG_LOGS) && (ELPP_LOGGING_ENABLED) && ((defined(_DEBUG)) || (!defined(NDEBUG))))
+                                            ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:284:43: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_INFO_LOGS) && (ELPP_LOGGING_ENABLED))
+                                           ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:289:46: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_WARNING_LOGS) && (ELPP_LOGGING_ENABLED))
+                                              ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:294:44: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_ERROR_LOGS) && (ELPP_LOGGING_ENABLED))
+                                            ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:299:44: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_FATAL_LOGS) && (ELPP_LOGGING_ENABLED))
+                                            ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:304:44: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_TRACE_LOGS) && (ELPP_LOGGING_ENABLED))
+                                            ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:309:46: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_VERBOSE_LOGS) && (ELPP_LOGGING_ENABLED))
+                                              ^~~~~~~~~~~~~~~~~~~~
+In file included from /planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/carj/logging.h:33:0,
+                 from /planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/carj/carj.h:3,
+                 from /planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/carj/carj.cpp:1:
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:4964:5: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if ELPP_LOGGING_ENABLED
+     ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:4973:5: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if ELPP_LOGGING_ENABLED
+     ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:5047:5: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if ELPP_LOGGING_ENABLED
+     ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:5329:52: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if !defined(ELPP_DISABLE_PERFORMANCE_TRACKING) && ELPP_LOGGING_ENABLED
+                                                    ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:5346:52: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if !defined(ELPP_DISABLE_PERFORMANCE_TRACKING) && ELPP_LOGGING_ENABLED
+                                                    ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:5371:52: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if !defined(ELPP_DISABLE_PERFORMANCE_TRACKING) && ELPP_LOGGING_ENABLED
+                                                    ^~~~~~~~~~~~~~~~~~~~
+In file included from /planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/carj/logging.h:33:0,
+                 from /planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/TimePointBasedSolver.h:7,
+                 from /planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/TimePointBasedSolver.cpp:1:
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:279:44: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_DEBUG_LOGS) && (ELPP_LOGGING_ENABLED) && ((defined(_DEBUG)) || (!defined(NDEBUG))))
+                                            ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:284:43: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_INFO_LOGS) && (ELPP_LOGGING_ENABLED))
+                                           ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:289:46: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_WARNING_LOGS) && (ELPP_LOGGING_ENABLED))
+                                              ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:294:44: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_ERROR_LOGS) && (ELPP_LOGGING_ENABLED))
+                                            ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:299:44: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_FATAL_LOGS) && (ELPP_LOGGING_ENABLED))
+                                            ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:304:44: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_TRACE_LOGS) && (ELPP_LOGGING_ENABLED))
+                                            ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:309:46: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_VERBOSE_LOGS) && (ELPP_LOGGING_ENABLED))
+                                              ^~~~~~~~~~~~~~~~~~~~
+In file included from /planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/carj/logging.h:33:0,
+                 from /planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/TimePointBasedSolver.h:7,
+                 from /planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/TimePointBasedSolver.cpp:1:
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:4964:5: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if ELPP_LOGGING_ENABLED
+     ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:4973:5: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if ELPP_LOGGING_ENABLED
+     ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:5047:5: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if ELPP_LOGGING_ENABLED
+     ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:5329:52: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if !defined(ELPP_DISABLE_PERFORMANCE_TRACKING) && ELPP_LOGGING_ENABLED
+                                                    ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:5346:52: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if !defined(ELPP_DISABLE_PERFORMANCE_TRACKING) && ELPP_LOGGING_ENABLED
+                                                    ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:5371:52: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if !defined(ELPP_DISABLE_PERFORMANCE_TRACKING) && ELPP_LOGGING_ENABLED
+                                                    ^~~~~~~~~~~~~~~~~~~~
+In file included from /planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/carj/logging.h:33:0,
+                 from /planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/DimspecProblem.cpp:3:
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:279:44: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_DEBUG_LOGS) && (ELPP_LOGGING_ENABLED) && ((defined(_DEBUG)) || (!defined(NDEBUG))))
+                                            ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:284:43: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_INFO_LOGS) && (ELPP_LOGGING_ENABLED))
+                                           ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:289:46: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_WARNING_LOGS) && (ELPP_LOGGING_ENABLED))
+                                              ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:294:44: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_ERROR_LOGS) && (ELPP_LOGGING_ENABLED))
+                                            ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:299:44: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_FATAL_LOGS) && (ELPP_LOGGING_ENABLED))
+                                            ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:304:44: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_TRACE_LOGS) && (ELPP_LOGGING_ENABLED))
+                                            ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:309:46: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_VERBOSE_LOGS) && (ELPP_LOGGING_ENABLED))
+                                              ^~~~~~~~~~~~~~~~~~~~
+In file included from /planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/carj/logging.h:33:0,
+                 from /planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/DimspecProblem.cpp:3:
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:4964:5: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if ELPP_LOGGING_ENABLED
+     ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:4973:5: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if ELPP_LOGGING_ENABLED
+     ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:5047:5: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if ELPP_LOGGING_ENABLED
+     ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:5329:52: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if !defined(ELPP_DISABLE_PERFORMANCE_TRACKING) && ELPP_LOGGING_ENABLED
+                                                    ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:5346:52: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if !defined(ELPP_DISABLE_PERFORMANCE_TRACKING) && ELPP_LOGGING_ENABLED
+                                                    ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:5371:52: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if !defined(ELPP_DISABLE_PERFORMANCE_TRACKING) && ELPP_LOGGING_ENABLED
+                                                    ^~~~~~~~~~~~~~~~~~~~
+In file included from /planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/carj/logging.h:33:0,
+                 from /planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/carj/carj.h:3,
+                 from /planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/PDR.cpp:5:
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:279:44: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_DEBUG_LOGS) && (ELPP_LOGGING_ENABLED) && ((defined(_DEBUG)) || (!defined(NDEBUG))))
+                                            ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:284:43: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_INFO_LOGS) && (ELPP_LOGGING_ENABLED))
+                                           ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:289:46: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_WARNING_LOGS) && (ELPP_LOGGING_ENABLED))
+                                              ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:294:44: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_ERROR_LOGS) && (ELPP_LOGGING_ENABLED))
+                                            ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:299:44: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_FATAL_LOGS) && (ELPP_LOGGING_ENABLED))
+                                            ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:304:44: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_TRACE_LOGS) && (ELPP_LOGGING_ENABLED))
+                                            ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:309:46: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if (!defined(ELPP_DISABLE_VERBOSE_LOGS) && (ELPP_LOGGING_ENABLED))
+                                              ^~~~~~~~~~~~~~~~~~~~
+In file included from /planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/carj/logging.h:33:0,
+                 from /planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/carj/carj.h:3,
+                 from /planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/PDR.cpp:5:
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:4964:5: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if ELPP_LOGGING_ENABLED
+     ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:4973:5: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if ELPP_LOGGING_ENABLED
+     ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:5047:5: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if ELPP_LOGGING_ENABLED
+     ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:5329:52: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if !defined(ELPP_DISABLE_PERFORMANCE_TRACKING) && ELPP_LOGGING_ENABLED
+                                                    ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:5346:52: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if !defined(ELPP_DISABLE_PERFORMANCE_TRACKING) && ELPP_LOGGING_ENABLED
+                                                    ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/easylogging++.h:5371:52: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+ #if !defined(ELPP_DISABLE_PERFORMANCE_TRACKING) && ELPP_LOGGING_ENABLED
+                                                    ^~~~~~~~~~~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp: In function 'const char* ipasir_signature()':
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp:20:51: warning: no return statement in function returning non-void [-Wreturn-type]
+  const char * ipasir_signature () {linkingError();}
+                                                   ^
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp: In function 'void* ipasir_init()':
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp:21:40: warning: no return statement in function returning non-void [-Wreturn-type]
+  void * ipasir_init () {linkingError();}
+                                        ^
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp: In function 'void ipasir_release(void*)':
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp:22:30: warning: unused parameter 'solver' [-Wunused-parameter]
+  void ipasir_release (void * solver){linkingError();}
+                              ^~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp: In function 'void ipasir_add(void*, int)':
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp:23:26: warning: unused parameter 'solver' [-Wunused-parameter]
+  void ipasir_add (void * solver, int lit_or_zero){linkingError();}
+                          ^~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp:23:38: warning: unused parameter 'lit_or_zero' [-Wunused-parameter]
+  void ipasir_add (void * solver, int lit_or_zero){linkingError();}
+                                      ^~~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp: In function 'void ipasir_assume(void*, int)':
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp:24:29: warning: unused parameter 'solver' [-Wunused-parameter]
+  void ipasir_assume (void * solver, int lit){linkingError();}
+                             ^~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp:24:41: warning: unused parameter 'lit' [-Wunused-parameter]
+  void ipasir_assume (void * solver, int lit){linkingError();}
+                                         ^~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp: In function 'int ipasir_solve(void*)':
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp:25:50: warning: no return statement in function returning non-void [-Wreturn-type]
+  int ipasir_solve (void * solver){linkingError();}
+                                                  ^
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp:25:27: warning: unused parameter 'solver' [-Wunused-parameter]
+  int ipasir_solve (void * solver){linkingError();}
+                           ^~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp: In function 'int ipasir_val(void*, int)':
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp:26:59: warning: no return statement in function returning non-void [-Wreturn-type]
+  int ipasir_val (void * solver, int lit){notImplemented();}
+                                                           ^
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp:26:25: warning: unused parameter 'solver' [-Wunused-parameter]
+  int ipasir_val (void * solver, int lit){notImplemented();}
+                         ^~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp:26:37: warning: unused parameter 'lit' [-Wunused-parameter]
+  int ipasir_val (void * solver, int lit){notImplemented();}
+                                     ^~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp: In function 'int ipasir_failed(void*, int)':
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp:27:62: warning: no return statement in function returning non-void [-Wreturn-type]
+  int ipasir_failed (void * solver, int lit){notImplemented();}
+                                                              ^
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp:27:28: warning: unused parameter 'solver' [-Wunused-parameter]
+  int ipasir_failed (void * solver, int lit){notImplemented();}
+                            ^~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp:27:40: warning: unused parameter 'lit' [-Wunused-parameter]
+  int ipasir_failed (void * solver, int lit){notImplemented();}
+                                        ^~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp: In function 'void ipasir_set_terminate(void*, void*, int (*)(void*))':
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp:28:36: warning: unused parameter 'solver' [-Wunused-parameter]
+  void ipasir_set_terminate (void * solver, void * state, int (*terminate)(void * state)){notImplemented();}
+                                    ^~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp:28:51: warning: unused parameter 'state' [-Wunused-parameter]
+  void ipasir_set_terminate (void * solver, void * state, int (*terminate)(void * state)){notImplemented();}
+                                                   ^~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp:28:87: warning: unused parameter 'terminate' [-Wunused-parameter]
+  void ipasir_set_terminate (void * solver, void * state, int (*terminate)(void * state)){notImplemented();}
+                                                                                       ^
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp: In function 'void ipasir_set_learn(void*, void*, int, void (*)(void*, int*))':
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp:29:32: warning: unused parameter 'solver' [-Wunused-parameter]
+  void ipasir_set_learn (void * solver, void * state, int max_length, void (*learn)(void * state, int * clause)){notImplemented();}
+                                ^~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp:29:47: warning: unused parameter 'state' [-Wunused-parameter]
+  void ipasir_set_learn (void * solver, void * state, int max_length, void (*learn)(void * state, int * clause)){notImplemented();}
+                                               ^~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp:29:58: warning: unused parameter 'max_length' [-Wunused-parameter]
+  void ipasir_set_learn (void * solver, void * state, int max_length, void (*learn)(void * state, int * clause)){notImplemented();}
+                                                          ^~~~~~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp:29:110: warning: unused parameter 'learn' [-Wunused-parameter]
+  void ipasir_set_learn (void * solver, void * state, int max_length, void (*learn)(void * state, int * clause)){notImplemented();}
+                                                                                                              ^
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp: In function 'void ipasir_add_as_learned(void*, int)':
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp:30:36: warning: unused parameter 'solver' [-Wunused-parameter]
+  void ipasir_add_as_learned(void * solver, int lit_or_zero){notImplemented();}
+                                    ^~~~~~
+/planner/planners/ipc2018-agl-freelunch-madagascar/incplan/src/libs/ipasir/ipasir_dummy_impl.cpp:30:48: warning: unused parameter 'lit_or_zero' [-Wunused-parameter]
+  void ipasir_add_as_learned(void * solver, int lit_or_zero){notImplemented();}
+                                                ^~~~~~~~~~~
++ strip --strip-all /planner/planners/ipc2018-agl-freelunch-madagascar/incplan-lgl
++ strip --strip-all /planner/planners/ipc2018-agl-freelunch-madagascar/MpC
+Getting image source signatures
+Copying blob sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+Copying config sha256:f9a80a55f492e823bf5d51f1bd5f87ea3eed1cb31788686aa99a2fb61a27af6a
+Writing manifest to image destination
+Storing signatures
+2023/06/11 11:40:52  info unpack layer: sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+INFO:    Copying planners/ipc2018-opt-planning-pdbs to /planner/planners/ipc2018-opt-planning-pdbs
+INFO:    Running post scriptlet
++ apt-get update
++ apt-get -y install --no-install-recommends cmake g++ make python autotools-dev automake gcc g++-multilib
+debconf: delaying package configuration, since apt-utils is not installed
++ cd /planner/planners/ipc2018-opt-planning-pdbs
++ ./build.py release64 -j6
+libcudd 64-bits build
+configure: WARNING: Doxygen not found - continuing without Doxygen support
+configure: WARNING: pdflatex not found - unable to compile manual to PDF
+configure: WARNING: makeindex not found - unable to compile manual to PDF
+make[3]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+cudd/cuddWindow.c: In function 'ddPermuteWindow3':
+cudd/cuddWindow.c:386:18: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case BCA: if (!cuddSwapInPlace(table,y,z)) return(0);
+                  ^
+cudd/cuddWindow.c:387:5: note: here
+     case CBA: if (!cuddSwapInPlace(table,x,y)) return(0);
+     ^~~~
+cudd/cuddWindow.c:387:18: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case CBA: if (!cuddSwapInPlace(table,x,y)) return(0);
+                  ^
+cudd/cuddWindow.c:388:5: note: here
+     case ABC: if (!cuddSwapInPlace(table,y,z)) return(0);
+     ^~~~
+cudd/cuddWindow.c:390:18: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case BAC: if (!cuddSwapInPlace(table,y,z)) return(0);
+                  ^
+cudd/cuddWindow.c:391:5: note: here
+     case CAB: if (!cuddSwapInPlace(table,x,y)) return(0);
+     ^~~~
+cudd/cuddWindow.c: In function 'ddPermuteWindow4':
+cudd/cuddWindow.c:759:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case DBCA: if (!cuddSwapInPlace(table,y,z)) return(0);
+                   ^
+cudd/cuddWindow.c:760:5: note: here
+     case BDCA: if (!cuddSwapInPlace(table,x,y)) return(0);
+     ^~~~
+cudd/cuddWindow.c:760:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case BDCA: if (!cuddSwapInPlace(table,x,y)) return(0);
+                   ^
+cudd/cuddWindow.c:761:5: note: here
+     case CDBA: if (!cuddSwapInPlace(table,w,x)) return(0);
+     ^~~~
+cudd/cuddWindow.c:761:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case CDBA: if (!cuddSwapInPlace(table,w,x)) return(0);
+                   ^
+cudd/cuddWindow.c:762:5: note: here
+     case ADBC: if (!cuddSwapInPlace(table,y,z)) return(0);
+     ^~~~
+cudd/cuddWindow.c:762:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case ADBC: if (!cuddSwapInPlace(table,y,z)) return(0);
+                   ^
+cudd/cuddWindow.c:763:5: note: here
+     case ABDC: if (!cuddSwapInPlace(table,x,y)) return(0);
+     ^~~~
+cudd/cuddWindow.c:763:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case ABDC: if (!cuddSwapInPlace(table,x,y)) return(0);
+                   ^
+cudd/cuddWindow.c:764:5: note: here
+     case ACDB: if (!cuddSwapInPlace(table,y,z)) return(0);
+     ^~~~
+cudd/cuddWindow.c:766:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case DCBA: if (!cuddSwapInPlace(table,y,z)) return(0);
+                   ^
+cudd/cuddWindow.c:767:5: note: here
+     case BCDA: if (!cuddSwapInPlace(table,x,y)) return(0);
+     ^~~~
+cudd/cuddWindow.c:767:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case BCDA: if (!cuddSwapInPlace(table,x,y)) return(0);
+                   ^
+cudd/cuddWindow.c:768:5: note: here
+     case CBDA: if (!cuddSwapInPlace(table,w,x)) return(0);
+     ^~~~
+cudd/cuddWindow.c:772:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case DBAC: if (!cuddSwapInPlace(table,x,y)) return(0);
+                   ^
+cudd/cuddWindow.c:773:5: note: here
+     case DCAB: if (!cuddSwapInPlace(table,w,x)) return(0);
+     ^~~~
+cudd/cuddWindow.c:773:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case DCAB: if (!cuddSwapInPlace(table,w,x)) return(0);
+                   ^
+cudd/cuddWindow.c:774:5: note: here
+     case DACB: if (!cuddSwapInPlace(table,y,z)) return(0);
+     ^~~~
+cudd/cuddWindow.c:774:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case DACB: if (!cuddSwapInPlace(table,y,z)) return(0);
+                   ^
+cudd/cuddWindow.c:775:5: note: here
+     case BACD: if (!cuddSwapInPlace(table,x,y)) return(0);
+     ^~~~
+cudd/cuddWindow.c:775:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case BACD: if (!cuddSwapInPlace(table,x,y)) return(0);
+                   ^
+cudd/cuddWindow.c:776:5: note: here
+     case CABD: if (!cuddSwapInPlace(table,w,x)) return(0);
+     ^~~~
+cudd/cuddWindow.c:778:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case DABC: if (!cuddSwapInPlace(table,y,z)) return(0);
+                   ^
+cudd/cuddWindow.c:779:5: note: here
+     case BADC: if (!cuddSwapInPlace(table,x,y)) return(0);
+     ^~~~
+cudd/cuddWindow.c:779:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case BADC: if (!cuddSwapInPlace(table,x,y)) return(0);
+                   ^
+cudd/cuddWindow.c:780:5: note: here
+     case CADB: if (!cuddSwapInPlace(table,w,x)) return(0);
+     ^~~~
+cudd/cuddWindow.c:783:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case BDAC: if (!cuddSwapInPlace(table,x,y)) return(0);
+                   ^
+cudd/cuddWindow.c:784:5: note: here
+     case CDAB: if (!cuddSwapInPlace(table,w,x)) return(0);
+     ^~~~
+cudd/cuddWindow.c:784:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case CDAB: if (!cuddSwapInPlace(table,w,x)) return(0);
+                   ^
+cudd/cuddWindow.c:785:5: note: here
+     case ADCB: if (!cuddSwapInPlace(table,y,z)) return(0);
+     ^~~~
+cudd/cuddWindow.c:785:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case ADCB: if (!cuddSwapInPlace(table,y,z)) return(0);
+                   ^
+cudd/cuddWindow.c:786:5: note: here
+     case ABCD: if (!cuddSwapInPlace(table,x,y)) return(0);
+     ^~~~
+cudd/cuddWindow.c:788:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case BCAD: if (!cuddSwapInPlace(table,x,y)) return(0);
+                   ^
+cudd/cuddWindow.c:789:5: note: here
+     case CBAD: if (!cuddSwapInPlace(table,w,x)) return(0);
+     ^~~~
+In file included from /usr/include/assert.h:35:0,
+                 from util/util.h:70,
+                 from util/cpu_stats.c:66:
+/usr/include/features.h:184:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+ # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+   ^~~~~~~
+In file included from dddmp/dddmpInt.h:39:0,
+                 from dddmp/dddmpStoreCnf.c:29:
+dddmp/dddmpStoreCnf.c: In function 'DddmpCuddBddArrayStoreCnf':
+dddmp/dddmp.h:238:12: warning: this statement may fall through [-Wimplicit-fallthrough=]
+         if ((expr) == 1) { \
+            ^
+dddmp/dddmpStoreCnf.c:599:7: note: in expansion of macro 'Dddmp_Warning'
+       Dddmp_Warning (1, "Wrong DDDMP Store Mode. Force DDDMP_MODE_BEST.");
+       ^~~~~~~~~~~~~
+dddmp/dddmpStoreCnf.c:600:5: note: here
+     case DDDMP_CNF_MODE_BEST:
+     ^~~~
+In file included from dddmp/dddmpInt.h:39:0,
+                 from dddmp/dddmpStoreCnf.c:29:
+dddmp/dddmp.h:238:12: warning: this statement may fall through [-Wimplicit-fallthrough=]
+         if ((expr) == 1) { \
+            ^
+dddmp/dddmpStoreCnf.c:645:7: note: in expansion of macro 'Dddmp_Warning'
+       Dddmp_Warning (1, "Wrong DDDMP Store Mode. Force DDDMP_MODE_BEST.");
+       ^~~~~~~~~~~~~
+dddmp/dddmpStoreCnf.c:646:5: note: here
+     case DDDMP_CNF_MODE_BEST:
+     ^~~~
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
++ strip --strip-all /planner/planners/ipc2018-opt-planning-pdbs/builds/release64/bin/downward
+Getting image source signatures
+Copying blob sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+Copying config sha256:f9a80a55f492e823bf5d51f1bd5f87ea3eed1cb31788686aa99a2fb61a27af6a
+Writing manifest to image destination
+Storing signatures
+2023/06/11 11:44:49  info unpack layer: sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+INFO:    Copying planners/ipc2014-agl-madagascar to /planner/planners/ipc2014-agl-mpc
+INFO:    Running post scriptlet
++ apt update
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
++ apt -y install bison flex make g++-multilib
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+debconf: delaying package configuration, since apt-utils is not installed
++ cd /planner/planners/ipc2014-agl-mpc
++ ./makedate
++ bison -d parser.y
++ flex lexer.lex
++ make -j4
++ strip --strip-all /planner/planners/ipc2014-agl-mpc/MpC
+Getting image source signatures
+Copying blob sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+Copying config sha256:f9a80a55f492e823bf5d51f1bd5f87ea3eed1cb31788686aa99a2fb61a27af6a
+Writing manifest to image destination
+Storing signatures
+2023/06/11 11:45:33  info unpack layer: sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+INFO:    Copying planners/ipc2014-agl-jasper to /planner/planners/ipc2014-agl-jasper
+INFO:    Running post scriptlet
++ apt-get update
++ apt-get -y install bison flex make g++ g++-multilib python gawk
+debconf: delaying package configuration, since apt-utils is not installed
++ cd /planner/planners/ipc2014-agl-jasper
++ ./build
+option_parser.cc: In member function 'double OptionParser::parse_double(const std::vector<std::__cxx11::basic_string<char> >&, int, int&)':
+option_parser.cc:337:39: warning: parameter 'start' set but not used [-Wunused-but-set-parameter]
+     const vector<string> &config, int start, int &end) {
+                                       ^~~~~
+option_parser.cc: In member function 'int OptionParser::parse_int(const std::vector<std::__cxx11::basic_string<char> >&, int, int&)':
+option_parser.cc:350:39: warning: parameter 'start' set but not used [-Wunused-but-set-parameter]
+     const vector<string> &config, int start, int &end) {
+                                       ^~~~~
+walker.cc: In member function 'void Walker::random_walk(State, int, MRW_Parameters&, int, bool)':
+walker.cc:130:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+     if (debug)
+     ^~
+walker.cc:132:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  heuristic->evaluate(current_state);
+  ^~~~~~~~~
+walker.cc:133:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+     if (debug)
+     ^~
+walker.cc:135:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  my_info.cost = current_cost;
+  ^~~~~~~
+walker.cc: In member function 'const Operator* Walker::mha_successor(std::vector<const Operator*>&, MRW_Parameters&)':
+walker.cc:194:6: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+      if(num[index] == 0)
+      ^~
+walker.cc:196:3: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   if(Q_MHA[index] != 0){
+   ^~
+general_path_h_stats_lazy_best_first_search.cc: In static member function 'static SearchEngine* GeneralPathHStatsLazyBestFirstSearch::create_greedy(const std::vector<std::__cxx11::basic_string<char> >&, int, int&, bool)':
+general_path_h_stats_lazy_best_first_search.cc:136:38: warning: variable 'local_open' set but not used [-Wunused-but-set-variable]
+         OpenList<OpenListEntryLazy> *local_open;
+                                      ^~~~~~~~~~
+general_count_discrepancy_lazy_best_first_search.cc: In static member function 'static SearchEngine* GeneralCountDiscrepancyLazyBestFirstSearch::create_greedy(const std::vector<std::__cxx11::basic_string<char> >&, int, int&, bool)':
+general_count_discrepancy_lazy_best_first_search.cc:186:38: warning: variable 'local_open' set but not used [-Wunused-but-set-variable]
+         OpenList<OpenListEntryLazy> *local_open;
+                                      ^~~~~~~~~~
+general_two_level_macro_rw_eager_best_first_search.cc: In static member function 'static SearchEngine* GeneralTwoLevelMacroRwEagerBestFirstSearch::create_greedy(const std::vector<std::__cxx11::basic_string<char> >&, int, int&, bool)':
+general_two_level_macro_rw_eager_best_first_search.cc:434:10: warning: unused variable 'reopen_closed' [-Wunused-variable]
+     bool reopen_closed = false;
+          ^~~~~~~~~~~~~
+cg_heuristic.cc: In destructor 'virtual CGHeuristic::~CGHeuristic()':
+cg_heuristic.cc:35:29: warning: deleting object of polymorphic class type 'AdaptiveQueue<ValueNode*>' which has non-virtual destructor might cause undefined behavior [-Wdelete-non-virtual-dtor]
+         delete prio_queues[i];
+                             ^
+landmarks/landmark_status_manager.cc: In member function 'bool LandmarkStatusManager::update_lm_status(const State&)':
+landmarks/landmark_status_manager.cc:125:16: warning: variable 'proxy' set but not used [-Wunused-but-set-variable]
+     StateProxy proxy = StateProxy(&state);
+                ^~~~~
+option_parser.cc: In member function 'double OptionParser::parse_double(const std::vector<std::__cxx11::basic_string<char> >&, int, int&)':
+option_parser.cc:337:39: warning: parameter 'start' set but not used [-Wunused-but-set-parameter]
+     const vector<string> &config, int start, int &end) {
+                                       ^~~~~
+option_parser.cc: In member function 'int OptionParser::parse_int(const std::vector<std::__cxx11::basic_string<char> >&, int, int&)':
+option_parser.cc:350:39: warning: parameter 'start' set but not used [-Wunused-but-set-parameter]
+     const vector<string> &config, int start, int &end) {
+                                       ^~~~~
+walker.cc: In member function 'void Walker::random_walk(State, int, MRW_Parameters&, int, bool)':
+walker.cc:130:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+     if (debug)
+     ^~
+walker.cc:132:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  heuristic->evaluate(current_state);
+  ^~~~~~~~~
+walker.cc:133:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+     if (debug)
+     ^~
+walker.cc:135:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  my_info.cost = current_cost;
+  ^~~~~~~
+walker.cc: In member function 'const Operator* Walker::mha_successor(std::vector<const Operator*>&, MRW_Parameters&)':
+walker.cc:194:6: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+      if(num[index] == 0)
+      ^~
+walker.cc:196:3: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   if(Q_MHA[index] != 0){
+   ^~
+general_path_h_stats_lazy_best_first_search.cc: In static member function 'static SearchEngine* GeneralPathHStatsLazyBestFirstSearch::create_greedy(const std::vector<std::__cxx11::basic_string<char> >&, int, int&, bool)':
+general_path_h_stats_lazy_best_first_search.cc:136:38: warning: variable 'local_open' set but not used [-Wunused-but-set-variable]
+         OpenList<OpenListEntryLazy> *local_open;
+                                      ^~~~~~~~~~
+general_count_discrepancy_lazy_best_first_search.cc: In static member function 'static SearchEngine* GeneralCountDiscrepancyLazyBestFirstSearch::create_greedy(const std::vector<std::__cxx11::basic_string<char> >&, int, int&, bool)':
+general_count_discrepancy_lazy_best_first_search.cc:186:38: warning: variable 'local_open' set but not used [-Wunused-but-set-variable]
+         OpenList<OpenListEntryLazy> *local_open;
+                                      ^~~~~~~~~~
+general_two_level_macro_rw_eager_best_first_search.cc: In static member function 'static SearchEngine* GeneralTwoLevelMacroRwEagerBestFirstSearch::create_greedy(const std::vector<std::__cxx11::basic_string<char> >&, int, int&, bool)':
+general_two_level_macro_rw_eager_best_first_search.cc:434:10: warning: unused variable 'reopen_closed' [-Wunused-variable]
+     bool reopen_closed = false;
+          ^~~~~~~~~~~~~
+cg_heuristic.cc: In destructor 'virtual CGHeuristic::~CGHeuristic()':
+cg_heuristic.cc:35:29: warning: deleting object of polymorphic class type 'AdaptiveQueue<ValueNode*>' which has non-virtual destructor might cause undefined behavior [-Wdelete-non-virtual-dtor]
+         delete prio_queues[i];
+                             ^
+landmarks/landmark_status_manager.cc: In member function 'bool LandmarkStatusManager::update_lm_status(const State&)':
+landmarks/landmark_status_manager.cc:125:16: warning: variable 'proxy' set but not used [-Wunused-but-set-variable]
+     StateProxy proxy = StateProxy(&state);
+                ^~~~~
+option_parser.cc: In member function 'double OptionParser::parse_double(const std::vector<std::__cxx11::basic_string<char> >&, int, int&)':
+option_parser.cc:337:39: warning: parameter 'start' set but not used [-Wunused-but-set-parameter]
+     const vector<string> &config, int start, int &end) {
+                                       ^~~~~
+option_parser.cc: In member function 'int OptionParser::parse_int(const std::vector<std::__cxx11::basic_string<char> >&, int, int&)':
+option_parser.cc:350:39: warning: parameter 'start' set but not used [-Wunused-but-set-parameter]
+     const vector<string> &config, int start, int &end) {
+                                       ^~~~~
+walker.cc: In member function 'void Walker::random_walk(State, int, MRW_Parameters&, int, bool)':
+walker.cc:130:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+     if (debug)
+     ^~
+walker.cc:132:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  heuristic->evaluate(current_state);
+  ^~~~~~~~~
+walker.cc:133:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+     if (debug)
+     ^~
+walker.cc:135:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  my_info.cost = current_cost;
+  ^~~~~~~
+walker.cc: In member function 'const Operator* Walker::mha_successor(std::vector<const Operator*>&, MRW_Parameters&)':
+walker.cc:194:6: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+      if(num[index] == 0)
+      ^~
+walker.cc:196:3: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   if(Q_MHA[index] != 0){
+   ^~
+general_path_h_stats_lazy_best_first_search.cc: In static member function 'static SearchEngine* GeneralPathHStatsLazyBestFirstSearch::create_greedy(const std::vector<std::__cxx11::basic_string<char> >&, int, int&, bool)':
+general_path_h_stats_lazy_best_first_search.cc:136:38: warning: variable 'local_open' set but not used [-Wunused-but-set-variable]
+         OpenList<OpenListEntryLazy> *local_open;
+                                      ^~~~~~~~~~
+general_count_discrepancy_lazy_best_first_search.cc: In static member function 'static SearchEngine* GeneralCountDiscrepancyLazyBestFirstSearch::create_greedy(const std::vector<std::__cxx11::basic_string<char> >&, int, int&, bool)':
+general_count_discrepancy_lazy_best_first_search.cc:186:38: warning: variable 'local_open' set but not used [-Wunused-but-set-variable]
+         OpenList<OpenListEntryLazy> *local_open;
+                                      ^~~~~~~~~~
+general_two_level_macro_rw_eager_best_first_search.cc: In static member function 'static SearchEngine* GeneralTwoLevelMacroRwEagerBestFirstSearch::create_greedy(const std::vector<std::__cxx11::basic_string<char> >&, int, int&, bool)':
+general_two_level_macro_rw_eager_best_first_search.cc:434:10: warning: unused variable 'reopen_closed' [-Wunused-variable]
+     bool reopen_closed = false;
+          ^~~~~~~~~~~~~
+cg_heuristic.cc: In destructor 'virtual CGHeuristic::~CGHeuristic()':
+cg_heuristic.cc:35:29: warning: deleting object of polymorphic class type 'AdaptiveQueue<ValueNode*>' which has non-virtual destructor might cause undefined behavior [-Wdelete-non-virtual-dtor]
+         delete prio_queues[i];
+                             ^
+landmarks/landmark_status_manager.cc: In member function 'bool LandmarkStatusManager::update_lm_status(const State&)':
+landmarks/landmark_status_manager.cc:125:16: warning: variable 'proxy' set but not used [-Wunused-but-set-variable]
+     StateProxy proxy = StateProxy(&state);
+                ^~~~~
+Assembler messages:
+Fatal error: can't create obj/planner.release.o: No such file or directory
+make: *** [planner.release.o] Error 1
+rm: cannot remove 'one_run_aras': No such file or directory
+cp: cannot stat 'one_plan_aras_bfmrw_codes/release-search': No such file or directory
++ strip --strip-all /planner/planners/ipc2014-agl-jasper/preprocess/preprocess
++ strip --strip-all /planner/planners/ipc2014-agl-jasper/search/downward-1
++ strip --strip-all /planner/planners/ipc2014-agl-jasper/search/downward-2
++ strip --strip-all /planner/planners/ipc2014-agl-jasper/search/downward-4
+Getting image source signatures
+Copying blob sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+Copying config sha256:f9a80a55f492e823bf5d51f1bd5f87ea3eed1cb31788686aa99a2fb61a27af6a
+Writing manifest to image destination
+Storing signatures
+2023/06/11 11:52:29  info unpack layer: sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+INFO:    Copying planners/ipc2014-agl-probe to /planner/planners/ipc2014-agl-probe
+INFO:    Running post scriptlet
++ apt-get update
++ apt-get -y install bison flex make xutils-dev g++-multilib scons
+debconf: delaying package configuration, since apt-utils is not installed
++ cd /planner/planners/ipc2014-agl-probe
++ ./build
+makedepend: warning:  main.c (reading /usr/include/stdlib.h, line 31): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+makedepend: warning:  main.c (reading /usr/include/sys/types.h, line 145): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+makedepend: warning:  main.c (reading /usr/include/alloca.h, line 24): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+makedepend: warning:  main.c (reading /usr/include/stdio.h, line 33): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+makedepend: warning:  main.c (reading /usr/include/bits/_G_config.h, line 19): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+makedepend: warning:  main.c (reading /usr/include/bits/libio.h, line 53): cannot find include file "stdarg.h"
+	not in /usr/include/stdarg.h
+makedepend: warning:  main.c (reading /usr/include/strings.h, line 23): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+makedepend: warning:  main.c (reading /usr/include/string.h, line 33): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+makedepend: warning:  cannot open "scan-fct_pddl.tab.c"
+makedepend: warning:  cannot open "scan-ops_pddl.tab.c"
+makedepend: warning:  cannot open "scan-probname.tab.c"
+makedepend: warning:  cannot open "lex.fct_pddl.c"
+makedepend: warning:  cannot open "lex.ops_pddl.c"
+makedepend: warning:  test_main.cxx, line 3: cannot find include file "iostream"
+	not in /usr/include/iostream
+makedepend: warning:  test_main.cxx, line 4: cannot find include file "fstream"
+	not in /usr/include/fstream
+In file included from libff.c:1:0:
+libff.h:222:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+ #endif // libff.h
+        ^
+libff.c: In function 'FF_parse_problem':
+libff.c:378:2: warning: implicit declaration of function 'snprintf'; did you mean 'sprintf'? [-Wimplicit-function-declaration]
+  snprintf( ops_file, MAX_LENGTH, "%s", domain_file );
+  ^~~~~~~~
+  sprintf
+In file included from inst_easy.c:66:0:
+inst_easy.c: In function 'multiply_easy_non_constrained_effect_parameters':
+ff.h:319:37: warning: '*' in boolean context, suggest '&&' instead [-Wint-in-bool-context]
+ #define DECODE_VAR( val ) (val + 1) * (-1)
+                           ~~~~~~~~~~^~~~~~
+inst_easy.c:944:9: note: in expansion of macro 'DECODE_VAR'
+         DECODE_VAR( tmp->conditions[i].args[j] < lo->num_vars ) ) {
+         ^~~~~~~~~~
+inst_final.c: In function 'build_connectivity_graph':
+inst_final.c:1932:3: warning: implicit declaration of function 'srandom'; did you mean 'srand'? [-Wimplicit-function-declaration]
+   srandom( tp.millitm );
+   ^~~~~~~
+   srand
+inst_final.c:1948:24: warning: implicit declaration of function 'random'; did you mean 'rand'? [-Wimplicit-function-declaration]
+     gft_conn[i].rand = random() % BIG_INT;
+                        ^~~~~~
+                        rand
+scan-fct_pddl.y: warning: 1 nonterminal useless in grammar [-Wother]
+scan-fct_pddl.y: warning: 2 rules useless in grammar [-Wother]
+scan-fct_pddl.y:135.17-33: warning: nonterminal useless in grammar: literal_name_plus [-Wother]
+ %type <pPlNode> literal_name_plus
+                 ^^^^^^^^^^^^^^^^^
+scan-fct_pddl.y:814.1-817.1: warning: rule useless in grammar [-Wother]
+ literal_name
+ ^^^^^^^^^^^^
+scan-fct_pddl.y:819.1-823.1: warning: rule useless in grammar [-Wother]
+ literal_name literal_name_plus
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+scan-fct_pddl.y: warning: 1 shift/reduce conflict [-Wconflicts-sr]
+scan-fct_pddl.y: warning: 1 reduce/reduce conflict [-Wconflicts-rr]
+scan-fct_pddl.tab.c: In function 'fct_pddlparse':
+scan-fct_pddl.tab.c:64:25: warning: implicit declaration of function 'fct_pddllex'; did you mean 'fct_pddlparse'? [-Wimplicit-function-declaration]
+ #define yylex           fct_pddllex
+                         ^
+scan-fct_pddl.tab.c:1382:16: note: in expansion of macro 'yylex'
+       yychar = yylex ();
+                ^~~~~
+scan-fct_pddl.y:194:3: warning: implicit declaration of function 'fcterr'; did you mean 'ftell'? [-Wimplicit-function-declaration]
+   fcterr( PROBNAME_EXPECTED, NULL );
+   ^~~~~~
+   ftell
+scan-fct_pddl.tab.c:65:25: warning: implicit declaration of function 'fct_pddlerror'; did you mean 'fct_pddlparse'? [-Wimplicit-function-declaration]
+ #define yyerror         fct_pddlerror
+                         ^
+scan-fct_pddl.y:222:5: note: in expansion of macro 'yyerror'
+     yyerror();
+     ^~~~~~~
+In file included from scan-fct_pddl.y:876:0:
+lex.fct_pddl.c: At top level:
+lex.fct_pddl.c:28:16: warning: prototype for 'fct_pddlwrap' follows non-prototype definition
+ #define yywrap fct_pddlwrap
+                ^
+lex.fct_pddl.c:913:12: note: in expansion of macro 'yywrap'
+ extern int yywrap ( void );
+            ^~~~~~
+In file included from scan-fct_pddl.y:876:0:
+lex.fct_pddl.c: In function 'fct_pddl_init_buffer':
+lex.fct_pddl.c:1962:48: warning: implicit declaration of function 'fileno'; did you mean 'mblen'? [-Wimplicit-function-declaration]
+         b->yy_is_interactive = file ? (isatty( fileno(file) ) > 0) : 0;
+                                                ^~~~~~
+                                                mblen
+scan-fct_pddl.y: At top level:
+scan-fct_pddl.y:887:6: warning: conflicting types for 'fcterr'
+ void fcterr( int errno, char *par ) {
+      ^~~~~~
+scan-fct_pddl.y:194:3: note: previous implicit declaration of 'fcterr' was here
+   fcterr( PROBNAME_EXPECTED, NULL );
+   ^~~~~~
+In file included from scan-fct_pddl.y:876:0:
+lex.fct_pddl.c:1759:16: warning: 'input' defined but not used [-Wunused-function]
+     static int input  (void)
+                ^~~~~
+lex.fct_pddl.c:1716:17: warning: 'yyunput' defined but not used [-Wunused-function]
+     static void yyunput (int c, char * yy_bp )
+                 ^~~~~~~
+scan-ops_pddl.y: warning: 1 shift/reduce conflict [-Wconflicts-sr]
+scan-ops_pddl.tab.c: In function 'ops_pddlparse':
+scan-ops_pddl.tab.c:64:25: warning: implicit declaration of function 'ops_pddllex'; did you mean 'ops_pddlparse'? [-Wimplicit-function-declaration]
+ #define yylex           ops_pddllex
+                         ^
+scan-ops_pddl.tab.c:1439:16: note: in expansion of macro 'yylex'
+       yychar = yylex ();
+                ^~~~~
+scan-ops_pddl.y:205:3: warning: implicit declaration of function 'opserr'; did you mean 'stderr'? [-Wimplicit-function-declaration]
+   opserr( DOMDEF_EXPECTED, NULL );
+   ^~~~~~
+   stderr
+scan-ops_pddl.tab.c:65:25: warning: implicit declaration of function 'ops_pddlerror'; did you mean 'ops_pddlparse'? [-Wimplicit-function-declaration]
+ #define yyerror         ops_pddlerror
+                         ^
+scan-ops_pddl.y:379:5: note: in expansion of macro 'yyerror'
+     yyerror();
+     ^~~~~~~
+In file included from scan-ops_pddl.y:994:0:
+lex.ops_pddl.c: At top level:
+lex.ops_pddl.c:28:16: warning: prototype for 'ops_pddlwrap' follows non-prototype definition
+ #define yywrap ops_pddlwrap
+                ^
+lex.ops_pddl.c:928:12: note: in expansion of macro 'yywrap'
+ extern int yywrap ( void );
+            ^~~~~~
+In file included from scan-ops_pddl.y:994:0:
+lex.ops_pddl.c: In function 'ops_pddl_init_buffer':
+lex.ops_pddl.c:2003:48: warning: implicit declaration of function 'fileno'; did you mean 'mblen'? [-Wimplicit-function-declaration]
+         b->yy_is_interactive = file ? (isatty( fileno(file) ) > 0) : 0;
+                                                ^~~~~~
+                                                mblen
+scan-ops_pddl.y: At top level:
+scan-ops_pddl.y:1005:6: warning: conflicting types for 'opserr'
+ void opserr( int errno, char *par )
+      ^~~~~~
+scan-ops_pddl.y:205:3: note: previous implicit declaration of 'opserr' was here
+   opserr( DOMDEF_EXPECTED, NULL );
+   ^~~~~~
+In file included from scan-ops_pddl.y:994:0:
+lex.ops_pddl.c:1800:16: warning: 'input' defined but not used [-Wunused-function]
+     static int input  (void)
+                ^~~~~
+lex.ops_pddl.c:1757:17: warning: 'yyunput' defined but not used [-Wunused-function]
+     static void yyunput (int c, char * yy_bp )
+                 ^~~~~~~
+ar: `u' modifier ignored since `D' is the default (see `U')
+src/heuristic/h2.cxx: In member function 'void NFF::H2::compute_with_persist(NFF::State*, NFF::Atom_Op_Vec*, NFF::Bool_Vec*, NFF::Operator_Vec*)':
+src/heuristic/h2.cxx:193:22: warning: variable 'del_useable' set but not used [-Wunused-but-set-variable]
+                 bool del_useable = false;
+                      ^~~~~~~~~~~
+src/heuristic/heuristics.cxx: In member function 'void NFF::BestSupporter::extractAllSupPlanForAction(unsigned int, NFF::RelaxedPlan&)':
+src/heuristic/heuristics.cxx:461:42: warning: variable 'op' set but not used [-Wunused-but-set-variable]
+                                 unsigned op = 0;
+                                          ^~
+In file included from src/search/node.hxx:33:0,
+                 from src/search/focus_bfs.hxx:22,
+                 from src/search/focus_bfs.cxx:20:
+src/inference/propagation_graph.hxx: In instantiation of 'float NFF::Lazy_Abstract_Propagator<Heuristic>::build_propagation_graph_commited(Node_Type*, bool) [with Node_Type = NFF::Node; Heuristic = NFF::Heuristic_Cls]':
+src/search/focus_bfs.cxx:152:67:   required from here
+src/inference/propagation_graph.hxx:189:46: warning: variable 'at_least_one_supporter' set but not used [-Wunused-but-set-variable]
+                                         bool at_least_one_supporter = false;
+                                              ^~~~~~~~~~~~~~~~~~~~~~
++ ls -la
++ ls -la src/parser-ff
++ strip --strip-all /planner/planners/ipc2014-agl-probe/probe
+Getting image source signatures
+Copying blob sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+Copying config sha256:f9a80a55f492e823bf5d51f1bd5f87ea3eed1cb31788686aa99a2fb61a27af6a
+Writing manifest to image destination
+Storing signatures
+2023/06/11 11:53:40  info unpack layer: sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+INFO:    Copying planners/ipc2018-agl-olcff to /planner/planners/ipc2018-agl-olcff
+INFO:    Running post scriptlet
++ apt-get update
++ apt-get -y install python cmake make libboost-dev clang
+debconf: delaying package configuration, since apt-utils is not installed
++ cd /planner/planners/ipc2018-agl-olcff/fast-downward-conjunctions
++ ./build.py release64clangpgonative -j4
++ strip --strip-all /planner/planners/ipc2018-agl-olcff/fast-downward-conjunctions/builds/release64clangpgonative/bin/preprocess
++ strip --strip-all /planner/planners/ipc2018-agl-olcff/fast-downward-conjunctions/builds/release64clangpgonative/bin/downward
+Getting image source signatures
+Copying blob sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+Copying config sha256:f9a80a55f492e823bf5d51f1bd5f87ea3eed1cb31788686aa99a2fb61a27af6a
+Writing manifest to image destination
+Storing signatures
+2023/06/11 11:56:28  info unpack layer: sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331
+INFO:    Copying /planner/planners/ipc2018-opt-scorpion/driver to 
+INFO:    Copying /planner/planners/ipc2018-opt-scorpion/fast-downward.py to 
+INFO:    Copying /planner/planners/ipc2018-opt-scorpion/builds/release64/bin to 
+INFO:    Copying /planner/planners/ipc2018-opt-scorpion/builds/h2-mutexes/bin/preprocess to 
+INFO:    Copying /planner/planners/ipc2018-saarplan/fast-downward.py to 
+INFO:    Copying /planner/planners/ipc2018-saarplan/driver to 
+INFO:    Copying /planner/planners/ipc2018-saarplan/fast-downward-conjunctions/driver to 
+INFO:    Copying /planner/planners/ipc2018-saarplan/fast-downward-conjunctions/builds/release64/bin/translate to 
+INFO:    Copying /planner/planners/ipc2018-saarplan/fast-downward-conjunctions/builds/release64/bin/preprocess to 
+INFO:    Copying /planner/planners/ipc2018-saarplan/fast-downward-conjunctions/builds/release64/bin/downward to 
+INFO:    Copying /planner/planners/ipc2018-opt-complementary2/driver to 
+INFO:    Copying /planner/planners/ipc2018-opt-complementary2/fast-downward.py to 
+INFO:    Copying /planner/planners/ipc2018-opt-complementary2/builds/release64/bin to 
+INFO:    Copying /planner/planners/ipc2018-opt-delfi/driver to 
+INFO:    Copying /planner/planners/ipc2018-opt-delfi/fast-downward.py to 
+INFO:    Copying /planner/planners/ipc2018-opt-delfi/builds/release64/bin to 
+INFO:    Copying /planner/planners/ipc2018-symple1/plan to 
+INFO:    Copying /planner/planners/ipc2018-symple1/src/plan to 
+INFO:    Copying /planner/planners/ipc2018-symple1/src/plan-ipc-18 to 
+INFO:    Copying /planner/planners/ipc2018-symple1/src/translate to 
+INFO:    Copying /planner/planners/ipc2018-symple1/src/preprocess/preprocess to 
+INFO:    Copying /planner/planners/ipc2018-symple1/src/search/dispatch to 
+INFO:    Copying /planner/planners/ipc2018-symple1/src/search/downward to 
+INFO:    Copying /planner/planners/ipc2018-symple1/src/search/downward-1 to 
+INFO:    Copying /planner/planners/ipc2018-symple1/src/search/downward-2 to 
+INFO:    Copying /planner/planners/ipc2018-symple1/src/search/downward-4 to 
+INFO:    Copying /planner/planners/ipc2018-symple1/src/search/unitcost to 
+INFO:    Copying /planner/planners/ipc2018-symple2/plan to 
+INFO:    Copying /planner/planners/ipc2018-symple2/src/plan to 
+INFO:    Copying /planner/planners/ipc2018-symple2/src/plan-ipc-18 to 
+INFO:    Copying /planner/planners/ipc2018-symple2/src/translate to 
+INFO:    Copying /planner/planners/ipc2018-symple2/src/preprocess/preprocess to 
+INFO:    Copying /planner/planners/ipc2018-symple2/src/search/dispatch to 
+INFO:    Copying /planner/planners/ipc2018-symple2/src/search/downward to 
+INFO:    Copying /planner/planners/ipc2018-symple2/src/search/downward-1 to 
+INFO:    Copying /planner/planners/ipc2018-symple2/src/search/downward-2 to 
+INFO:    Copying /planner/planners/ipc2018-symple2/src/search/downward-4 to 
+INFO:    Copying /planner/planners/ipc2018-symple2/src/search/unitcost to 
+INFO:    Copying /planner/planners/ipc2014-opt-symba1/plan to 
+INFO:    Copying /planner/planners/ipc2014-opt-symba1/src/plan to 
+INFO:    Copying /planner/planners/ipc2014-opt-symba1/src/plan-ipc to 
+INFO:    Copying /planner/planners/ipc2014-opt-symba1/src/translate to 
+INFO:    Copying /planner/planners/ipc2014-opt-symba1/src/preprocess/preprocess to 
+INFO:    Copying /planner/planners/ipc2014-opt-symba1/src/search/downward to 
+INFO:    Copying /planner/planners/ipc2014-opt-symba1/src/search/downward-1 to 
+INFO:    Copying /planner/planners/ipc2014-opt-symba1/src/search/downward-2 to 
+INFO:    Copying /planner/planners/ipc2014-opt-symba1/src/search/downward-4 to 
+INFO:    Copying /planner/planners/ipc2014-opt-symba1/src/search/dispatch to 
+INFO:    Copying /planner/planners/ipc2014-opt-symba1/src/search/unitcost to 
+INFO:    Copying /planner/planners/ipc2018-fd-2018/driver to 
+INFO:    Copying /planner/planners/ipc2018-fd-2018/fast-downward.py to 
+INFO:    Copying /planner/planners/ipc2018-fd-2018/builds/release64/bin to 
+INFO:    Copying /planner/planners/ipc2018-fd-2018/builds/h2-mutexes/bin/preprocess to 
+INFO:    Copying /planner/planners/ipc2018-agl-merwin/src/search/downward to 
+INFO:    Copying /planner/planners/ipc2018-agl-merwin/src/search/downward-1 to 
+INFO:    Copying /planner/planners/ipc2018-agl-merwin/src/search/downward-2 to 
+INFO:    Copying /planner/planners/ipc2018-agl-merwin/src/search/downward-4 to 
+INFO:    Copying /planner/planners/ipc2018-agl-merwin/src/search/dispatch to 
+INFO:    Copying /planner/planners/ipc2018-agl-merwin/src/search/unitcost to 
+INFO:    Copying /planner/planners/ipc2018-agl-merwin/src/preprocess/ to 
+INFO:    Copying /planner/planners/ipc2018-agl-merwin/src/translate/ to 
+INFO:    Copying /planner/planners/ipc2018-agl-merwin/src/prepare to 
+INFO:    Copying /planner/planners/ipc2018-agl-merwin/src/plan to 
+INFO:    Copying /planner/planners/ipc2018-agl-merwin/src/plan-ipc to 
+INFO:    Copying /planner/planners/ipc2018-agl-merwin/plan-agl to 
+INFO:    Copying /planner/planners/ipc2018-agl-merwin/plan-sat to 
+INFO:    Copying /planner/planners/ipc2018-agl-mercury2014/src/search/downward to 
+INFO:    Copying /planner/planners/ipc2018-agl-mercury2014/src/search/downward-1 to 
+INFO:    Copying /planner/planners/ipc2018-agl-mercury2014/src/search/downward-2 to 
+INFO:    Copying /planner/planners/ipc2018-agl-mercury2014/src/search/downward-4 to 
+INFO:    Copying /planner/planners/ipc2018-agl-mercury2014/src/search/dispatch to 
+INFO:    Copying /planner/planners/ipc2018-agl-mercury2014/src/search/unitcost to 
+INFO:    Copying /planner/planners/ipc2018-agl-mercury2014/src/preprocess/preprocess to 
+INFO:    Copying /planner/planners/ipc2018-agl-mercury2014/src/translate/ to 
+INFO:    Copying /planner/planners/ipc2018-agl-mercury2014/src/plan to 
+INFO:    Copying /planner/planners/ipc2018-agl-mercury2014/src/plan-ipc to 
+INFO:    Copying /planner/planners/ipc2018-agl-mercury2014/plan to 
+INFO:    Copying /planner/planners/ipc2018-opt-metis/fast-downward.py to 
+INFO:    Copying /planner/planners/ipc2018-opt-metis/builds/release64/bin/ to 
+INFO:    Copying /planner/planners/ipc2018-opt-metis/driver to 
+INFO:    Copying /planner/planners/ipc2018-agl-cerberus/fast-downward.py to 
+INFO:    Copying /planner/planners/ipc2018-agl-cerberus/plan.py to 
+INFO:    Copying /planner/planners/ipc2018-agl-cerberus/builds/release64/bin/ to 
+INFO:    Copying /planner/planners/ipc2018-agl-cerberus/driver to 
+INFO:    Copying /planner/planners/ipc2018-lapkt-dfs-plus/dfs_plus to 
+INFO:    Copying /planner/planners/ipc2018-lapkt-dfs-plus/LAPKT-public/external/libff/libff.a to 
+INFO:    Copying /planner/planners/ipc2018-lapkt-dfs-plus/LAPKT-public/planners/dfs_plus to 
+INFO:    Copying /usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0 to 
+INFO:    Copying /usr/lib/x86_64-linux-gnu/libboost_python-py27.so.1.65.1 to 
+INFO:    Copying /planner/planners/ipc2018-lapkt-bfws/LAPKT-public/external/libff/libff.a to 
+INFO:    Copying /planner/planners/ipc2018-lapkt-bfws/BFWS/ff-version to 
+INFO:    Copying /planner/planners/ipc2018-lapkt-bfws/BFWS/fd-version to 
+INFO:    Copying /planner/planners/ipc2018-lapkt-bfws/Fast-Downward-2018-2/builds/release64/bin to 
+INFO:    Copying /planner/planners/ipc2018-lapkt-bfws/Fast-Downward-2018-2/driver to 
+INFO:    Copying /planner/planners/ipc2018-lapkt-bfws/Fast-Downward-2018-2/fast-downward.py to 
+INFO:    Copying /planner/planners/ipc2018-lapkt-bfws/Fast-Downward-2018-2/fast-downward-singularity.py to 
+INFO:    Copying /planner/planners/ipc2018-lapkt-bfws/h2-fd-preprocessor/builds/release32/bin to 
+INFO:    Copying /usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0 to 
+INFO:    Copying /usr/lib/x86_64-linux-gnu/libboost_python-py27.so.1.65.1 to 
+INFO:    Copying /planner/planners/ipc2018-decstar/src/driver to 
+INFO:    Copying /planner/planners/ipc2018-decstar/src/fast-downward.py to 
+INFO:    Copying /planner/planners/ipc2018-decstar/src/preprocess/preprocess to 
+INFO:    Copying /planner/planners/ipc2018-decstar/src/translate to 
+INFO:    Copying /planner/planners/ipc2018-decstar/src/search/downward-release to 
+INFO:    Copying /planner/planners/ipc2018-agl-freelunch-madagascar/MpC to 
+INFO:    Copying /planner/planners/ipc2018-agl-freelunch-madagascar/incplan-lgl to 
+INFO:    Copying /planner/planners/ipc2018-agl-freelunch-madagascar/plan.sh to 
+INFO:    Copying /planner/planners/ipc2018-opt-planning-pdbs/fast-downward.py to 
+INFO:    Copying /planner/planners/ipc2018-opt-planning-pdbs/driver to 
+INFO:    Copying /planner/planners/ipc2018-opt-planning-pdbs/builds/release64/bin to 
+INFO:    Copying /planner/planners/ipc2014-agl-mpc/MpC to 
+INFO:    Copying /planner/planners/ipc2014-agl-jasper/translate to 
+INFO:    Copying /planner/planners/ipc2014-agl-jasper/preprocess/preprocess to 
+INFO:    Copying /planner/planners/ipc2014-agl-jasper/search/downward* to 
+INFO:    Copying /planner/planners/ipc2014-agl-jasper/search/unitcost to 
+INFO:    Copying /planner/planners/ipc2014-agl-jasper/search/dispatch to 
+INFO:    Copying /planner/planners/ipc2014-agl-jasper/plan to 
+INFO:    Copying /planner/planners/ipc2014-agl-jasper/plan-ipc to 
+INFO:    Copying /planner/planners/ipc2014-agl-jasper/one_plan_aras_bfmrw_codes to 
+INFO:    Copying /planner/planners/ipc2014-agl-probe/probe to 
+INFO:    Copying /planner/planners/ipc2014-agl-probe/src/parser-ff/libff.a to 
+INFO:    Copying /planner/planners/ipc2014-agl-probe/plan to 
+INFO:    Copying /planner/planners/ipc2018-agl-olcff/fast-downward-conjunctions/driver to 
+INFO:    Copying /planner/planners/ipc2018-agl-olcff/fast-downward-conjunctions/fast-downward.py to 
+INFO:    Copying /planner/planners/ipc2018-agl-olcff/fast-downward-conjunctions/builds/release64clangpgonative/bin to 
+INFO:    Copying configs to /planner/configs
+INFO:    Copying plan.py to /planner/plan.py
+INFO:    Copying run-portfolio.py to /planner/run-portfolio.py
+INFO:    Copying portfolio_driver to /planner/portfolio_driver
+INFO:    Running post scriptlet
++ apt-get update
++ apt-get -y install --no-install-recommends python software-properties-common time gawk python-pip
+debconf: delaying package configuration, since apt-utils is not installed
++ pip2 install -U wheel setuptools
++ pip2 install networkx
++ apt-get -y install --no-install-recommends python3
++ apt-get clean
++ rm -rf /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_bionic-backports_InRelease /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_bionic-backports_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_bionic-backports_universe_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_bionic-updates_InRelease /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_bionic-updates_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_bionic-updates_multiverse_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_bionic-updates_restricted_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_bionic-updates_universe_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_bionic_InRelease /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_bionic_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_bionic_multiverse_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_bionic_restricted_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_bionic_universe_binary-amd64_Packages.lz4 /var/lib/apt/lists/auxfiles /var/lib/apt/lists/lock /var/lib/apt/lists/partial /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_bionic-security_InRelease /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_bionic-security_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_bionic-security_multiverse_binary-amd64_Packages.lz4 /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_bionic-security_restricted_binary-amd64_Packages.lz4 /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_bionic-security_universe_binary-amd64_Packages.lz4
+INFO:    Adding labels
+INFO:    Adding runscript
+INFO:    Creating SIF file...
+INFO:    Build complete: /tmp/hapori_mip2_agl.img

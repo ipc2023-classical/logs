@@ -1,0 +1,44 @@
+INFO:    Starting build...
+Getting image source signatures
+Copying blob sha256:ca1778b6935686ad781c27472c4668fc61ec3aeb85494f72deb1921892b9d39e
+Copying config sha256:88bd6891718934e63638d9ca0ecee018e69b638270fe04990a310e5c78ab4a92
+Writing manifest to image destination
+Storing signatures
+2023/05/03 12:04:14  info unpack layer: sha256:ca1778b6935686ad781c27472c4668fc61ec3aeb85494f72deb1921892b9d39e
+INFO:    Copying . to 
+INFO:    Running post scriptlet
++ export DEBIAN_FRONTEND=noninteractive
++ apt-get update
++ apt-get -y install cmake python3 make g++ unzip wget
+debconf: delaying package configuration, since apt-utils is not installed
++ cat third_party/libtorch.part1.zip third_party/libtorch.part2.zip third_party/libtorch.part3.zip third_party/libtorch.part4.zip third_party/libtorch.part5.zip third_party/libtorch.part6.zip third_party/libtorch.part7.zip third_party/libtorch.part8.zip
++ unzip third_party/libtorch.full.zip -d third_party
++ pwd
++ export Torch_DIR=//third_party/libtorch
++ ./build.py -j4
++ strip --strip-all builds/release/bin/downward
+Getting image source signatures
+Copying blob sha256:ca1778b6935686ad781c27472c4668fc61ec3aeb85494f72deb1921892b9d39e
+Copying config sha256:88bd6891718934e63638d9ca0ecee018e69b638270fe04990a310e5c78ab4a92
+Writing manifest to image destination
+Storing signatures
+2023/05/03 12:09:59  info unpack layer: sha256:ca1778b6935686ad781c27472c4668fc61ec3aeb85494f72deb1921892b9d39e
+INFO:    Copying builds/release/bin/ to 
+INFO:    Copying third_party/libtorch/lib to 
+INFO:    Copying driver to 
+INFO:    Copying src/pytorch to 
+INFO:    Copying requirements.txt to 
+INFO:    Copying run.py to 
+INFO:    Copying train.py to 
+INFO:    Copying test.py to 
+INFO:    Copying fast-downward.py to 
+INFO:    Running post scriptlet
++ apt-get update
++ apt-get -y install python3-minimal python3-pip
+debconf: delaying package configuration, since apt-utils is not installed
++ python3 -m pip install --no-cache-dir -r requirements.txt
++ rm -rf /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_focal-backports_InRelease /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_focal-backports_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_focal-backports_universe_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_focal-updates_InRelease /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_focal-updates_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_focal-updates_multiverse_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_focal-updates_restricted_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_focal-updates_universe_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_focal_InRelease /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_focal_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_focal_multiverse_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_focal_restricted_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_focal_universe_binary-amd64_Packages.lz4 /var/lib/apt/lists/auxfiles /var/lib/apt/lists/lock /var/lib/apt/lists/partial /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_focal-security_InRelease /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_focal-security_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_focal-security_multiverse_binary-amd64_Packages.lz4 /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_focal-security_restricted_binary-amd64_Packages.lz4 /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_focal-security_universe_binary-amd64_Packages.lz4
+INFO:    Adding labels
+INFO:    Adding runscript
+INFO:    Creating SIF file...
+INFO:    Build complete: /tmp/FSM.img

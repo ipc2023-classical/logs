@@ -1,0 +1,309 @@
+INFO:    Starting build...
+Getting image source signatures
+Copying blob sha256:0963d61c5d36e157f4d244438f1a5213d8590b724d49300d6df8ebf5d70342a9
+Copying config sha256:f15f05d8742509cfc142f79dfe4cc2fa4e1b7bd20415675f7b52d3e22fd53670
+Writing manifest to image destination
+Storing signatures
+2023/06/02 08:52:23  info unpack layer: sha256:0963d61c5d36e157f4d244438f1a5213d8590b724d49300d6df8ebf5d70342a9
+INFO:    Copying . to 
+INFO:    Running post scriptlet
++ apt-get update
++ apt-get -y install --no-install-recommends cmake make g++ pypy3 automake libboost-all-dev
+debconf: delaying package configuration, since apt-utils is not installed
++ rm -rf ./builds
++ pypy3 build.py release64
+CMake Deprecation Warning at CMakeLists.txt:31 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+libcudd 64-bits build
+configure.ac:131: warning: The macro `AC_TRY_RUN' is obsolete.
+configure.ac:131: You should run autoupdate.
+./lib/autoconf/general.m4:2997: AC_TRY_RUN is expanded from...
+lib/m4sugar/m4sh.m4:692: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:699: AS_IF is expanded from...
+./lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+configure.ac:131: the top level
+configure: WARNING: Doxygen not found - continuing without Doxygen support
+configure: WARNING: pdflatex not found - unable to compile manual to PDF
+configure: WARNING: makeindex not found - unable to compile manual to PDF
+cudd/cuddAddIte.c: In function 'Cudd_addLeq':
+cudd/cuddAddIte.c:377:31: warning: cast between incompatible function types from 'int (*)(DdManager *, DdNode *, DdNode *)' to 'DdNode * (*)(DdManager *, DdNode *, DdNode *)' [-Wcast-function-type]
+  377 |     tmp = cuddCacheLookup2(dd,(DD_CTFP)Cudd_addLeq,f,g);
+      |                               ^
+cudd/cuddAddIte.c:399:25: warning: cast between incompatible function types from 'int (*)(DdManager *, DdNode *, DdNode *)' to 'DdNode * (*)(DdManager *, DdNode *, DdNode *)' [-Wcast-function-type]
+  399 |     cuddCacheInsert2(dd,(DD_CTFP) Cudd_addLeq,f,g,
+      |                         ^
+cudd/cuddAddNeg.c: In function 'cuddAddRoundOffRecur':
+cudd/cuddAddNeg.c:238:15: warning: cast between incompatible function types from 'DdNode * (*)(DdManager *, DdNode *, int)' to 'DdNode * (*)(DdManager *, DdNode *)' [-Wcast-function-type]
+  238 |     cacheOp = (DD_CTFP1) Cudd_addRoundOff;
+      |               ^
+cudd/cuddBddAbs.c: In function 'Cudd_bddVarIsDependent':
+cudd/cuddBddAbs.c:362:15: warning: cast between incompatible function types from 'int (*)(DdManager *, DdNode *, DdNode *)' to 'DdNode * (*)(DdManager *, DdNode *, DdNode *)' [-Wcast-function-type]
+  362 |     cacheOp = (DD_CTFP) Cudd_bddVarIsDependent;
+      |               ^
+cudd/cuddBddIte.c: In function 'Cudd_bddLeq':
+cudd/cuddBddIte.c:662:35: warning: cast between incompatible function types from 'int (*)(DdManager *, DdNode *, DdNode *)' to 'DdNode * (*)(DdManager *, DdNode *, DdNode *)' [-Wcast-function-type]
+  662 |         tmp = cuddCacheLookup2(dd,(DD_CTFP)Cudd_bddLeq,f,g);
+      |                                   ^
+cudd/cuddBddIte.c:695:29: warning: cast between incompatible function types from 'int (*)(DdManager *, DdNode *, DdNode *)' to 'DdNode * (*)(DdManager *, DdNode *, DdNode *)' [-Wcast-function-type]
+  695 |         cuddCacheInsert2(dd,(DD_CTFP)Cudd_bddLeq,f,g,(res ? one : zero));
+      |                             ^
+cudd/cuddClip.c: In function 'cuddBddClippingAndRecur':
+cudd/cuddClip.c:285:15: warning: cast between incompatible function types from 'DdNode * (*)(DdManager *, DdNode *, DdNode *, int,  int)' to 'DdNode * (*)(DdManager *, DdNode *, DdNode *)' [-Wcast-function-type]
+  285 |     cacheOp = (DD_CTFP)
+      |               ^
+cudd/cuddMatMult.c: In function 'addMMRecur':
+cudd/cuddMatMult.c:379:15: warning: cast between incompatible function types from 'DdNode * (*)(DdManager *, DdNode *, DdNode *, int,  int *)' to 'DdNode * (*)(DdManager *, DdNode *, DdNode *)' [-Wcast-function-type]
+  379 |     cacheOp = (DD_CTFP) addMMRecur;
+      |               ^
+cudd/cuddPriority.c: In function 'cuddBddClosestCube':
+cudd/cuddPriority.c:1637:35: warning: cast between incompatible function types from 'DdNode * (*)(DdManager *, DdNode *, DdNode *, int *)' to 'DdNode * (*)(DdManager *, DdNode *, DdNode *)' [-Wcast-function-type]
+ 1637 |         res = cuddCacheLookup2(dd,(DD_CTFP) Cudd_bddClosestCube, f, g);
+      |                                   ^
+cudd/cuddPriority.c:1789:29: warning: cast between incompatible function types from 'DdNode * (*)(DdManager *, DdNode *, DdNode *, int *)' to 'DdNode * (*)(DdManager *, DdNode *, DdNode *)' [-Wcast-function-type]
+ 1789 |         cuddCacheInsert2(dd,(DD_CTFP) Cudd_bddClosestCube, f, g, res);
+      |                             ^
+cudd/cuddSat.c: In function 'Cudd_Decreasing':
+cudd/cuddSat.c:420:15: warning: cast between incompatible function types from 'DdNode * (*)(DdManager *, DdNode *, int)' to 'DdNode * (*)(DdManager *, DdNode *, DdNode *)' [-Wcast-function-type]
+  420 |     cacheOp = (DD_CTFP) Cudd_Decreasing;
+      |               ^
+cudd/cuddSat.c: In function 'Cudd_EqualSupNorm':
+cudd/cuddSat.c:798:29: warning: cast between incompatible function types from 'int (*)(DdManager *, DdNode *, DdNode *, CUDD_VALUE_TYPE,  int)' {aka 'int (*)(DdManager *, DdNode *, DdNode *, double,  int)'} to 'DdNode * (*)(DdManager *, DdNode *, DdNode *)' [-Wcast-function-type]
+  798 |     r = cuddCacheLookup2(dd,(DD_CTFP)Cudd_EqualSupNorm,f,g);
+      |                             ^
+cudd/cuddSat.c:813:25: warning: cast between incompatible function types from 'int (*)(DdManager *, DdNode *, DdNode *, CUDD_VALUE_TYPE,  int)' {aka 'int (*)(DdManager *, DdNode *, DdNode *, double,  int)'} to 'DdNode * (*)(DdManager *, DdNode *, DdNode *)' [-Wcast-function-type]
+  813 |     cuddCacheInsert2(dd,(DD_CTFP)Cudd_EqualSupNorm,f,g,DD_ONE(dd));
+      |                         ^
+cudd/cuddWindow.c: In function 'ddPermuteWindow3':
+cudd/cuddWindow.c:386:18: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  386 |     case BCA: if (!cuddSwapInPlace(table,y,z)) return(0);
+      |                  ^
+cudd/cuddWindow.c:387:5: note: here
+  387 |     case CBA: if (!cuddSwapInPlace(table,x,y)) return(0);
+      |     ^~~~
+cudd/cuddWindow.c:387:18: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  387 |     case CBA: if (!cuddSwapInPlace(table,x,y)) return(0);
+      |                  ^
+cudd/cuddWindow.c:388:5: note: here
+  388 |     case ABC: if (!cuddSwapInPlace(table,y,z)) return(0);
+      |     ^~~~
+cudd/cuddWindow.c:390:18: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  390 |     case BAC: if (!cuddSwapInPlace(table,y,z)) return(0);
+      |                  ^
+cudd/cuddWindow.c:391:5: note: here
+  391 |     case CAB: if (!cuddSwapInPlace(table,x,y)) return(0);
+      |     ^~~~
+cudd/cuddWindow.c: In function 'ddPermuteWindow4':
+cudd/cuddWindow.c:759:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  759 |     case DBCA: if (!cuddSwapInPlace(table,y,z)) return(0);
+      |                   ^
+cudd/cuddWindow.c:760:5: note: here
+  760 |     case BDCA: if (!cuddSwapInPlace(table,x,y)) return(0);
+      |     ^~~~
+cudd/cuddWindow.c:760:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  760 |     case BDCA: if (!cuddSwapInPlace(table,x,y)) return(0);
+      |                   ^
+cudd/cuddWindow.c:761:5: note: here
+  761 |     case CDBA: if (!cuddSwapInPlace(table,w,x)) return(0);
+      |     ^~~~
+cudd/cuddWindow.c:761:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  761 |     case CDBA: if (!cuddSwapInPlace(table,w,x)) return(0);
+      |                   ^
+cudd/cuddWindow.c:762:5: note: here
+  762 |     case ADBC: if (!cuddSwapInPlace(table,y,z)) return(0);
+      |     ^~~~
+cudd/cuddWindow.c:762:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  762 |     case ADBC: if (!cuddSwapInPlace(table,y,z)) return(0);
+      |                   ^
+cudd/cuddWindow.c:763:5: note: here
+  763 |     case ABDC: if (!cuddSwapInPlace(table,x,y)) return(0);
+      |     ^~~~
+cudd/cuddWindow.c:763:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  763 |     case ABDC: if (!cuddSwapInPlace(table,x,y)) return(0);
+      |                   ^
+cudd/cuddWindow.c:764:5: note: here
+  764 |     case ACDB: if (!cuddSwapInPlace(table,y,z)) return(0);
+      |     ^~~~
+cudd/cuddWindow.c:766:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  766 |     case DCBA: if (!cuddSwapInPlace(table,y,z)) return(0);
+      |                   ^
+cudd/cuddWindow.c:767:5: note: here
+  767 |     case BCDA: if (!cuddSwapInPlace(table,x,y)) return(0);
+      |     ^~~~
+cudd/cuddWindow.c:767:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  767 |     case BCDA: if (!cuddSwapInPlace(table,x,y)) return(0);
+      |                   ^
+cudd/cuddWindow.c:768:5: note: here
+  768 |     case CBDA: if (!cuddSwapInPlace(table,w,x)) return(0);
+      |     ^~~~
+cudd/cuddWindow.c:772:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  772 |     case DBAC: if (!cuddSwapInPlace(table,x,y)) return(0);
+      |                   ^
+cudd/cuddWindow.c:773:5: note: here
+  773 |     case DCAB: if (!cuddSwapInPlace(table,w,x)) return(0);
+      |     ^~~~
+cudd/cuddWindow.c:773:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  773 |     case DCAB: if (!cuddSwapInPlace(table,w,x)) return(0);
+      |                   ^
+cudd/cuddWindow.c:774:5: note: here
+  774 |     case DACB: if (!cuddSwapInPlace(table,y,z)) return(0);
+      |     ^~~~
+cudd/cuddWindow.c:774:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  774 |     case DACB: if (!cuddSwapInPlace(table,y,z)) return(0);
+      |                   ^
+cudd/cuddWindow.c:775:5: note: here
+  775 |     case BACD: if (!cuddSwapInPlace(table,x,y)) return(0);
+      |     ^~~~
+cudd/cuddWindow.c:775:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  775 |     case BACD: if (!cuddSwapInPlace(table,x,y)) return(0);
+      |                   ^
+cudd/cuddWindow.c:776:5: note: here
+  776 |     case CABD: if (!cuddSwapInPlace(table,w,x)) return(0);
+      |     ^~~~
+cudd/cuddWindow.c:778:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  778 |     case DABC: if (!cuddSwapInPlace(table,y,z)) return(0);
+      |                   ^
+cudd/cuddWindow.c:779:5: note: here
+  779 |     case BADC: if (!cuddSwapInPlace(table,x,y)) return(0);
+      |     ^~~~
+cudd/cuddWindow.c:779:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  779 |     case BADC: if (!cuddSwapInPlace(table,x,y)) return(0);
+      |                   ^
+cudd/cuddWindow.c:780:5: note: here
+  780 |     case CADB: if (!cuddSwapInPlace(table,w,x)) return(0);
+      |     ^~~~
+cudd/cuddWindow.c:783:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  783 |     case BDAC: if (!cuddSwapInPlace(table,x,y)) return(0);
+      |                   ^
+cudd/cuddWindow.c:784:5: note: here
+  784 |     case CDAB: if (!cuddSwapInPlace(table,w,x)) return(0);
+      |     ^~~~
+cudd/cuddWindow.c:784:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  784 |     case CDAB: if (!cuddSwapInPlace(table,w,x)) return(0);
+      |                   ^
+cudd/cuddWindow.c:785:5: note: here
+  785 |     case ADCB: if (!cuddSwapInPlace(table,y,z)) return(0);
+      |     ^~~~
+cudd/cuddWindow.c:785:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  785 |     case ADCB: if (!cuddSwapInPlace(table,y,z)) return(0);
+      |                   ^
+cudd/cuddWindow.c:786:5: note: here
+  786 |     case ABCD: if (!cuddSwapInPlace(table,x,y)) return(0);
+      |     ^~~~
+cudd/cuddWindow.c:788:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  788 |     case BCAD: if (!cuddSwapInPlace(table,x,y)) return(0);
+      |                   ^
+cudd/cuddWindow.c:789:5: note: here
+  789 |     case CBAD: if (!cuddSwapInPlace(table,w,x)) return(0);
+      |     ^~~~
+cudd/cuddZddIsop.c: In function 'cuddZddIsop':
+cudd/cuddZddIsop.c:256:15: warning: cast between incompatible function types from 'DdNode * (*)(DdManager *, DdNode *, DdNode *, DdNode **)' to 'DdNode * (*)(DdManager *, DdNode *, DdNode *)' [-Wcast-function-type]
+  256 |     cacheOp = (DD_CTFP) cuddZddIsop;
+      |               ^
+In file included from /usr/include/assert.h:35,
+                 from util/util.h:70,
+                 from util/cpu_stats.c:66:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+util/cstringstream.c: In function 'appendStringStringStream':
+util/cstringstream.c:143:3: warning: '__builtin_strncpy' output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+  143 |   strncpy(ss->data + ss->inUse - len, s, len);
+      |   ^
+util/cstringstream.c:140:16: note: length computed here
+  140 |   size_t len = strlen(s);
+      |                ^~~~~~~~~
+util/cstringstream.c: In function 'appendIntStringStream':
+util/cstringstream.c:143:3: warning: '__builtin_strncpy' output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+  143 |   strncpy(ss->data + ss->inUse - len, s, len);
+      |   ^
+In function 'appendStringStringStream',
+    inlined from 'appendIntStringStream' at util/cstringstream.c:151:10:
+util/cstringstream.c:140:16: note: length computed here
+  140 |   size_t len = strlen(s);
+      |                ^~~~~~~~~
+util/cstringstream.c: In function 'appendUnsignedStringStream':
+util/cstringstream.c:143:3: warning: '__builtin_strncpy' output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+  143 |   strncpy(ss->data + ss->inUse - len, s, len);
+      |   ^
+In function 'appendStringStringStream',
+    inlined from 'appendUnsignedStringStream' at util/cstringstream.c:158:10:
+util/cstringstream.c:140:16: note: length computed here
+  140 |   size_t len = strlen(s);
+      |                ^~~~~~~~~
+util/cstringstream.c: In function 'appendLongStringStream':
+util/cstringstream.c:143:3: warning: '__builtin_strncpy' output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+  143 |   strncpy(ss->data + ss->inUse - len, s, len);
+      |   ^
+In function 'appendStringStringStream',
+    inlined from 'appendLongStringStream' at util/cstringstream.c:165:10:
+util/cstringstream.c:140:16: note: length computed here
+  140 |   size_t len = strlen(s);
+      |                ^~~~~~~~~
+util/cstringstream.c: In function 'appendUnsignedLongStringStream':
+util/cstringstream.c:143:3: warning: '__builtin_strncpy' output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+  143 |   strncpy(ss->data + ss->inUse - len, s, len);
+      |   ^
+In function 'appendStringStringStream',
+    inlined from 'appendUnsignedLongStringStream' at util/cstringstream.c:172:10:
+util/cstringstream.c:140:16: note: length computed here
+  140 |   size_t len = strlen(s);
+      |                ^~~~~~~~~
+util/cstringstream.c: In function 'appendDoubleStringStream':
+util/cstringstream.c:143:3: warning: '__builtin_strncpy' output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+  143 |   strncpy(ss->data + ss->inUse - len, s, len);
+      |   ^
+In function 'appendStringStringStream',
+    inlined from 'appendDoubleStringStream' at util/cstringstream.c:179:10:
+util/cstringstream.c:140:16: note: length computed here
+  140 |   size_t len = strlen(s);
+      |                ^~~~~~~~~
+ar: `u' modifier ignored since `D' is the default (see `U')
+In file included from dddmp/dddmpInt.h:39,
+                 from dddmp/dddmpStoreCnf.c:29:
+dddmp/dddmpStoreCnf.c: In function 'DddmpCuddBddArrayStoreCnf':
+dddmp/dddmp.h:242:13: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  242 |             fflush(stderr); \
+      |             ^~~~~~~~~~~~~~
+dddmp/dddmpStoreCnf.c:599:7: note: in expansion of macro 'Dddmp_Warning'
+  599 |       Dddmp_Warning (1, "Wrong DDDMP Store Mode. Force DDDMP_MODE_BEST.");
+      |       ^~~~~~~~~~~~~
+dddmp/dddmpStoreCnf.c:600:5: note: here
+  600 |     case DDDMP_CNF_MODE_BEST:
+      |     ^~~~
+dddmp/dddmp.h:242:13: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  242 |             fflush(stderr); \
+      |             ^~~~~~~~~~~~~~
+dddmp/dddmpStoreCnf.c:645:7: note: in expansion of macro 'Dddmp_Warning'
+  645 |       Dddmp_Warning (1, "Wrong DDDMP Store Mode. Force DDDMP_MODE_BEST.");
+      |       ^~~~~~~~~~~~~
+dddmp/dddmpStoreCnf.c:646:5: note: here
+  646 |     case DDDMP_CNF_MODE_BEST:
+      |     ^~~~
+ar: `u' modifier ignored since `D' is the default (see `U')
++ strip --strip-all /builds/release64/bin/downward
++ strip --strip-all /builds/release64/bin/preprocess-h2
+Getting image source signatures
+Copying blob sha256:0963d61c5d36e157f4d244438f1a5213d8590b724d49300d6df8ebf5d70342a9
+Copying config sha256:f15f05d8742509cfc142f79dfe4cc2fa4e1b7bd20415675f7b52d3e22fd53670
+Writing manifest to image destination
+Storing signatures
+2023/06/02 08:59:16  info unpack layer: sha256:0963d61c5d36e157f4d244438f1a5213d8590b724d49300d6df8ebf5d70342a9
+INFO:    Copying fast-downward.py to 
+INFO:    Copying driver to 
+INFO:    Copying builds/release64/bin/ to 
+INFO:    Running post scriptlet
++ apt-get update
++ apt-get -y install --no-install-recommends pypy3
+debconf: delaying package configuration, since apt-utils is not installed
++ apt-get clean
++ rm -rf /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic-backports_InRelease /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic-backports_universe_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic-updates_InRelease /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic-updates_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic-updates_multiverse_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic-updates_restricted_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic-updates_universe_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic_InRelease /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic_multiverse_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic_restricted_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_kinetic_universe_binary-amd64_Packages.lz4 /var/lib/apt/lists/auxfiles /var/lib/apt/lists/lock /var/lib/apt/lists/partial /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_kinetic-security_InRelease /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_kinetic-security_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_kinetic-security_multiverse_binary-amd64_Packages.lz4 /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_kinetic-security_restricted_binary-amd64_Packages.lz4 /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_kinetic-security_universe_binary-amd64_Packages.lz4
+INFO:    Adding labels
+INFO:    Adding runscript
+INFO:    Creating SIF file...
+INFO:    Build complete: /tmp/fts_sbd_opt.img
